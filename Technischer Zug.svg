@@ -9,16 +9,18 @@
 				src: url('LubalinGraphBoldBT.ttf');
 			}
 		</style>
+
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
 	</defs>
 
-	<rect x="10" y="64" width="236" height="128" fill="#003399" stroke="#ffffff" stroke-width="10" />
+	<rect x="10" y="64" width="236" height="128" fill="#003399" stroke="#ffffff" stroke-width="10" clip-path="url(#symbol)" />
 	<rect x="10" y="64" width="236" height="128" fill="none" stroke="#000000" stroke-width="1" />
 
 	<ellipse cx="48" cy="48" rx="10" ry="10" />
 	<ellipse cx="128" cy="48" rx="10" ry="10" />
 	<ellipse cx="208" cy="48" rx="10" ry="10" />
-
-	<text id="titel" alignment-baseline="middle" text-anchor="middle" x="128" y="128">ZTr</text>
 
 	<text font-size="300%" fill="#ffffff" font-family="lubalin" alignment-baseline="central" text-anchor="middle" x="128" y="128">TZ-</text>
 	<text fill="#ffffff" font-family="lubalin"  text-anchor="end" x="236" y="180">THW</text>

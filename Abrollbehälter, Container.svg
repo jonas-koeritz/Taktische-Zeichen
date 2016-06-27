@@ -6,7 +6,7 @@
 		</clipPath>
 	</defs>
 	
-	<ellipse cx="8" cy="64" rx="5" ry="5" stroke="#000000" fill="#ffffff" stroke-width="5" clip-path="url(#hook)" />
+	<ellipse cx="8" cy="64" rx="5" ry="5" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#hook)" />
 
 	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="none" stroke-width="5" stroke="#000000" />
 </svg>

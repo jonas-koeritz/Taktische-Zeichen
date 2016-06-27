@@ -11,14 +11,18 @@
 		<clipPath id="wheels">
 			<rect x="10" y="192" width="236" height="20" />
 		</clipPath>
+
+		<clipPath id="symbol">
+			<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" />
+		</clipPath>
 	</defs>
 	
-	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44" fill="#003399" stroke-width="10" stroke="#ffffff" />
+	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44" fill="#003399" stroke-width="10" stroke="#ffffff" clip-path="url(#symbol)" />
 	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44" fill="none" stroke-width="1" stroke="#000000" />
 	
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="#ffffff" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="#000000" fill="#ffffff" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="#ffffff" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 
 	<text font-family="lubalin" font-size="300%" fill="#ffffff" alignment-baseline="central" text-anchor="middle" x="128" y="128">MLW I</text>
 

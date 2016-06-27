@@ -7,9 +7,12 @@
 				src: url('LubalinGraphBoldBT.ttf');
 			}
 		</style>
+		<clipPath id="symbol">
+			<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" />
+		</clipPath>
 	</defs>
 	
-	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="#003399" stroke-width="10" stroke="#ffffff" />
+	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="#003399" stroke-width="10" stroke="#ffffff" clip-path="url(#symbol)" />
 	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="none" stroke-width="1" stroke="#000000" />
 	
 	<rect x="0" y="121.5" width="11" height="15" fill="#ffffff" />
