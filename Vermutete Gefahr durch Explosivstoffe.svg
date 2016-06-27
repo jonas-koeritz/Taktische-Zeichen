@@ -1,0 +1,19 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+			@font-face {
+				font-family: lubalin;
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		</style>
+	</defs>
+
+	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="#ff0000" fill="none" />
+
+	<ellipse cx="128" cy="108" rx="24" ry="24" stroke="#ff0000" stroke-width="10" fill="none" />
+	
+	<ellipse cx="128" cy="108" rx="10" ry="10" fill="#ff0000" />
+
+	<text font-family="lubalin" alignment-baseline="central" text-anchor="middle" fill="#ff0000" font-size="400%" x="64" y="150">?</text>
+</svg>
