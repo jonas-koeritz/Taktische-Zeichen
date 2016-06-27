@@ -1,0 +1,25 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+			@font-face {
+				font-family: lubalin;
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		</style>
+	</defs>
+	<rect x="10" y="64" width="236" height="128" fill="#003399" stroke="#ffffff" stroke-width="10" />
+	<rect x="10" y="64" width="236" height="128" fill="none" stroke="#000000" stroke-width="1" />
+
+	<!-- Punkt über dem Rechteck -->
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
+
+	<!-- Punkte im Rechteck -->
+	<ellipse cx="48"  cy="86" rx="10" ry="10" fill="#ffffff" />
+	<ellipse cx="128" cy="86" rx="10" ry="10" fill="#ffffff" />
+	<ellipse cx="208" cy="86" rx="10" ry="10" fill="#ffffff" />
+
+	<!-- Texte -->
+	<text font-size="300%" fill="#ffffff" font-family="lubalin" alignment-baseline="mathematical" text-anchor="middle" x="128" y="128">TZ</text>
+	<text fill="#ffffff" font-family="lubalin"  text-anchor="end" x="236" y="180">THW</text>
+</svg>

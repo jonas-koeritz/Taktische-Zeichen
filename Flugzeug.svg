@@ -1,0 +1,6 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<path d="M128,98 l0,60" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M138,118 l44,0 a10,10 180 0 1 0,20 l-44,0 a10,10 180 0 1 0,-20 Z" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M74,118 l44,0 a10,10 180 0 1 0,20 l-44,0 a10,10 180 0 1 0,-20 Z" stroke="#000000" stroke-width="5" fill="none" />
+</svg>
