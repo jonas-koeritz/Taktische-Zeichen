@@ -7,6 +7,6 @@
 	<path d="M108,182 L98,182 L98,172 Z" fill="#000000" />
 	<path d="M148,182 L158,182 L158,172 Z" fill="#000000" />
 
-	<ellipse cx="104" cy="135" rx="10" ry="10" fill="#000000" />
-	<ellipse cx="152" cy="135" rx="10" ry="10" fill="#000000" />
+	<ellipse cx="104" cy="134" rx="10" ry="10" fill="#000000" />
+	<ellipse cx="152" cy="134" rx="10" ry="10" fill="#000000" />
 </svg>
