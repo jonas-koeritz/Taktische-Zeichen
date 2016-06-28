@@ -15,5 +15,8 @@
 	
 	<ellipse cx="128" cy="108" rx="10" ry="10" fill="#ff0000" />
 
+	<rect x="123" y="76" fill="#ff0000" width="10" height="10" transform="rotate(30,128,108)" />
+	<rect x="123" y="76" fill="#ff0000" width="10" height="10" transform="rotate(-30,128,108)" />
+
 	<text font-family="lubalin" alignment-baseline="central" text-anchor="middle" fill="#ff0000" font-size="400%" x="64" y="150">?</text>
 </svg>
