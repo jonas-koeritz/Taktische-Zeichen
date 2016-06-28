@@ -1,0 +1,22 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<clipPath id="flamme1">
+			<path d="M103,192 l40,-128 l0,128 Z" />
+		</clipPath>
+		<clipPath id="flamme2">
+			<path d="M63,192 l40,-128 l0,128 Z" />
+		</clipPath>
+		<clipPath id="flamme3">
+			<path d="M143,192 l40,-128 l0,128 Z" />
+		</clipPath>
+	</defs>
+	
+	<path d="M103,192 l40,-128 l0,128 Z" stroke-width="10" stroke="#ff0000" fill="none" clip-path="url(#flamme1)" />
+
+	<path d="M63,192 l40,-128 l0,128 Z" stroke-width="10" stroke="#ff0000" fill="none" clip-path="url(#flamme2)" />
+
+	<path d="M143,192 l40,-128 l0,128 Z" stroke-width="10" stroke="#ff0000" fill="none" clip-path="url(#flamme3)" />
+
+	<ellipse cx="128" cy="128" rx="108" ry="86" stroke-width="5" stroke="#ff0000" fill="none" />
+</svg>
