@@ -25,5 +25,5 @@
 	<ellipse cx="78" cy="102" rx="20" ry="20" fill="#ffffff" />
 	<ellipse cx="178" cy="102" rx="20" ry="20" fill="#ffffff" />
 
-	<text font-family="lubalin" font-size="200%" fill="#ffffff" x="128" alignment-baseline="after-edge" text-anchor="middle" y="182">P</text>
+	<text font-family="lubalin" font-size="200%" fill="#ffffff" x="128" text-anchor="middle" y="182">P</text>
 </svg>
