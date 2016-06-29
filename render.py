@@ -13,7 +13,7 @@ except:
 if len(sys.argv) == 2:
 	filename, ext = os.path.splitext(str(sys.argv[1]))
 	call(["wkhtmltoimage", "--transparent", "--quality", "100", "--crop-h", "256", "--crop-w", "256", str(sys.argv[1]), "./256x256/" + filename + ".png"])
-	call(["convert", "./256x256/" + filename + ".png", "-resize", "50%", "./128x128/" + filename + ".png"])
+	call(["magick", "./256x256/" + filename + ".png", "-resize", "50%", "./128x128/" + filename + ".png"])
 	call(["optipng", "./256x256/" + filename + ".png"])
 	call(["optipng", "./128x128/" + filename + ".png"])
 
@@ -30,7 +30,7 @@ else:
 
 		# Generate 256x256 image
 		call(["wkhtmltoimage", "--transparent", "--quality", "100", "--crop-h", "256", "--crop-w", "256", file, "./256x256/" + filename + ".png"])
-		call(["convert", "./256x256/" + filename + ".png", "-resize", "50%", "./128x128/" + filename + ".png"])
+		call(["magick", "./256x256/" + filename + ".png", "-resize", "50%", "./128x128/" + filename + ".png"])
 		call(["optipng", "./256x256/" + filename + ".png"])
 		call(["optipng", "./128x128/" + filename + ".png"])
 
