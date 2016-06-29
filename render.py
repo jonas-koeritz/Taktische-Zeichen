@@ -26,7 +26,7 @@ else:
 	for file in glob.glob("*.svg"):
 		filename, ext = os.path.splitext(file)
 
-		call(["wkhtmltoimage", "--transparent", "--quality", "100", "--zoom", "4", "--crop-h", "1024", "--crop-w", "1024", str(sys.argv[1]), "./1024x1024/" + filename + ".png"])
+		call(["wkhtmltoimage", "--transparent", "--quality", "100", "--zoom", "4", "--crop-h", "1024", "--crop-w", "1024", file, "./1024x1024/" + filename + ".png"])
 	
 		call(["magick", "./1024x1024/" + filename + ".png", "-resize", "50%", "./512x512/" + filename + ".png"])
 		call(["magick", "./1024x1024/" + filename + ".png", "-resize", "25%", "./256x256/" + filename + ".png"])
