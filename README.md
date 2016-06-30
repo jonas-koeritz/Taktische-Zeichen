@@ -1,5 +1,5 @@
 # Taktische-Zeichen
-Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken
+Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
 
 ![Zugführer - THW](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/Zugf%C3%BChrer%20-%20THW.png)
 ![Löschzug](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/L%C3%B6schzug.png)
