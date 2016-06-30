@@ -8,5 +8,5 @@
 		<line x1="158" x2="158" y1="52" y2="192" stroke-width="5" stroke="#000000" />
 	</g>
 	
-	<path d="M10,64 l0,128 l238,0 l0,-128 m0,40 l-238,0" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M10,64 l0,128 l236,0 l0,-128 m0,40 l-236,0" stroke="#000000" stroke-width="5" fill="none" />
 </svg>

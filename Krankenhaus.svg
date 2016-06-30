@@ -1,5 +1,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
 	<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64 Z" stroke="#000000" stroke-width="5" fill="#ffffff" />
-	<path d="M10 65 L246,65 M128,64 l0,128 M10,128 l 238,0 M69,108 l0,40 M187,108 l0,40" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M10 65 L246,65 M128,64 l0,128 M10,128 l236,0 M69,108 l0,40 M187,108 l0,40" stroke="#000000" stroke-width="5" fill="none" />
 </svg>
