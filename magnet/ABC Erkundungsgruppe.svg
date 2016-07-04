@@ -1,0 +1,48 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" shape-rendering="cripsEdges">
+	<defs>
+		<style type="text/css">
+			@font-face {
+				font-family: lubalin;
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		</style>
+	</defs>
+	<rect x="0" y="0" width="256" height="256" stroke="#dddddd" stroke-width="1" fill="#ffffff"/>
+	<g transform="scale(0.9) translate(12.8,-10)" id="symbol">
+		
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+			@font-face {
+				font-family: lubalin;
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		</style>
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
+	</defs>
+	
+	<rect x="10" y="64" width="236" height="128" stroke="#ffffff" stroke-width="10" fill="#ff0000" clip-path="url(#symbol)" />
+	<path d="M10,192 l236,-128" stroke-width="5" stroke="#ffffff" fill="none" clip-path="url(#symbol)" />
+	<rect x="10" y="64" width="236" height="128" stroke="#000000" stroke-width="1" fill="none" />
+
+
+	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="#000000" />
+	<ellipse cx="192" cy="48" rx="10" ry="10" fill="#000000" />
+
+	<path d="M88 92 L188 164 M168 92 L68 164" stroke="#ffffff" stroke-width="10" fill="none" />
+	<ellipse cx="78" cy="102" rx="20" ry="20" fill="#ffffff" />
+	<ellipse cx="178" cy="102" rx="20" ry="20" fill="#ffffff" />
+
+
+</svg>
+	</g>
+	<g transform="scale(0.9) translate(12.8,230)">
+		<path  d="M10,0 l50,0 m12,0 l50,0 m12,0 l50,0 m12,0 l50,0" stroke="#000000" fill="none" stroke-width="1" stroke-linecap="round" />
+		<path  d="M246,0 l-50,0" stroke-linecap="round" stroke="#000000" fill="none" stroke-width="2" />
+		<path d="M66,0 l8,-30 M128,0 l8,-30 M190,0 l8,-30" stroke="#000000" fill="none" stroke-width="1" stroke-linecap="round" />
+		<path d="M10,46 l236,0" stroke-linecap="round" stroke="#000000" fill="none" stroke-width="1" />
+	</g>
+</svg>

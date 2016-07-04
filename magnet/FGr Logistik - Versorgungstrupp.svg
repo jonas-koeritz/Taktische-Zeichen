@@ -1,0 +1,44 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" shape-rendering="cripsEdges">
+	<defs>
+		<style type="text/css">
+			@font-face {
+				font-family: lubalin;
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		</style>
+	</defs>
+	<rect x="0" y="0" width="256" height="256" stroke="#dddddd" stroke-width="1" fill="#ffffff"/>
+	<g transform="scale(0.9) translate(12.8,-10)" id="symbol">
+		
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+			@font-face {
+				font-family: lubalin;
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		</style>
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
+	</defs>
+	
+	<rect x="10" y="64" width="236" height="128" fill="#003399" stroke="#ffffff" stroke-width="10" clip-path="url(#symbol)" />
+	<rect x="10" y="64" width="236" height="128" fill="none" stroke="#000000" stroke-width="1" />
+	<rect x="11" y="166" width="234" height="25" fill="#ffffff" />
+
+	<ellipse cx="128" cy="48" rx="10" ry="10" />
+
+	<text fill="#ffffff" font-family="lubalin" font-size="300%" text-anchor="middle" x="128" y="128">Log-V</text>
+
+	<text font-family="lubalin" fill="#ffffff" text-anchor="end" x="236" y="160">THW</text>
+</svg>
+	</g>
+	<g transform="scale(0.9) translate(12.8,230)">
+		<path  d="M10,0 l50,0 m12,0 l50,0 m12,0 l50,0 m12,0 l50,0" stroke="#000000" fill="none" stroke-width="1" stroke-linecap="round" />
+		<path  d="M246,0 l-50,0" stroke-linecap="round" stroke="#000000" fill="none" stroke-width="2" />
+		<path d="M66,0 l8,-30 M128,0 l8,-30 M190,0 l8,-30" stroke="#000000" fill="none" stroke-width="1" stroke-linecap="round" />
+		<path d="M10,46 l236,0" stroke-linecap="round" stroke="#000000" fill="none" stroke-width="1" />
+	</g>
+</svg>
