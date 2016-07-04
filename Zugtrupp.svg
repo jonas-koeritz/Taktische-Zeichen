@@ -18,9 +18,9 @@
 	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
 
 	<!-- Punkte im Rechteck -->
-	<ellipse cx="48"  cy="86" rx="10" ry="10" fill="#ffffff" />
+	<ellipse cx="64"  cy="86" rx="10" ry="10" fill="#ffffff" />
 	<ellipse cx="128" cy="86" rx="10" ry="10" fill="#ffffff" />
-	<ellipse cx="208" cy="86" rx="10" ry="10" fill="#ffffff" />
+	<ellipse cx="192" cy="86" rx="10" ry="10" fill="#ffffff" />
 
 	<!-- Texte -->
 	<text font-size="300%" fill="#ffffff" font-family="lubalin" alignment-baseline="mathematical" text-anchor="middle" x="128" y="128">TZ</text>
