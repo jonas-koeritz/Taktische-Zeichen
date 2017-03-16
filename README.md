@@ -1,12 +1,12 @@
 # Taktische-Zeichen
 Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
 
-![Zugführer - THW](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/Zugf%C3%BChrer%20-%20THW.png)
-![Löschzug](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/L%C3%B6schzug.png)
-![Leitstelle](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/Leitstelle.png)
-![Gerettete Person](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/Gerettete%20Person.png)
-![Gefahr durch Explosivstoffe](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/Gefahr%20durch%20Explosivstoffe.png)
-![Brückenbau](https://github.com/jonas-koeritz/Taktische-Zeichen/blob/master/128x128/Br%C3%BCckenbau.png)
+![Zugführer - THW](https://raw.githubusercontent.com/jonas-koeritz/Taktische-Zeichen/master/Zugf%C3%BChrer%20-%20THW.svg)
+![Löschzug](https://raw.githubusercontent.com/jonas-koeritz/Taktische-Zeichen/master/L%C3%B6schzug.svg)
+![Leitstelle](https://raw.githubusercontent.com/jonas-koeritz/Taktische-Zeichen/master/Leitstelle.svg)
+![Gerettete Person](https://raw.githubusercontent.com/jonas-koeritz/Taktische-Zeichen/master/Gerettete%20Person.svg)
+![Gefahr durch Explosivstoffe](https://raw.githubusercontent.com/jonas-koeritz/Taktische-Zeichen/master/Gefahr%20durch%20Explosivstoffe.svg)
+![Brückenbau](https://raw.githubusercontent.com/jonas-koeritz/Taktische-Zeichen/master/Br%C3%BCckenbau.svg)
 
 ## Fehlende Zeichen
 Fehlende zeichen können als [issue](https://github.com/jonas-koeritz/Taktische-Zeichen/issues) eingereicht werden, Ich erstelle die Symbole dann.
