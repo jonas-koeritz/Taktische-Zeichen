@@ -2,10 +2,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 		<clipPath id="symbol">
 			<rect x="10" y="64" width="236" height="128" />
@@ -18,7 +20,7 @@
 
 	<ellipse cx="128" cy="48" rx="10" ry="10" />
 
-	<text fill="#ffffff" font-family="lubalin" font-size="300%" text-anchor="middle" x="128" y="128">Log-M</text>
+	<text fill="#ffffff" font-family="LubalGraph Bd BT" font-size="300%" text-anchor="middle" x="128" y="128">Log-M</text>
 
-	<text font-family="lubalin" fill="#ffffff" text-anchor="end" x="236" y="160">THW</text>
+	<text font-family="LubalGraph Bd BT" fill="#ffffff" text-anchor="end" x="236" y="160">THW</text>
 </svg>

@@ -2,10 +2,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" shape-rendering="cripsEdges">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 	</defs>
 	<rect x="0" y="0" width="256" height="256" stroke="#dddddd" stroke-width="1" fill="#ffffff"/>
@@ -14,10 +16,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 		<clipPath id="symbol">
 			<rect x="10" y="64" width="236" height="128" />
@@ -30,9 +34,9 @@
 	<ellipse cx="192" cy="48" rx="10" ry="10" fill="#000000" />
 
 	<!-- Texte -->
-	<text font-size="300%" fill="#ffffff" font-family="lubalin" alignment-baseline="central" text-anchor="middle" x="128" y="128">O</text>
-	<text fill="#ffffff" font-family="lubalin"  text-anchor="start" x="20" y="180">B</text>
-	<text fill="#ffffff" font-family="lubalin"  text-anchor="end" x="236" y="180">THW</text>
+	<text font-size="300%" fill="#ffffff" font-family="LubalGraph Bd BT" alignment-baseline="central" text-anchor="middle" x="128" y="128">O</text>
+	<text fill="#ffffff" font-family="LubalGraph Bd BT"  text-anchor="start" x="20" y="180">B</text>
+	<text fill="#ffffff" font-family="LubalGraph Bd BT"  text-anchor="end" x="236" y="180">THW</text>
 </svg>
 	</g>
 	<g transform="scale(0.9) translate(12.8,230)">

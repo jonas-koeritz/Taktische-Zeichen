@@ -2,10 +2,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" shape-rendering="cripsEdges">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 	</defs>
 	<rect x="0" y="0" width="256" height="256" stroke="#dddddd" stroke-width="1" fill="#ffffff"/>
@@ -14,10 +16,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 		<clipPath id="symbol">
 			<rect x="10" y="64" width="236" height="128" />
@@ -37,7 +41,7 @@
 	<ellipse cx="78" cy="102" rx="20" ry="20" fill="#ffffff" />
 	<ellipse cx="178" cy="102" rx="20" ry="20" fill="#ffffff" />
 
-	<text font-family="lubalin" font-size="200%" fill="#ffffff" x="128" text-anchor="middle" y="182">P</text>
+	<text font-family="LubalGraph Bd BT" font-size="200%" fill="#ffffff" x="128" text-anchor="middle" y="182">P</text>
 </svg>
 	</g>
 	<g transform="scale(0.9) translate(12.8,230)">

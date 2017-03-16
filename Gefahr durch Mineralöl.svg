@@ -2,14 +2,16 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 	</defs>
 
 	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="#ff0000" fill="none" />
 
-	<text font-family="lubalin" alignment-baseline="central" text-anchor="middle" fill="#ff0000" font-size="350%" x="128" y="108">Öl</text>
+	<text font-family="LubalGraph Bd BT" alignment-baseline="central" text-anchor="middle" fill="#ff0000" font-size="350%" x="128" y="108">Öl</text>
 </svg>

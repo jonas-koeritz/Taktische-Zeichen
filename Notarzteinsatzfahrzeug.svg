@@ -2,10 +2,12 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
 	<defs>
 		<style type="text/css">
+		<![CDATA[
 			@font-face {
-				font-family: lubalin;
+				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
+		]]>
 		</style>
 
 		<clipPath id="wheels">
@@ -20,5 +22,5 @@
 
 	<path d="M10,128 l236,0 M128,192 l0,-120 M108,160 l40,0" fill="none" stroke-width="5" stroke="#000000" />
 
-	<text font-family="lubalin" font-size="200%" fill="#000000" alignment-baseline="before-edge" text-anchor="start" x="22" y="70">NEF</text>
+	<text font-family="LubalGraph Bd BT" font-size="200%" fill="#000000" alignment-baseline="before-edge" text-anchor="start" x="22" y="70">NEF</text>
 </svg>
