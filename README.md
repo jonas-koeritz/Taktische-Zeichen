@@ -17,7 +17,15 @@ Die .SVG Dateien haben die Maße 256x256 Einheiten, Alle Zeichen müssen in dies
 Zeichen für Einheiten/Fahrzeuge/Personen etc. müssen untereinander Deckungsgleich sein!
 
 ## PNG-Dateien
-Die PNG Dateien stehen in den Maßen [128x128](https://github.com/jonas-koeritz/Taktische-Zeichen/tree/master/128x128), [256x256](https://github.com/jonas-koeritz/Taktische-Zeichen/tree/master/256x256), [512x512](https://github.com/jonas-koeritz/Taktische-Zeichen/tree/master/512x512) und [1024x1024](https://github.com/jonas-koeritz/Taktische-Zeichen/tree/master/1024x1024) zur Verfügung. Die Dateien können mit dem beiligenenden Python Skript erstellt werden.
+Die PNG Dateien stehen in den Maßen 128x128, 256x256, 512x512 und 1024x1024 zur Verfügung. Die fertigen PNG Dateien können unter [releases](https://github.com/jonas-koeritz/Taktische-Zeichen/releases) heruntergeladen werden.
+Die Dateien können auch mit dem beiligenenden Python Skript erstellt werden:
+
+`python render.py render-all`
+
+## Vorlagen für Magnete
+Aus den Symbolen für Gruppen, Züge und Einheiten können automatisiert Vorlange für Magnete erstellt werden:
+
+`python render.py all-magnets`
 
 ## Lizenz
 Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigenen Änderungen erweitert werden.
