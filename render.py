@@ -2,6 +2,7 @@
 
 import glob, os, sys
 from subprocess import call
+import xml.etree.ElementTree
 
 def render_raster_images(svg_file):
 	create_output_folders()
@@ -30,16 +31,30 @@ def create_output_folders():
 		pass
 
 def create_magnet_svg(svg_file):
-	with open('Magnet.svg', 'r') as magnet:
-		template = magnet.read()
-		with open(str(svg_file), 'r') as symbol:
-			symbol_data = symbol.read()
-			symbol_data = symbol_data.replace('<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">', "")
-			magnet_data = template.replace('%SYMBOL%', symbol_data)
+	xml.etree.ElementTree.register_namespace('', "http://www.w3.org/2000/svg")
+	namespaces = {'svg': 'http://www.w3.org/2000/svg'}
+	
+	magnet = xml.etree.ElementTree.parse('Magnet.svg');
+	template = magnet.getroot()
+	symbol = xml.etree.ElementTree.parse(svg_file).getroot()
+	
+	template_defs = template.find("svg:defs", namespaces)
+	template_symbol = template.find("*[@id='symbol']")
 
-			filename, ext = os.path.splitext(svg_file)
-			with open("./magnet/" + filename + ".svg", 'w') as output_file:
-				output_file.write(magnet_data)
+	# Merge defs
+	symbol_defs = symbol.findall("svg:defs/*", namespaces)
+	for def_item in symbol_defs:
+		if def_item.tag != "{http://www.w3.org/2000/svg}style":
+			template_defs.append(def_item)
+
+	# Get Symbol content
+	symbol_elements = symbol.findall("*", namespaces)
+	for symbol_element in symbol_elements:
+		if symbol_element.tag != "{http://www.w3.org/2000/svg}defs":
+			template_symbol.append(symbol_element)
+
+	filename, ext = os.path.splitext(svg_file)
+	magnet.write("./magnet/" + filename + ".svg", encoding="utf-8")
 
 def render_all():
 	for file in glob.glob("*.svg"):
