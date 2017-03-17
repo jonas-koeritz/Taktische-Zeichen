@@ -57,6 +57,10 @@ def create_magnet_svg(svg_file):
 	magnet.write("./magnet/" + filename + ".svg", encoding="utf-8")
 
 def render_all():
+	os.mkdir('./128x128/')
+	os.mkdir('./256x256/')
+	os.mkdir('./512x512/')
+	os.mkdir('./1024x1024/')
 	for file in glob.glob("*.svg"):
 		filename, ext = os.path.splitext(file)
 
@@ -72,10 +76,10 @@ def render_all():
 		call(["optipng", "./128x128/" + filename + ".png"])
 
 def create_all_magnet_svg():
-	for file in glob.glob("*.svg"):
+	for file in glob.glob(u'*.svg'):
 		filename, ext = os.path.splitext(file)
 		filename = filename.lower()
-		if "magnet" not in filename and "führer" not in filename:
+		if "magnet" not in filename and u'führer' not in filename:
 			if "fgr" in filename:
 				print("Erzeuge Magnet-SVG fuer '" + file + "'")
 				create_magnet_svg(file)
@@ -86,6 +90,9 @@ def create_all_magnet_svg():
 				print("Erzeuge Magnet-SVG fuer '" + file + "'")
 				create_magnet_svg(file)
 			elif "einheit" in filename:
+				print("Erzeuge Magnet-SVG fuer '" + file + "'")
+				create_magnet_svg(file)
+			elif "trupp" in filename:
 				print("Erzeuge Magnet-SVG fuer '" + file + "'")
 				create_magnet_svg(file)
 
