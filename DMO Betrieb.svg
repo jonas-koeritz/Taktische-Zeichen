@@ -1,0 +1,6 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<path d="M10,128 l50,32 l136,0 l50,-32 l-50,-32 l-136,0 Z" fill="none" stroke-width="5" stroke="#000000" />
+	<text fill="#000000" font-size="150%" font-family="LubalGraph Bd BT" text-anchor="left" dominant-baseline="central" x="40" y="128">DMO</text>
+	<path d="M40,115 l60,0" fill="none" stroke-width="3" stroke="#000000" />
+</svg>
