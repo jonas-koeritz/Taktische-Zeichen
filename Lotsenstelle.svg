@@ -13,5 +13,5 @@
 
 
 	<ellipse fill="#ffff00" stroke="#000000" stroke-width="5" cx="128" cy="128" rx="64" ry="64" />
-	<text font-family="LubalGraph Bd BT" font-size="350%" alignment-baseline="central" text-anchor="middle" x="128" y="128">L</text>
+	<text font-family="LubalGraph Bd BT" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">L</text>
 </svg>

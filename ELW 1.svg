@@ -25,5 +25,5 @@
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 
-	<text font-family="LubalGraph Bd BT" font-size="300%" fill="#ffffff" alignment-baseline="central" text-anchor="middle" x="128" y="128">ELW 1</text>
+	<text font-family="LubalGraph Bd BT" font-size="300%" fill="#ffffff" dominant-baseline="central" text-anchor="middle" x="128" y="128">ELW 1</text>
 </svg>

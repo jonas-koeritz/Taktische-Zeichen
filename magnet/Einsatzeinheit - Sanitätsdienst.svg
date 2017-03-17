@@ -1,31 +1,26 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" shape-rendering="cripsEdges">
+<svg xmlns="http://www.w3.org/2000/svg" height="256" version="1.1" width="256">
 	<defs>
 		<style type="text/css">
-		<![CDATA[
+		
 			@font-face {
 				font-family: 'LubalGraph Bd BT';
 				src: url('LubalinGraphBoldBT.ttf');
 			}
-		]]>
+		
 		</style>
 	</defs>
-	<rect x="0" y="0" width="256" height="256" stroke="#dddddd" stroke-width="1" fill="#ffffff"/>
-	<g transform="scale(0.9) translate(12.8,-10)" id="symbol">
-		
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
-	<rect x="10" y="64" width="236" height="128" fill="#ffffff" stroke="#000000" stroke-width="5" />
-	<path d="M128,64 l0,128 M10,128 l236,0 M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
+	<rect fill="#ffffff" height="256" stroke="#dddddd" stroke-width="1" width="256" x="0" y="0" />
+	<g id="symbol" transform="scale(0.9) translate(12.8,-10)"><rect fill="#ffffff" height="128" stroke="#000000" stroke-width="5" width="236" x="10" y="64" />
+	<path d="M128,64 l0,128 M10,128 l236,0 M10,192 L128,66 L246,192" fill="none" stroke="#000000" stroke-width="5" />
 	
 	<ellipse cx="48" cy="48" rx="10" ry="10" />
 	<ellipse cx="128" cy="48" rx="10" ry="10" />
 	<ellipse cx="208" cy="48" rx="10" ry="10" />
-</svg>
-	</g>
+</g>
 	<g transform="scale(0.9) translate(12.8,230)">
-		<path  d="M10,0 l50,0 m12,0 l50,0 m12,0 l50,0 m12,0 l50,0" stroke="#000000" fill="none" stroke-width="1" stroke-linecap="round" />
-		<path  d="M246,0 l-50,0" stroke-linecap="round" stroke="#000000" fill="none" stroke-width="2" />
-		<path d="M66,0 l8,-30 M128,0 l8,-30 M190,0 l8,-30" stroke="#000000" fill="none" stroke-width="1" stroke-linecap="round" />
-		<path d="M10,46 l236,0" stroke-linecap="round" stroke="#000000" fill="none" stroke-width="1" />
+		<path d="M10,0 l50,0 m12,0 l50,0 m12,0 l50,0 m12,0 l50,0" fill="none" stroke="#000000" stroke-linecap="round" stroke-width="1" />
+		<path d="M246,0 l-50,0" fill="none" stroke="#000000" stroke-linecap="round" stroke-width="2" />
+		<path d="M66,0 l8,-30 M128,0 l8,-30 M190,0 l8,-30" fill="none" stroke="#000000" stroke-linecap="round" stroke-width="1" />
+		<path d="M10,46 l236,0" fill="none" stroke="#000000" stroke-linecap="round" stroke-width="1" />
 	</g>
 </svg>

@@ -19,7 +19,7 @@
 
 	<ellipse cx="128" cy="48" rx="10" ry="10" />
 
-	<text font-family="LubalGraph Bd BT" fill="#ffffff" font-size="300%" alignment-baseline="middle" text-anchor="middle" x="128" y="128">Fm</text>
+	<text font-family="LubalGraph Bd BT" fill="#ffffff" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">Fm</text>
 
 	<text font-family="LubalGraph Bd BT" fill="#ffffff" text-anchor="end" x="236" y="180">THW</text>
 </svg>

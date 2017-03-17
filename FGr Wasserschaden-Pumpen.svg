@@ -20,6 +20,6 @@
 	<ellipse cx="192" cy="48" rx="10" ry="10" fill="#000000" />
 
 	<!-- Texte -->
-	<text font-size="300%" fill="#ffffff" font-family="LubalGraph Bd BT" alignment-baseline="central" text-anchor="middle" x="128" y="128">WP</text>
+	<text font-size="300%" fill="#ffffff" font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" x="128" y="128">WP</text>
 	<text fill="#ffffff" font-family="LubalGraph Bd BT"  text-anchor="end" x="236" y="180">THW</text>
 </svg>

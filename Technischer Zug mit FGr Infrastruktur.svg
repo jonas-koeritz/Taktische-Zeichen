@@ -22,6 +22,6 @@
 	<ellipse cx="128" cy="48" rx="10" ry="10" />
 	<ellipse cx="192" cy="48" rx="10" ry="10" />
 
-	<text font-size="300%" fill="#ffffff" font-family="LubalGraph Bd BT" alignment-baseline="central" text-anchor="middle" x="128" y="128">TZ-I</text>
+	<text font-size="300%" fill="#ffffff" font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" x="128" y="128">TZ-I</text>
 	<text fill="#ffffff" font-family="LubalGraph Bd BT"  text-anchor="end" x="236" y="180">THW</text>
 </svg>
