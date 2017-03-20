@@ -1,0 +1,38 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+
+		<clipPath id="wheels">
+			<rect x="10" y="192" width="236" height="20" />
+		</clipPath>
+		<clipPath id="symbol">
+			<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" />
+		</clipPath>
+	</defs>
+	
+	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="{{ color_primary }}" stroke-width="10" stroke="{{ color_secondary }}" clip-path="url(#symbol)" />
+	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="none" stroke-width="1" stroke="{{ stroke_color }}" />
+	
+	{{#if three_wheels}}
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	{{/if}}
+
+	{{#if two_wheels}}
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	{{/if}}
+
+	<text font-family="LubalGraph Bd BT" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+
+	<text font-family="LubalGraph Bd BT" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
+</svg>

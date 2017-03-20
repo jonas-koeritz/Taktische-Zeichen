@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+
+		<clipPath id="symbol">
+			<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64 Z" />
+		</clipPath>
+	</defs>
+	
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ color_secondary }}" stroke-width="10" clip-path="url(#symbol)" />
+
+	
+	<path d="M10 64 L128 16 L246 64" stroke="{{ color_secondary }}" stroke-width="10" fill="{{ color_primary }}" clip-path="url(#symbol)" />
+	<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64" stroke="{{ stroke_color }}" stroke-width="1" fill="none" />
+
+	<text font-family="LubalGraph Bd BT" fill="{{ color_text }}" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	<text font-family="LubalGraph Bd BT" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
+</svg>
