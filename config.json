@@ -223,9 +223,8 @@
 					"name": "Zugführer",
 					"template": "Person.svg",
 					"unit": "TZ",
-					"stroke_width": "12",
 					"variants": {
-						"zugführer": "Zugführer"
+						"zugführer_thw": "Zugführer"
 					}
 				}
 			]
@@ -625,7 +624,7 @@
 			"color_primary": "#FF0000",
 			"color_secondary": "#FFFFFF",
 			"stroke_color": "#000000",
-			"color_text": "#000000",
+			"color_text": "#FFFFFF",
 			"symbols": [
 				{
 					"name": "ELW 1",
@@ -1003,6 +1002,7 @@
 		{
 			"name": "Einrichtungen",
 			"color_primary": "#FFFF00",
+			"stroke_color": "#000000",
 			"symbols": [
 				{
 					"name": "Leitstelle",

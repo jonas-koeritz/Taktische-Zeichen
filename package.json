@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jonas-koeritz/Taktische-Zeichen#readme",
   "dependencies": {
+    "async": "^2.2.0",
     "handlebars": "^4.0.6"
   }
 }
