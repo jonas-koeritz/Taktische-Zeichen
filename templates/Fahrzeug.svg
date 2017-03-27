@@ -16,9 +16,25 @@
 		<clipPath id="symbol">
 			<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" />
 		</clipPath>
+
+		{{#if container}}
+		<clipPath id="hook">
+			<rect x="0" y="44" width="10" height="148" />
+		</clipPath>
+		{{/if}}
 	</defs>
+
+	
+
 	
 	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="{{ color_primary }}" stroke-width="10" stroke="{{ color_secondary }}" clip-path="url(#symbol)" />
+
+	{{#if drehleiter}}
+	<path d="M125,192 l3,0 l80,-80 l20,0 l0,-20 l-20,0 l0,20" fill="none" stroke="{{ color_secondary }}" stroke-width="7" clip-path="url(#symbol)" />
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	{{/if}}
+	
 	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="none" stroke-width="1" stroke="{{ stroke_color }}" />
 	
 	{{#if three_wheels}}
@@ -32,7 +48,35 @@
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	{{/if}}
 
+	{{#if tracks}}
+	<path d="M24,195 l208,0 a10,10 180 0 1 0,20 l-208,0 a10,10 180 0 1 0,-20 Z" stroke="#000000" fill="none" stroke-width="5" />
+	{{/if}}
+
+	{{#if rail}}
+	<ellipse cx="24" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
+	<ellipse cx="50" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
+	<ellipse cx="206" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
+	<ellipse cx="232" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
+	{{/if}}
+	
+	{{#if container}}
+	<ellipse cx="8" cy="64" rx="5" ry="5" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#hook)" />
+	{{/if}}
+
+	{{#if trailer}}
+	<rect x="0" y="120.5" width="10" height="15" />
+	{{/if}}
+
+	{{#if arzt}}
+	<path d="M108,160 l40,0" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
+	{{/if}}
+
+	{{#if rettungswesen}}
+	<path d="M10,128 l236,0 M128,192 l0,-120" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
+	<text font-family="LubalGraph Bd BT" font-size="200%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="70">{{ unit }}</text>
+	{{else}}
 	<text font-family="LubalGraph Bd BT" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	{{/if}}
 
 	<text font-family="LubalGraph Bd BT" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
 </svg>

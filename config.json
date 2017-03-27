@@ -1,4 +1,7 @@
 {
+	"fonts": [
+		"LubalinGraphBoldBT.ttf"
+	],
 	"sets": [
 		{
 			"name": "THW Einheiten",
@@ -174,6 +177,56 @@
 					"template": "Einheit.svg",
 					"unit": "TZ",
 					"variants": { "zugtrupp": "Zugtrupp" }
+				},
+				{
+					"name": "FGr Logistik - Führungstrupp",
+					"template": "Führungstrupp.svg",
+					"unit": "Log",
+					"variants": { "führungstrupp": "FGr Logistik - Führungstrupp" }
+				},
+				{
+					"name": "FGr FK - Führungs- und Kommunikationstrupp",
+					"template": "Führungstrupp.svg",
+					"unit": "FüKom",
+					"variants": { "führungstrupp": "FGr FK - Führungs- und Kommunikationstrupp" }
+				},
+				{
+					"name": "FGr FK - Führungstrupp",
+					"template": "Führungstrupp.svg",
+					"unit": "Fü",
+					"denominator": "A",
+					"variants": { "führungstrupp": "FGr FK - Führungstrupp" }
+				},
+				{
+					"name": "FGr Logistik - Materialerhaltungstrupp",
+					"template": "Versorgungstrupp.svg",
+					"unit": "Log-M",
+					"variants": { "versorgungstrupp": "FGr Logistik - Materialerhaltungstrupp" }
+				},
+				{
+					"name": "FGr Logistik - Versorgungstrupp",
+					"template": "Versorgungstrupp.svg",
+					"unit": "Log-V",
+					"variants": { "versorgungstrupp": "FGr Logistik - Versorgungstrupp" }
+				}
+			]
+		},
+		{
+			"name": "THW Personen",
+			"color_primary": "#003399",
+			"color_secondary": "#FFFFFF",
+			"stroke_color": "#000000",
+			"color_text": "#FFFFFF",
+			"organization": "THW",
+			"symbols": [
+				{
+					"name": "Zugführer",
+					"template": "Person.svg",
+					"unit": "TZ",
+					"stroke_width": "12",
+					"variants": {
+						"zugführer": "Zugführer"
+					}
 				}
 			]
 		},
@@ -292,6 +345,30 @@
 					"template": "Fahrzeug.svg",
 					"unit": "PKW-",
 					"variants": { "two_wheels": "Personenkraftwagen" }
+				},
+				{
+					"name": "MTW",
+					"template": "Fahrzeug.svg",
+					"unit": "MTW",
+					"variants": { "two_wheels": "MTW" }
+				},
+				{
+					"name": "Mehrzweckboot",
+					"template": "Wasserfahrzeug.svg",
+					"unit": "MZB",
+					"variants": { "mehrzweckboot": "Mehrzweckboot" }
+				},
+				{
+					"name": "Mehrzweckponton",
+					"template": "Wasserfahrzeug.svg",
+					"unit": "MZPt",
+					"variants": { "mehrzweckponton": "Mehrzweckponton" }
+				},
+				{
+					"name": "Wechselladerfahrzeug",
+					"template": "Wechselladerfahrzeug.svg",
+					"unit": "WLF",
+					"variants": { "wechselladerfahrzeug": "Wechselladerfahrzeug" }
 				}
 			]
 		},
@@ -324,6 +401,246 @@
 					"template": "Gebäude.svg",
 					"unit": "Fw",
 					"variants": { "gebäude": "Feuerwehrgerätehaus" }
+				}
+			]
+		},
+		{
+			"name": "Rettungswesen Personen",
+			"color_primary": "#FFFFFF",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "Leitender Notarzt",
+					"template": "Person.svg",
+					"color_primary": "#FFFF00",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"font_size": "250%",
+					"unit": "LNA",
+					"variants": {
+						"special_function": "Leitender Notarzt"
+					}
+				},
+				{
+					"name": "Organisatorischer Leiter Rettungsdienst",
+					"template": "Person.svg",
+					"color_primary": "#FFFF00",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"font_size": "230%",
+					"unit": "OrgL",
+					"variants": {
+						"special_function": "Organisatorischer Leiter Rettungsdienst"
+					}
+				},
+				{
+					"name": "Rotkreuzbeauftragter",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#FFFFFF",
+					"text_color": "#000000",
+					"font_size": "250%",
+					"stroke_width": "5",
+					"unit": "DRK",
+					"variants": {
+						"special_function": "Rotkreuzbeauftragter"
+					}
+				},
+				{
+					"name": "Sanitätseinheit",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"rettungswesen": true,
+					"variants": {
+						"gruppenführer": "Gruppenführer Sanitätsgruppe",
+						"truppführer": "Truppführer Sanitätstrupp",
+						"zugführer": "Zugführer Sanitätszug"
+					}
+				},
+				{
+					"name": "Betreuungseinheit",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"betreuungswesen": true,
+					"variants": {
+						"gruppenführer": "Gruppenführer Betreuungsgruppe",
+						"truppführer": "Truppführer Betreuungstrupp",
+						"zugführer": "Zugführer Betreuungszug"
+					}
+				},
+				{
+					"name": "Zugführer Einsatzeinheit Rettungsdienst",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"betreuungswesen": true,
+					"rettungswesen": true,
+					"variants": {
+						"zugführer": "Zugführer Einsatzeinheit Rettungsdienst"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rettungswesen Einheiten",
+			"color_primary": "#FFFFFF",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "Rettungsdienst",
+					"template": "Einheit.svg",
+					"unit": "RettD",
+					"rettungswesen": true,
+					"variants": {
+						"rettd": "Rettungsdienst"
+					}
+				},
+				{
+					"name": "Sanitätsgruppe",
+					"template": "Einheit.svg",
+					"rettungswesen": true,
+					"variants": {
+						"squad": "Sanitätstrupp",
+						"group": "Sanitätsgruppe",
+						"platoon": "Sanitätszug"
+					}
+				},
+				{
+					"name": "Einsatzeinheit Sanitätsdienst",
+					"template": "Einheit.svg",
+					"rettungswesen": true,
+					"variants": {
+						"einsatzeinheit_sanitätsdienst": "Einsatzeinheit Sanitätsdienst"
+					}
+				},
+				{
+					"name": "Patiententransportgruppe",
+					"template": "Einheit.svg",
+					"rettungswesen": true,
+					"variants": {
+						"patiententransportgruppe": "Patiententransportgruppe"
+					}
+				},
+				{
+					"name": "Betreuung",
+					"template": "Einheit.svg",
+					"betreuung": true,
+					"stroke_width": 5,
+					"variants": {
+						"squad": "Betreuungstrupp",
+						"group": "Betreuungsgruppe",
+						"platoon": "Betreuungszug"
+					}
+				},
+				{
+					"name": "Verpflegung",
+					"template": "Einheit.svg",
+					"verpflegung": true,
+					"stroke_width": 5,
+					"variants": {
+						"squad": "Verpflegungstrupp",
+						"group": "Verpflegungsgruppe",
+						"platoon": "Verpflegungszug"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rettungswesen Einrichtungen",
+			"color_primary": "#FFFFFF",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "Patientenablage",
+					"template": "Patientenablage.svg",
+					"rettungswesen": true,
+					"variants": {
+						"arzt": "Arztbesetzte Patientenablage",
+						"ablage": "Patientenablage",
+						"betroffene": "Sammelplatz für betroffene"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rettungswesen Fahrzeuge",
+			"color_primary": "#FFFFFF",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "RTW",
+					"template": "Fahrzeug.svg",
+					"unit": "RTW",
+					"rettungswesen": true,
+					"variants": {
+						"two_wheels": "RTW"
+					}
+				},
+				{
+					"name": "KTW",
+					"template": "Fahrzeug.svg",
+					"unit": "KTW",
+					"rettungswesen": true,
+					"variants": {
+						"two_wheels": "KTW"
+					}
+				},
+				{
+					"name": "NEF",
+					"template": "Fahrzeug.svg",
+					"unit": "NEF",
+					"rettungswesen": true,
+					"arzt": "true",
+					"variants": {
+						"two_wheels": "Notarzteinsatzfahrzeug"
+					}
+				},
+				{
+					"name": "NAW",
+					"template": "Fahrzeug.svg",
+					"unit": "NAW",
+					"rettungswesen": true,
+					"arzt": "true",
+					"variants": {
+						"two_wheels": "Notarztwagen"
+					}
+				}
+			]
+		},
+		{
+			"name": "Feuerwehr Fahrzeuge",
+			"color_primary": "#FF0000",
+			"color_secondary": "#FFFFFF",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "ELW 1",
+					"template": "Fahrzeug.svg",
+					"unit": "ELW 1",
+					"variants": {
+						"two_wheels": "ELW 1"
+					}
+				},
+				{
+					"name": "Drehleiter mit Korb",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"drehleiter": "Drehleiter mit Korb"
+					}
 				}
 			]
 		},
@@ -411,11 +728,60 @@
 					"template": "Löschzug.svg",
 					"organization": "",
 					"variants": { "löschzug": "Löschzug" }
+				},
+				{
+					"name": "Dekontaminationsgruppe",
+					"template": "Dekontaminationsgruppe.svg",
+					"denominator": "G",
+					"variants": {
+						"g": "Dekontaminationsgruppe - Gerät"
+					}
+				},
+				{
+					"name": "Dekontaminationsgruppe",
+					"template": "Dekontaminationsgruppe.svg",
+					"denominator": "P",
+					"variants": {
+						"p": "Dekontaminationsgruppe - Personen"
+					}
+				},
+				{
+					"name": "ABC Erkundungsgruppe",
+					"template": "Dekontaminationsgruppe.svg",
+					"variants": {
+						"abc_erkundung": "ABC Erkundungsgruppe"
+					}
+				},
+				{
+					"name": "Gefahrstoffzug - ABC-Zug",
+					"template": "Dekontaminationsgruppe.svg",
+					"variants": {
+						"abc_zug": "Gefahrstoffzug - ABC-Zug"
+					}
+				}
+			]
+		},
+		{
+			"name": "Feuerwehr Personen",
+			"color_primary": "#FF0000",
+			"color_secondary": "#FFFFFF",
+			"stroke_color": "#000000",
+			"color_text": "#FFFFFF",
+			"organization": "",
+			"symbols": [
+				{
+					"name": "Zugführer Löschzug",
+					"template": "Person.svg",
+					"stroke_width": "12",
+					"variants": {
+						"zugführer_löschzug": "Zugführer Löschzug"
+					}
 				}
 			]
 		},
 		{
 			"name": "Gefahren",
+			"color_primary": "#FF0000",
 			"symbols": [
 				{
 					"name": "Akute Gefahr",
@@ -454,6 +820,24 @@
 						"hazardous_materials": "Gefahr durch gefährliche Stoffe",
 						"unspecified": "Gefahr"
 					}
+				},
+				{
+					"name": "Brand",
+					"template": "Brand.svg",
+					"variants": {
+						"vollbrand": "Vollbrand",
+						"entstehungsbrand": "Entstehungsbrand",
+						"fortentwickelt": "Fortentwickelter Brand",
+						"flächenbrand": "Flächenbrand"
+					}
+				},
+				{
+					"name": "Wassereinbruch",
+					"template": "Gefahr.svg",
+					"color_primary": "#003399",
+					"variants": {
+						"water_ingress": "Gefahr durch Wassereinbruch"
+					}
 				}
 			]
 		},
@@ -463,15 +847,66 @@
 				{
 					"name": "Person",
 					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "none",
+					"stroke_color": "#000000",
 					"variants": {
 						"missing": "Vermisste Person",
 						"spilled": "Verschüttete Person",
 						"hurt": "Verletzte Person",
 						"dead": "Tote Person",
 						"to_be_moved": "Zu transportierende Person",
+						"moved": "Transportierte Person",
 						"saved": "Gerettete Person",
 						"special_function": "Person mit Sonderfunktion",
 						"person": "Person"
+					}
+				},
+				{
+					"name": "Einsatzleiter",
+					"template": "Person.svg",
+					"color_primary": "#FFFF00",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"unit": "EL",
+					"variants": {
+						"special_function": "Einsatzleiter"
+					}
+				},
+				{
+					"name": "Einsatzabschnittsleiter",
+					"template": "Person.svg",
+					"color_primary": "#FFFF00",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"font_size": "250%",
+					"unit": "EAL",
+					"variants": {
+						"special_function": "Einsatzabschnittsleiter"
+					}
+				},
+				{
+					"name": "Untereinsatzabschnittsleiter",
+					"template": "Person.svg",
+					"color_primary": "#FFFF00",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"font_size": "230%",
+					"unit": "UEAL",
+					"variants": {
+						"special_function": "Untereinsatzabschnittsleiter"
+					}
+				},
+				{
+					"name": "Führungskraft",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"variants": {
+						"truppführer": "Truppführer",
+						"gruppenführer": "Gruppenführer",
+						"zugführer": "Zugführer"
 					}
 				}
 			]
@@ -488,7 +923,385 @@
 						"bridge": "Brückenbau",
 						"cleanup": "Räumen",
 						"decontaminate": "Dekontaminieren",
-						"maßnahme": "Maßnahme"
+						"maßnahme": "Maßnahme",
+						"betreuung": "Betreuung",
+						"transport": "Transportieren"
+					}
+				}
+			]
+		},
+		{
+			"name": "Fahrzeuge",
+			"color_primary": "#FFFFFF",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"symbols": [
+				{
+					"name": "Fahrzeug",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"three_wheels": "Kraftfahrzeug geländegängig",
+						"two_wheels": "Kraftfahrzeug",
+						"tracks": "Kettenfahrzeug",
+						"rail": "Schienenfahrzeug",
+						"container": "Abbrollbehälter, Container",
+						"trailer": "Anhäger",
+						"none": "Fahrzeug"
+					}
+				},
+				{
+					"name": "Wasserfahrzeug",
+					"template": "Wasserfahrzeug.svg",
+					"variants": {
+						"none": "Wasserfahrzeug"
+					}
+				},
+				{
+					"name": "Zweirad",
+					"template": "Zweirad.svg",
+					"variants": {
+						"motorcycle": "Kraftrad",
+						"bicycle": "Fahrrad"
+					}
+				},
+				{
+					"name": "Luftfahrzeug",
+					"template": "Luftfahrzeug.svg",
+					"variants": {
+						"hubschrauber": "Hubschrauber",
+						"flugzeug": "Flugzeug"
+					}
+				},
+				{
+					"name": "Wechselladerfahrzeug",
+					"template": "Wechselladerfahrzeug.svg",
+					"color_primary": "#FFFFFF",
+					"stroke_color": "#000000",
+					"variants": {
+						"wechselladerfahrzeug": "Wechselladerfahrzeug"
+					}
+				}
+			]
+		},
+		{
+			"name": "Gebäude",
+			"color_primary": "#FFFFFF",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"symbols": [
+				{
+					"name": "Gebäude",
+					"template": "Gebäude.svg",
+					"variants": {
+						"none": "Gebäude",
+						"hospital": "Krankenhaus",
+						"unterkunft": "Unterkunft"
+					}
+				}
+			]
+		},
+		{
+			"name": "Einrichtungen",
+			"color_primary": "#FFFF00",
+			"symbols": [
+				{
+					"name": "Leitstelle",
+					"template": "Stelle.svg",
+					"unit": "LSt",
+					"variants": {
+						"leitstelle": "Leitstelle"
+					}
+				},
+				{
+					"name": "Logistikstützpunkt",
+					"template": "Stelle.svg",
+					"unit": "Log",
+					"variants": {
+					}
+				},
+				{
+					"name": "Lotsenstelle",
+					"template": "Stelle.svg",
+					"unit": "L",
+					"variants": {
+						"lotsenstelle": "Lotsenstelle"
+					}
+				},
+				{
+					"name": "Meldekopf",
+					"template": "Stelle.svg",
+					"unit": "M",
+					"variants": {
+						"meldekopf": "Meldekopf"
+					}
+				},
+				{
+					"name": "Hubschrauberlandeplatz",
+					"template": "Stelle.svg",
+					"variants": {
+						"hubschrauberlandeplatz": "Hubschrauberlandeplatz"
+					}
+				},
+				{
+					"name": "Bereitstellungsraum",
+					"template": "Stelle.svg",
+					"variants": {
+						"bereitstellungsraum": "Bereitstellungsraum"
+					}
+				},
+				{
+					"name": "Behandlungsplatz",
+					"template": "Stelle.svg",
+					"color_primary": "#FFFFFF",
+					"variants": {
+						"behandlungsplatz": "Behandlungsplatz"
+					}
+				},
+				{
+					"name": "Sammelstelle",
+					"template": "Stelle.svg",
+					"color_primary": "#FFFFFF",
+					"stroke_color": "#000000",
+					"variants": {
+						"sammelstelle": "Sammelstelle"
+					}
+				},
+				{
+					"name": "Halteplatz für Fahrzeuge zum Verletztentransport",
+					"template": "Stelle.svg",
+					"color_primary": "#FFFFFF",
+					"variants": {
+						"halteplatz_verletztentransport": "Halteplatz für Fahrzeuge zum Verletztentransport"
+					}
+				},
+				{
+					"name": "Betreuungsstelle",
+					"template": "Stelle.svg",
+					"color_primary": "#FFFFFF",
+					"stroke_color": "#000000",
+					"variants": {
+						"betreuungsstelle": "Betreuungsstelle"
+					}
+				}
+			]
+		},
+		{
+			"name": "Schäden",
+			"symbols": [
+				{
+					"name": "Beschädigung",
+					"template": "Beschädigung.svg",
+					"variants": {
+						"zerstört": "Zerstört",
+						"teilzerstört": "Teilzerstört",
+						"angeschlagen": "Angeschlagen"
+					}
+				},
+				{
+					"name": "Blockade",
+					"template": "Blockade.svg",
+					"variants": {
+						"teilblockiert": "Teilblockiert",
+						"blockiert": "Blockiert"
+					}
+				},
+				{
+					"name": "Raum",
+					"template": "Raum.svg",
+					"variants": {
+						"ausgefüllt": "Ausgefüllter Raum",
+						"schichtung": "Ausgefüllter Raum - Schichtung",
+						"wasser": "Ausgefüllter Raum - Wasser",
+						"angeschlagen": "Angeschlagener Raum",
+						"schwalbennest": "Angeschlagener Raum - Schwalbennest",
+						"halb": "Angeschlagener Raum - Halber Raum"
+					}
+				},
+				{
+					"name": "Schichtung",
+					"template": "Schichtung.svg",
+					"variants": {
+						"schichtung": "Schichtung",
+						"rutschfläche": "Rutschfläche"
+					}
+				},
+				{
+					"name": "Überschwemmtes Gebiet",
+					"template": "Überschwemmtes Gebiet.svg",
+					"variants": {
+						"überschwemmtes_gebiet": "Überschwemmtes Gebiet"
+					}
+				},
+				{
+					"name": "Randtrümmer",
+					"template": "Randtrümmer.svg",
+					"variants": {
+						"randtrümmer": "Randtrümmer"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sonstiges",
+			"symbols": [
+				{
+					"name": "Ereignis",
+					"template": "Ereignis.svg",
+					"variants": {
+						"ereignis": "Ereignis"
+					}
+				},
+				{
+					"name": "Ortsfest",
+					"template": "Ortsfest.svg",
+					"variants": {
+						"ortsfest": "Ortsfest"
+					}
+				},
+				{
+					"name": "Einheit der Bundespolizei",
+					"template": "Einheit.svg",
+					"color_primary": "#13A538",
+					"color_secondary": "#000000",
+					"stroke_color": "#000000",
+					"color_text": "#000000",
+					"unit": "BPOL",
+					"variants": {
+						"bpol": "Einheit der Bundespolizei"
+					}
+				},
+				{
+					"name": "Einheit der Bundeswehr",
+					"template": "Einheit.svg",
+					"color_primary": "#996633",
+					"color_secondary": "#FFFFFF",
+					"stroke_color": "#000000",
+					"color_text": "#FFFFFF",
+					"unit": "BW",
+					"variants": {
+						"bpol": "Einheit der Bundeswehr"
+					}
+				},
+				{
+					"name": "Bewegung",
+					"template": "Bewegung.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#FFFFFF",
+					"stroke_color": "#000000",
+					"color_text": "#FFFFFF",
+					"variants": {
+						"ausgangspunkt": "Ausgangspunkt",
+						"endpunkt": "Endpunkt",
+						"richtung": "Richtung",
+						"sammeln": "Sammeln",
+						"zwei_richtungen": "Bewegung in zwei Richtungen"
+					}
+				},
+				{
+					"name": "Tendenz",
+					"template": "Tendenz.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#FFFFFF",
+					"stroke_color": "#000000",
+					"color_text": "#FFFFFF",
+					"variants": {
+						"steigend": "Tendenz steigend",
+						"fallend": "Tendenz fallend",
+						"unverändert": "Tendenz unverändert"
+					}
+				},
+				{
+					"name": "Aktivität",
+					"template": "Aktivität.svg",
+					"color_primary": "#13A538",
+					"color_secondary": "#E30613",
+					"stroke_color": "#000000",
+					"variants": {
+						"level_1": "Geringfüggig erhöhte Aktivität",
+						"level_2": "Moderat erhöhte Aktivität",
+						"level_3": "Deutlich erhöhte Aktivität",
+						"level_4": "Stark erhöhte Aktivität"
+					}
+				}
+			]
+		},
+		{
+			"name": "Funk",
+			"color_primary": "#FFFFFF",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "Digitalfunkbetrieb",
+					"template": "Digitalfunkbetrieb.svg",
+					"variants": {
+						"dmo": "DMO Betrieb",
+						"tmo": "TMO Betrieb"
+					}
+				},
+				{
+					"name": "Funkgerät digital",
+					"template": "Funkgerät digital.svg",
+					"variants": {
+						"hrt": "Handfunkgerät digital",
+						"mrt": "Fahrzeugfunkgerät digital",
+						"frt": "Funk Feststation digital"
+					}
+				},
+				{
+					"name": "Sprechfunk",
+					"template": "Verbindung.svg",
+					"funk": true,
+					"variants": {
+						"digital": "Digitaler Sprechfunk",
+						"analog": "Fernsprechen über Funk"
+					}
+				},
+				{
+					"name": "Relaisfunkbetrieb",
+					"template": "Verbindung.svg",
+					"variants": {
+						"relaisfunkbetrieb": "Relaisfunkbetrieb"
+					}
+				},
+				{
+					"name": "Fernsprechen",
+					"template": "Verbindung.svg",
+					"variants": {
+						"analog": "Fernsprechen über Draht"
+					}
+				}
+			]
+		},
+		{
+			"name": "Polizei Einheiten",
+			"color_primary": "#13A538",
+			"color_secondary": "#000000",
+			"stroke_color": "#000000",
+			"color_text": "#000000",
+			"symbols": [
+				{
+					"name": "Einheit der Bundespolizei",
+					"template": "Einheit.svg",
+					"unit": "BPOL",
+					"variants": {
+						"bpol": "Einheit der Bundespolizei"
+					}
+				},
+				{
+					"name": "Einheit der Polizei",
+					"template": "Einheit.svg",
+					"unit": "POL",
+					"variants": {
+						"bpol": "Einheit der Polizei"
+					}
+				},
+				{
+					"name": "Einheit des Zoll",
+					"template": "Einheit.svg",
+					"unit": "Zoll",
+					"variants": {
+						"bpol": "Einheit des Zoll"
 					}
 				}
 			]

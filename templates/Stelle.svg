@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="no"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+		<clipPath id="base">
+			<ellipse cx="128" cy="128" rx="64" ry="64" />
+		</clipPath>
+	</defs>
+
+
+	<ellipse fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" cx="128" cy="128" rx="64" ry="64" />
+	
+
+	{{#if leitstelle}}
+	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="136">{{ unit }}</text>
+	<rect id="top" x="64" y="64" width="128" height="32" clip-path="url(#base)" />
+	<path d="M10 80 L128 48 L246 80" stroke-width="5" stroke="#000000" fill="none" />
+	{{/if}}
+
+	{{#if logistikstützpunkt}}
+	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="120">{{ unit }}</text>
+	<rect x="64" y="160" width="128" height="32" clip-path="url(#base)" />
+	{{/if}}
+
+	{{#if lotsenstelle}}
+	<text font-family="LubalGraph Bd BT" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	{{/if}}
+
+	{{#if meldekopf}}
+	<text font-family="LubalGraph Bd BT" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	{{/if}}
+
+	{{#if hubschrauberlandeplatz}}
+	<path d="M110,162 l36,0 M128,162 l0,-54" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M128,108 a5,5 90 0 1 5,-5 l32,0 a5,5 180 0 1 0,10 l-32,0 a5,5 90 0 1 -5,-5 Z" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M128,108 a5,5 90 0 0 -5,-5 l-32,0 a5,5 180 0 0 0,10 l32,0 a5,5 90 0 0 5,-5 Z" stroke="#000000" stroke-width="5" fill="none" />
+	{{/if}}
+
+	{{#if bereitstellungsraum}}
+	<path d="M85,105 L85,151 L171,151 L171,105 Q128,128 85,105 Z" stroke="#000000" stroke-width="5" fill="none" />
+	{{/if}}
+
+	{{#if behandlungsplatz}}
+	<path d="M128,64 l0,128 M64,128 l128,0" stroke="#000000" stroke-width="5" fill="none" />
+	{{/if}}
+
+	{{#if halteplatz_verletztentransport}}
+	<path d="M128,64 l0,128 M64,128 l128,0" stroke="#000000" stroke-width="5" fill="none" />
+	<ellipse cx="128" cy="128" rx="32" ry="32" fill="none" stroke-width="5" stroke="#000000" />
+	<path d="M128,128 l32,0 l-64,0 m32,0 l0,32 l0,-64" fill="none" stroke-width="5" stroke="#000000" transform="rotate(45,128,128)" />
+	{{/if}}
+
+	{{#if sammelstelle}}	
+	<ellipse fill="{{ color_primary }}" stroke="#000000" stroke-width="3" cx="170" cy="128" rx="10" ry="10" />
+	<path d="M76,128 l78,0 m-15,-15 l15,15 l-15,15" stroke="{{ stroke_color }}" stroke-width="3" fill="none" />
+	{{/if}}
+
+	{{#if betreuungsstelle}}
+	<path d="M10 80 L128 48 L246 80" stroke-width="5" stroke="#000000" fill="none" />
+	<path d="M128,64 l64,128 M128,64 l-64,128" stroke="#000000" stroke-width="5" fill="none" clip-path="url(#base)" />
+	{{/if}}
+</svg>

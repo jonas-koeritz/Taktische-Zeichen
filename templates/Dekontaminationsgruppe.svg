@@ -1,0 +1,47 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
+	</defs>
+	
+	<rect x="10" y="64" width="236" height="128" stroke="{{ color_secondary }}" stroke-width="10" fill="{{ color_primary }}" clip-path="url(#symbol)" />
+	{{#if abc_erkundung}}
+	<path d="M10,192 l236,-128" stroke-width="5" stroke="#ffffff" fill="none" clip-path="url(#symbol)" />
+	{{/if}}
+	<rect x="10" y="64" width="236" height="128" stroke="{{ stroke_color }}" stroke-width="1" fill="none" />
+
+
+	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	{{#if abc_zug}}
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	{{/if}}
+	<ellipse cx="192" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+
+	<path d="M88 92 L188 164 M168 92 L68 164" stroke="{{ color_secondary }}" stroke-width="10" fill="none" />
+
+	{{#if abc_erkundung}}
+	{{else}}
+		{{#if abc_zug}}
+		{{else}}
+		<path d="M185,161 m7,7 l-15,0 m15,0 l0,-15 l-15,15 Z" fill="{{ color_secondary }}" transform="rotate(-10,188,164)" />
+		<path d="M71,161 m-7,7 l15,0 l-15,-15 Z" fill="{{ color_secondary }}" transform="rotate(10,68,164)" />
+		{{/if}}
+	{{/if}}
+
+	<ellipse cx="78" cy="102" rx="20" ry="20" fill="{{ color_secondary }}" />
+	<ellipse cx="178" cy="102" rx="20" ry="20" fill="{{ color_secondary }}" />
+
+	{{#if denominator}}
+	<text font-family="LubalGraph Bd BT" font-size="200%" fill="{{ color_text }}" x="128" text-anchor="middle" y="182">{{ denominator }}</text>
+	{{/if}}
+</svg>

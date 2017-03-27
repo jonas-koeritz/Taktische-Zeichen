@@ -11,32 +11,37 @@
 		</style>
 	</defs>
 
-	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="#ff0000" fill="none" />
+	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="{{ color_primary }}" fill="none" />
 
 	{{#if explosion}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="#ff0000" font-size="350%" x="128" y="108">Ex</text>
+	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">Ex</text>
 	{{/if}}
 
 	{{#if oil}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="#ff0000" font-size="350%" x="128" y="108">Öl</text>
+	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">Öl</text>
 	{{/if}}
 
 	{{#if radioactivity}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="#ff0000" font-size="350%" x="128" y="108">A</text>
+	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">A</text>
 	{{/if}}
 
 	{{#if hazardous_materials}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="#ff0000" font-size="350%" x="128" y="108">GS</text>
+	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">GS</text>
 	{{/if}}
 
 	{{#if explosives}}
-	<ellipse cx="128" cy="108" rx="24" ry="24" stroke="#ff0000" stroke-width="10" fill="none" />
-	<ellipse cx="128" cy="108" rx="10" ry="10" fill="#ff0000" />
-	<rect x="123" y="76" fill="#ff0000" width="10" height="10" transform="rotate(30,128,108)" />
-	<rect x="123" y="76" fill="#ff0000" width="10" height="10" transform="rotate(-30,128,108)" />
+	<ellipse cx="128" cy="108" rx="24" ry="24" stroke="{{ color_primary }}" stroke-width="10" fill="none" />
+	<ellipse cx="128" cy="108" rx="10" ry="10" fill="{{ color_primary }}" />
+	<rect x="123" y="76" fill="{{ color_primary }}" width="10" height="10" transform="rotate(30,128,108)" />
+	<rect x="123" y="76" fill="{{ color_primary }}" width="10" height="10" transform="rotate(-30,128,108)" />
 	{{/if}}
 
 	{{#if denominator}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="#ff0000" font-size="400%" x="64" y="150">{{ denominator }}</text>
+	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="400%" x="64" y="150">{{ denominator }}</text>
+	{{/if}}
+
+	{{#if water_ingress}}
+	<path d="M78,84 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0" stroke="{{ color_primary }}" stroke-width="5" fill="none" />
+	<path d="M78,100 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0" stroke="{{ color_primary }}" stroke-width="5" fill="none" />
 	{{/if}}
 </svg>

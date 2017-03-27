@@ -9,6 +9,8 @@ if (!fs.existsSync("symbols")) {
 	fs.mkdirSync("symbols");
 }
 
+var fonts = config.fonts;
+
 for(var i = 0; i < config.sets.length; i++) {
 	var set = config.sets[i];
 	var data = set;
@@ -18,6 +20,13 @@ for(var i = 0; i < config.sets.length; i++) {
 	if(!fs.existsSync(path.join('symbols', set.name))) {
 		fs.mkdirSync(path.join('symbols', set.name));
 	}
+
+	console.log("Copying fonts");
+	for(var f = 0; f < fonts.length; f++) {
+		console.log("Copying font: " + fonts[f]);
+		fs.createReadStream(fonts[f]).pipe(fs.createWriteStream(path.join('symbols', set.name, fonts[f])));
+	}
+	
 
 	for(var x = 0; x < set.symbols.length; x++) {
 		var symbol = set.symbols[x];

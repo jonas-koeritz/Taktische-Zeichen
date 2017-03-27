@@ -1,0 +1,50 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+	</defs>
+
+	{{#if level_1}}
+	<rect x="64" y="64" width="128" height="128" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_primary }}" />
+	<rect x="128" y="64" width="64" height="64" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_secondary }}" />
+	{{/if}}
+
+	{{#if level_2}}
+	<rect x="64" y="64" width="128" height="128" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_primary }}" />
+	<rect x="128" y="64" width="64" height="128" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_secondary }}" />
+	{{/if}}
+
+	{{#if level_3}}
+	<rect x="64" y="64" width="128" height="128" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_secondary }}" />
+	<rect x="64" y="64" width="64" height="64" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_primary }}" />
+	{{/if}}
+
+	{{#if level_4}}
+	<rect x="64" y="64" width="128" height="128" stroke-width="5" stroke="{{ stroke_color }}" fill="{{ color_secondary }}" />
+	{{/if}}
+
+	<ellipse cx="128" cy="128" rx="32" ry="32" stroke-width="3" stroke="{{ stroke_color }}" fill="#FFFFFF" />
+
+	{{#if level_1}}
+	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">1</text>
+	{{/if}}
+
+	{{#if level_2}}
+	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">2</text>
+	{{/if}}
+
+	{{#if level_3}}
+	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">3</text>
+	{{/if}}
+
+	{{#if level_4}}
+	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">4</text>
+	{{/if}}
+</svg>
