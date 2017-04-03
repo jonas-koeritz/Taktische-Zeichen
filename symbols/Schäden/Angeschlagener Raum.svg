@@ -1,0 +1,10 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+
+
+
+	<line x1="90" x2="237" y1="68" y2="68" stroke="#000000" stroke-width="5" fill="none" transform="rotate(30,128,128)" />
+	<path d="M10,64 l0,128 l236,0 l0,-128 Z" fill="none" stroke="#000000" stroke-width="5" />
+
+
+</svg>

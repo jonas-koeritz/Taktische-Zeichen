@@ -1,0 +1,12 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<path d="M50,192 L128,64 L206,192 Z" stroke-width="5" stroke="#000000" fill="none" />
+
+
+
+
+
+
+	<ellipse cx="128" cy="150" rx="30" ry="30" stroke-width="5" stroke="#000000" fill="none" />
+	<path d="M128,150 l-30,0 l60,0 m-30,0 l0,-30 l0,60 m0,-30 l21,21 M128,150 l-21,-21 M128,150 l21,-21 M128,150 l-21,21" stroke-width="5" stroke="#000000" />
+</svg>

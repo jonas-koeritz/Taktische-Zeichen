@@ -1,0 +1,27 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+	</defs>
+
+	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="#FF0000" fill="none" />
+
+
+
+
+
+	<ellipse cx="128" cy="108" rx="24" ry="24" stroke="#FF0000" stroke-width="10" fill="none" />
+	<ellipse cx="128" cy="108" rx="10" ry="10" fill="#FF0000" />
+	<rect x="123" y="76" fill="#FF0000" width="10" height="10" transform="rotate(30,128,108)" />
+	<rect x="123" y="76" fill="#FF0000" width="10" height="10" transform="rotate(-30,128,108)" />
+
+	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="#FF0000" font-size="400%" x="64" y="150">?</text>
+
+</svg>
