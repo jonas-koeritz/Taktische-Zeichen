@@ -474,7 +474,7 @@
 					}
 				},
 				{
-					"name": "Zugführer Einsatzeinheit Rettungsdienst",
+					"name": "Zugführer Einsatzeinheit",
 					"template": "Person.svg",
 					"color_primary": "#FFFFFF",
 					"color_secondary": "#000000",
@@ -482,7 +482,33 @@
 					"betreuungswesen": true,
 					"rettungswesen": true,
 					"variants": {
-						"zugführer": "Zugführer Einsatzeinheit Rettungsdienst"
+						"zugführer": "Zugführer Einsatzeinheit"
+					}
+				},
+				{
+					"name": "Führungskraft Technik und Sicherheit",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"stroke_color": "#000000",
+					"technik_und_sicherheit": true,
+					"variants": {
+						"gruppenführer": "Gruppenführer Technik und Sicherheit",
+						"truppführer": "Truppführer Technik und Sicherheit"
+					}
+				},
+				{
+					"name": "Führungskraft Verpflegung",
+					"template": "Person.svg",
+					"color_primary": "#FFFFFF",
+					"color_secondary": "#000000",
+					"text_color": "#000000",
+					"stroke_color": "#000000",
+					"verpflegung": true,
+					"variants": {
+						"gruppenführer": "Gruppenführer Verpflegung",
+						"truppführer": "Truppführer Verpflegung"
 					}
 				}
 			]
@@ -514,11 +540,11 @@
 					}
 				},
 				{
-					"name": "Einsatzeinheit Sanitätsdienst",
+					"name": "Einsatzeinheit",
 					"template": "Einheit.svg",
 					"rettungswesen": true,
 					"variants": {
-						"einsatzeinheit_sanitätsdienst": "Einsatzeinheit Sanitätsdienst"
+						"einsatzeinheit_sanitätsdienst": "Einsatzeinheit"
 					}
 				},
 				{
@@ -549,6 +575,41 @@
 						"squad": "Verpflegungstrupp",
 						"group": "Verpflegungsgruppe",
 						"platoon": "Verpflegungszug"
+					}
+				},
+				{
+					"name": "Soziale Betreuung",
+					"template": "Einheit.svg",
+					"soziale_betreuung": true,
+					"variants": {
+						"squad": "Trupp für soziale Betreuung",
+						"group": "Gruppe für soziale Betreuung",
+						"platoon": "Zug für Soziale Betreuung"
+					}
+				},
+				{
+					"name": "Schnell-Einsatz-Gruppe Betreuung",
+					"template": "Einheit.svg",
+					"seg_betreuung": true,
+					"variants": {
+						"group": "Schnell-Einsatz-Gruppe Betreuung"
+					}
+				},
+				{
+					"name": "Einheit für Psychosoziale Notfallversorgung",
+					"template": "Einheit.svg",
+					"variants": {
+						"psnv": "Einheit für Psychosoziale Notfallversorgung"
+					}
+				},
+				{
+					"name": "Technik und Sicherheit",
+					"template": "Einheit.svg",
+					"technik_und_sicherheit": true,
+					"variants": {
+						"group": "Gruppe Technik und Sicherheit",
+						"squad": "Trupp Technik und Sicherheit",
+						"platoon": "Zug Technik und Sicherheit"
 					}
 				}
 			]

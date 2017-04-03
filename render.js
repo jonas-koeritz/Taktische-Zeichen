@@ -75,7 +75,7 @@ function renderAll() {
 		}
 	}
 
-	async.eachLimit(jobs, 5, function(job, callback) {	
+	async.eachLimit(jobs, 10, function(job, callback) {	
 				console.log("Rendering " + job.svgFile + " -> " + job.pngFile);
 				var render = spawn("wkhtmltoimage", ["--transparent", "--quality", "100", "--zoom", "4", "--crop-h", "1024", "--crop-w", "1024", job.svgFile, job.pngFile]);
 				render.on('close', function(code) {
