@@ -1,0 +1,29 @@
+{
+  "name": "taktische-zeichen",
+  "version": "1.0.0",
+  "description": "Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonas-koeritz/Taktische-Zeichen.git"
+  },
+  "keywords": [
+    "thw",
+    "taktische-zeichen",
+    "bos",
+    "lagekarte"
+  ],
+  "author": "Jonas Köritz <jonas.koeritz@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jonas-koeritz/Taktische-Zeichen/issues"
+  },
+  "homepage": "https://github.com/jonas-koeritz/Taktische-Zeichen#readme",
+  "dependencies": {
+    "async": "^2.2.0",
+    "handlebars": "^4.0.6"
+  }
+}

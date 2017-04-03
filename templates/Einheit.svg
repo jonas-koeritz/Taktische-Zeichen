@@ -1,0 +1,126 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		<![CDATA[
+			@font-face {
+				font-family: 'LubalGraph Bd BT';
+				src: url('LubalinGraphBoldBT.ttf');
+			}
+		]]>
+		</style>
+
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
+	</defs>
+	{{#if einsatzeinheit_sanitätsdienst}}
+	{{else}}
+	{{#if stroke_width}}
+	{{else}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ color_secondary }}" stroke-width="10" clip-path="url(#symbol)" />
+	{{/if}}
+	{{/if}}
+
+	{{#if stroke_width}}
+	<rect x="10" y="64" width="236" height="128" fill="none" stroke="{{ stroke_color }}" stroke-width="{{ stroke_width }}" />
+	{{else}}
+	<rect x="10" y="64" width="236" height="128" fill="none" stroke="{{ stroke_color }}" stroke-width="1" />
+	{{/if}}
+
+	{{#if rettungswesen}}
+	<path d="M128,64 l0,128 M10,128 l236,0" stroke="{{ stroke_color }}" stroke-width="5" fill="none" />
+	{{/if}}
+
+	{{#if platoon}}
+	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="192" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	{{/if}}
+
+	{{#if group}}
+	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="192" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	{{/if}}
+
+	{{#if squad}}
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	{{/if}}
+
+	{{#if zugtrupp}}
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="64"  cy="86" rx="10" ry="10" fill="{{ color_secondary }}" />
+	<ellipse cx="128" cy="86" rx="10" ry="10" fill="{{ color_secondary }}" />
+	<ellipse cx="192" cy="86" rx="10" ry="10" fill="{{ color_secondary }}" />
+	{{/if}}
+
+	{{#if einsatzeinheit_sanitätsdienst}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
+	<path d="M128,64 l0,128 M10,128 l236,0 M10,192 L128,66 L246,192" stroke="{{ stroke_color }}" stroke-width="5" fill="none" />
+	
+	<ellipse cx="64" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="192" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	{{/if}}
+
+	{{#if patiententransportgruppe}}
+	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="192" cy="48" rx="10" ry="10" fill="{{ stroke_color }}" />
+	<ellipse cx="128" cy="128" rx="32" ry="32" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
+	<path d="M128,128 l32,0 l-64,0 m32,0 l0,32 l0,-64" fill="none" stroke-width="5" stroke="{{ stroke_color }}" transform="rotate(45,128,128)" />
+	{{/if}}
+
+	<!-- Texte -->
+	{{#if rettungswesen}}
+	<text fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="text-before-edge" font-size="200%" text-anchor="start" x="22" y="70">{{ unit }}</text>
+	{{else}}
+	<text font-size="300%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	{{/if}}
+
+	{{#if denominator}}
+	<text fill="{{ color_text }}" font-family="LubalGraph Bd BT"  text-anchor="start" x="20" y="180">{{ denominator }}</text>
+	{{/if}}
+
+	{{#if organization}}
+	<text fill="{{ color_text }}" font-family="LubalGraph Bd BT"  text-anchor="end" x="236" y="180">{{ organization }}</text>
+	{{/if}}
+
+	{{#if betreuung}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
+	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
+	{{/if}}
+
+	{{#if soziale_betreuung}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
+	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
+
+	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">SOZ</text>
+	{{/if}}
+
+	{{#if seg_betreuung}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
+	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
+
+	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">SEG</text>
+	{{/if}}
+
+	{{#if technik_und_sicherheit}}
+	<path d="M44,148 a20,20 0 0,0 0,-40 M64,128 L192,128 m20,20 a20,20 0 0,1 0,-40" fill="none" stroke="{{ stroke_color }}" stroke-width="5" />
+	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="120">TS</text>
+	{{/if}}
+
+	{{#if psnv}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
+	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
+
+	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">PSNV</text>
+	{{/if}}
+
+	{{#if verpflegung}}
+	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
+	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
+	<path d="M128,140 l32,-16 a32 32 0 1 0 0,32 Z" stroke="#000000" stroke-width="5" fill="none" />
+
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
+	{{/if}}
+</svg>
