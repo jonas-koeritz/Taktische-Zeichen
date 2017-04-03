@@ -10,22 +10,16 @@ Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
 
 ## Fehlende Zeichen
 Fehlende zeichen können als [issue](https://github.com/jonas-koeritz/Taktische-Zeichen/issues) eingereicht werden, Ich erstelle die Symbole dann.
-Auch Pull-Requests sind willkommen, bitte auf die Abmessungen der Zeichen achten.
 
 ## Aufbau der Symbole
 Die .SVG Dateien haben die Maße 256x256 Einheiten, Alle Zeichen müssen in diesem Bereich dargestellt werden und mittig ausgerichtet sein.
-Zeichen für Einheiten/Fahrzeuge/Personen etc. müssen untereinander Deckungsgleich sein!
+Zeichen für Einheiten/Fahrzeuge/Personen etc. müssen untereinander Deckungsgleich sein, hierbei hilft das System aus Templates und `config.json`.
 
 ## PNG-Dateien
 Die PNG Dateien stehen in den Maßen 128x128, 256x256, 512x512 und 1024x1024 zur Verfügung. Die fertigen PNG Dateien können unter [releases](https://github.com/jonas-koeritz/Taktische-Zeichen/releases) heruntergeladen werden.
-Die Dateien können auch mit dem beiligenenden Python Skript erstellt werden:
+Die Dateien können auch mit dem beiligenenden Node.JS Skript erstellt werden:
 
-`python render.py render-all`
-
-## Vorlagen für Magnete
-Aus den Symbolen für Gruppen, Züge und Einheiten können automatisiert Vorlange für Magnete erstellt werden:
-
-`python render.py all-magnets`
+`node render.js config.json render-all`
 
 ## Lizenz
 Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigenen Änderungen erweitert werden.
