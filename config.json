@@ -832,7 +832,6 @@
 				{
 					"name": "Zugführer Löschzug",
 					"template": "Person.svg",
-					"stroke_width": "12",
 					"variants": {
 						"zugführer_löschzug": "Zugführer Löschzug"
 					}
