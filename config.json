@@ -628,7 +628,7 @@
 					"variants": {
 						"arzt": "Arztbesetzte Patientenablage",
 						"ablage": "Patientenablage",
-						"betroffene": "Sammelplatz für betroffene"
+						"betroffene": "Sammelplatz für Betroffene"
 					}
 				}
 			]
@@ -1003,8 +1003,8 @@
 						"two_wheels": "Kraftfahrzeug",
 						"tracks": "Kettenfahrzeug",
 						"rail": "Schienenfahrzeug",
-						"container": "Abbrollbehälter, Container",
-						"trailer": "Anhäger",
+						"container": "Abrollbehälter, Container",
+						"trailer": "Anhänger",
 						"none": "Fahrzeug"
 					}
 				},
@@ -1277,7 +1277,7 @@
 					"color_secondary": "#E30613",
 					"stroke_color": "#000000",
 					"variants": {
-						"level_1": "Geringfüggig erhöhte Aktivität",
+						"level_1": "Geringfügig erhöhte Aktivität",
 						"level_2": "Moderat erhöhte Aktivität",
 						"level_3": "Deutlich erhöhte Aktivität",
 						"level_4": "Stark erhöhte Aktivität"
