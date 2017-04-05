@@ -24,6 +24,17 @@ Die Dateien können auch mit dem beiligenenden Node.JS Skript erstellt werden:
 
 `npm run render-all`
 
+## Installation mit bower oder npm
+Die Symbole können auch über bower und npm bezogen werden. Das Paket heißt jeweils `taktische-zeichen`.
+
+```
+bower install taktische-zeichen
+```
+bzw.
+```
+npm install --save taktische-zeichen
+```
+
 ## Lizenz
 Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigenen Änderungen erweitert werden.
 Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind.
