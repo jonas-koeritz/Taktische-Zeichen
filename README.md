@@ -16,13 +16,17 @@ Die .SVG Dateien haben die Maße 256x256 Einheiten, Alle Zeichen müssen in dies
 Zeichen für Einheiten/Fahrzeuge/Personen etc. müssen untereinander Deckungsgleich sein, hierbei hilft das System aus Templates und `config.json`.
 Um die SVG-Dateien aus den Templates zu erzeugen wird ein Node.JS Skript verwendet.
 
-`npm run create-svgs`
+```
+npm run create-svgs
+```
 
 ## PNG-Dateien
 Die PNG Dateien stehen in den Maßen 128x128, 256x256, 512x512 und 1024x1024 zur Verfügung. Die fertigen PNG Dateien können unter [releases](https://github.com/jonas-koeritz/Taktische-Zeichen/releases) heruntergeladen werden.
 Die Dateien können auch mit dem beiligenenden Node.JS Skript erstellt werden:
 
-`npm run render-all`
+```
+npm run render-all
+```
 
 ## Installation mit bower oder npm
 Die Symbole können auch über bower und npm bezogen werden. Das Paket heißt jeweils `taktische-zeichen`.
