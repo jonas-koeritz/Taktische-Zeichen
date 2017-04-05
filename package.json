@@ -1,11 +1,11 @@
 {
   "name": "taktische-zeichen",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken",
   "main": "render.js",
   "scripts": {
-  	"render-all": "node render.js config.json render-all",
-  	"create-svgs": "node render.js config.json create-svgs"
+    "render-all": "node render.js config.json render-all",
+    "create-svgs": "node render.js config.json create-svgs"
   },
   "repository": {
     "type": "git",
