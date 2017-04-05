@@ -1,6 +1,6 @@
 {
   "name": "taktische-zeichen",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken",
   "main": "render.js",
   "scripts": {
