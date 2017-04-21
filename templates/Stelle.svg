@@ -6,8 +6,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -21,22 +21,22 @@
 	
 
 	{{#if leitstelle}}
-	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="136">{{ unit }}</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="136">{{ unit }}</text>
 	<rect id="top" x="64" y="64" width="128" height="32" clip-path="url(#base)" />
 	<path d="M10 80 L128 48 L246 80" stroke-width="5" stroke="#000000" fill="none" />
 	{{/if}}
 
 	{{#if logistikstützpunkt}}
-	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="120">{{ unit }}</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="120">{{ unit }}</text>
 	<rect x="64" y="160" width="128" height="32" clip-path="url(#base)" />
 	{{/if}}
 
 	{{#if lotsenstelle}}
-	<text font-family="LubalGraph Bd BT" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	<text font-family="Roboto Slab Bold" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
 	{{/if}}
 
 	{{#if meldekopf}}
-	<text font-family="LubalGraph Bd BT" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	<text font-family="Roboto Slab Bold" font-size="350%" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
 	{{/if}}
 
 	{{#if hubschrauberlandeplatz}}

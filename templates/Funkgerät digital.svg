@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -14,14 +14,14 @@
 	<path d="M80,94 l98,0" stroke-width="5" stroke="{{ stroke_color }}" fill="none" />
 
 	{{#if hrt}}
-	<text fill="{{ color_text }}" font-size="250%" font-family="LubalGraph Bd BT"  text-anchor="middle" x="128" y="160">HRT</text>
+	<text fill="{{ color_text }}" font-size="250%" font-family="Roboto Slab Bold"  text-anchor="middle" x="128" y="160">HRT</text>
 	{{/if}}
 
 	{{#if mrt}}
-	<text fill="{{ color_text }}" font-size="250%" font-family="LubalGraph Bd BT"  text-anchor="middle" x="128" y="160">MRT</text>
+	<text fill="{{ color_text }}" font-size="250%" font-family="Roboto Slab Bold"  text-anchor="middle" x="128" y="160">MRT</text>
 	{{/if}}
 
 	{{#if frt}}
-	<text fill="{{ color_text }}" font-size="250%" font-family="LubalGraph Bd BT"  text-anchor="middle" x="128" y="160">FRT</text>
+	<text fill="{{ color_text }}" font-size="250%" font-family="Roboto Slab Bold"  text-anchor="middle" x="128" y="160">FRT</text>
 	{{/if}}
 </svg>

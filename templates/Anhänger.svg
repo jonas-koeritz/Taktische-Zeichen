@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'RobotoSlab-Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -21,7 +21,7 @@
 	<rect x="0" y="121.5" width="11" height="15" fill="{{ color_secondary }}" />
 	<path d="M10,121 L10,121.5 L0,121.5 M0,136.5 L10,136.5 L10,137" stroke="{{ stroke_color }}" stroke-width="1" />
 
-	<text font-family="LubalGraph Bd BT" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	<text font-family="RobotoSlab-Bold" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
 
-	<text font-family="LubalGraph Bd BT" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
+	<text font-family="RobotoSlab-Bold" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
 </svg>

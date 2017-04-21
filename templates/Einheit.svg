@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -72,17 +72,17 @@
 
 	<!-- Texte -->
 	{{#if rettungswesen}}
-	<text fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="text-before-edge" font-size="200%" text-anchor="start" x="22" y="70">{{ unit }}</text>
+	<text fill="{{ color_text }}" font-family="Roboto Slab Bold" dominant-baseline="text-before-edge" font-size="200%" text-anchor="start" x="22" y="70">{{ unit }}</text>
 	{{else}}
-	<text font-size="300%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	<text font-size="300%" fill="{{ color_text }}" font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
 	{{/if}}
 
 	{{#if denominator}}
-	<text fill="{{ color_text }}" font-family="LubalGraph Bd BT"  text-anchor="start" x="20" y="180">{{ denominator }}</text>
+	<text fill="{{ color_text }}" font-family="Roboto Slab Bold"  text-anchor="start" x="20" y="180">{{ denominator }}</text>
 	{{/if}}
 
 	{{#if organization}}
-	<text fill="{{ color_text }}" font-family="LubalGraph Bd BT"  text-anchor="end" x="236" y="180">{{ organization }}</text>
+	<text fill="{{ color_text }}" font-family="Roboto Slab Bold"  text-anchor="end" x="236" y="180">{{ organization }}</text>
 	{{/if}}
 
 	{{#if betreuung}}
@@ -94,26 +94,26 @@
 	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
 	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
 
-	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">SOZ</text>
+	<text font-size="200%" fill="{{ color_text }}" font-family="Roboto Slab Bold" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">SOZ</text>
 	{{/if}}
 
 	{{#if seg_betreuung}}
 	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
 	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
 
-	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">SEG</text>
+	<text font-size="200%" fill="{{ color_text }}" font-family="Roboto Slab Bold" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">SEG</text>
 	{{/if}}
 
 	{{#if technik_und_sicherheit}}
 	<path d="M44,148 a20,20 0 0,0 0,-40 M64,128 L192,128 m20,20 a20,20 0 0,1 0,-40" fill="none" stroke="{{ stroke_color }}" stroke-width="5" />
-	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="120">TS</text>
+	<text font-size="200%" fill="{{ color_text }}" font-family="Roboto Slab Bold" dominant-baseline="bottom" text-anchor="middle" x="128" y="120">TS</text>
 	{{/if}}
 
 	{{#if psnv}}
 	<rect x="10" y="64" width="236" height="128" fill="{{ color_primary }}" stroke="{{ stroke_color }}" stroke-width="5" />
 	<path d="M10,192 L128,66 L246,192" stroke="#000000" stroke-width="5" fill="none" />
 
-	<text font-size="200%" fill="{{ color_text }}" font-family="LubalGraph Bd BT" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">PSNV</text>
+	<text font-size="200%" fill="{{ color_text }}" font-family="Roboto Slab Bold" dominant-baseline="bottom" text-anchor="middle" x="128" y="180">PSNV</text>
 	{{/if}}
 
 	{{#if verpflegung}}

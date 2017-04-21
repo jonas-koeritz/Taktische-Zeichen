@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -37,7 +37,7 @@
 
 
 
-	<text font-family="LubalGraph Bd BT" font-size="300%" fill="#FFFFFF" dominant-baseline="central" text-anchor="middle" x="128" y="128">MLW IV</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" fill="#FFFFFF" dominant-baseline="central" text-anchor="middle" x="128" y="128">MLW IV</text>
 
-	<text font-family="LubalGraph Bd BT" fill="#FFFFFF" text-anchor="end" x="236" y="180">THW</text>
+	<text font-family="Roboto Slab Bold" fill="#FFFFFF" text-anchor="end" x="236" y="180">THW</text>
 </svg>

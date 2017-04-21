@@ -1,16 +1,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
-	<defs>
-		<style type="text/css">
-		<![CDATA[
-			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
-			}
-		]]>
-		</style>
-	</defs>
-
 	{{#if betroffene}}
 	<path d="M128,64 l0,96 M96,96 l64,0 M64,192 l64,-32 l64,32" stroke-width="5" stroke="{{ stroke_color }}" fill="none" />
 	{{else}}

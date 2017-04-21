@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -33,18 +33,18 @@
 	<ellipse cx="128" cy="128" rx="32" ry="32" stroke-width="3" stroke="{{ stroke_color }}" fill="#FFFFFF" />
 
 	{{#if level_1}}
-	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">1</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">1</text>
 	{{/if}}
 
 	{{#if level_2}}
-	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">2</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">2</text>
 	{{/if}}
 
 	{{#if level_3}}
-	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">3</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">3</text>
 	{{/if}}
 
 	{{#if level_4}}
-	<text font-family="LubalGraph Bd BT" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">4</text>
+	<text font-family="Roboto Slab Bold" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">4</text>
 	{{/if}}
 </svg>

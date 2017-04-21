@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -14,19 +14,19 @@
 	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="{{ color_primary }}" fill="none" />
 
 	{{#if explosion}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">Ex</text>
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">Ex</text>
 	{{/if}}
 
 	{{#if oil}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">Öl</text>
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">Öl</text>
 	{{/if}}
 
 	{{#if radioactivity}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">A</text>
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">A</text>
 	{{/if}}
 
 	{{#if hazardous_materials}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">GS</text>
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">GS</text>
 	{{/if}}
 
 	{{#if explosives}}
@@ -37,7 +37,7 @@
 	{{/if}}
 
 	{{#if denominator}}
-	<text font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="400%" x="64" y="150">{{ denominator }}</text>
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="400%" x="64" y="150">{{ denominator }}</text>
 	{{/if}}
 
 	{{#if water_ingress}}

@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -20,8 +20,8 @@
 
 	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
 
-	<text font-family="LubalGraph Bd BT" fill="#FFFFFF" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">Fü</text>
+	<text font-family="Roboto Slab Bold" fill="#FFFFFF" font-size="300%" dominant-baseline="central" text-anchor="middle" x="128" y="128">Fü</text>
 
-	<text fill="#FFFFFF" font-family="LubalGraph Bd BT"  text-anchor="start" x="20" y="180">A</text>
-	<text font-family="LubalGraph Bd BT" fill="#FFFFFF" text-anchor="end" x="236" y="180">THW</text>
+	<text fill="#FFFFFF" font-family="Roboto Slab Bold"  text-anchor="start" x="20" y="180">A</text>
+	<text font-family="Roboto Slab Bold" fill="#FFFFFF" text-anchor="end" x="236" y="180">THW</text>
 </svg>

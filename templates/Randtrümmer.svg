@@ -1,18 +1,6 @@
 <?xml version="1.0" standalone="no"?>
-
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
-	<defs>
-		<style type="text/css">
-		<![CDATA[
-			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
-			}
-		]]>
-		</style>
-	</defs>
-	
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">	
 	<path d="M34,78 l0,100 l188,0" stroke="#000000" stroke-width="5" fill="none" />
 
 	<path d="M27,76 a15,5 20 1 1 37.6,20 a15,5 20 1 1 37.6,20 a15,5 20 1 1 37.6,20 a15,5 20 1 1 37.6,20 a15,5 20 1 1 37.6,20 L222,178 l-10,0" stroke="#000000" stroke-width="5" fill="none" />

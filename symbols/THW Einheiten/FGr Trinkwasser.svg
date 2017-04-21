@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -28,10 +28,10 @@
 
 
 	<!-- Texte -->
-	<text font-size="300%" fill="#FFFFFF" font-family="LubalGraph Bd BT" dominant-baseline="central" text-anchor="middle" x="128" y="128">TW</text>
+	<text font-size="300%" fill="#FFFFFF" font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" x="128" y="128">TW</text>
 
 
-	<text fill="#FFFFFF" font-family="LubalGraph Bd BT"  text-anchor="end" x="236" y="180">THW</text>
+	<text fill="#FFFFFF" font-family="Roboto Slab Bold"  text-anchor="end" x="236" y="180">THW</text>
 
 
 

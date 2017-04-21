@@ -4,8 +4,8 @@
 		<style type="text/css">
 		<![CDATA[
 			@font-face {
-				font-family: 'LubalGraph Bd BT';
-				src: url('LubalinGraphBoldBT.ttf');
+				font-family: 'Roboto Slab Bold';
+				src: url('RobotoSlab-Bold.ttf');
 			}
 		]]>
 		</style>
@@ -42,6 +42,6 @@
 	<ellipse cx="178" cy="102" rx="20" ry="20" fill="{{ color_secondary }}" />
 
 	{{#if denominator}}
-	<text font-family="LubalGraph Bd BT" font-size="200%" fill="{{ color_text }}" x="128" text-anchor="middle" y="182">{{ denominator }}</text>
+	<text font-family="Roboto Slab Bold" font-size="200%" fill="{{ color_text }}" x="128" text-anchor="middle" y="182">{{ denominator }}</text>
 	{{/if}}
 </svg>
