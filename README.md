@@ -43,3 +43,6 @@ npm install --save taktische-zeichen
 Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigenen Änderungen erweitert werden.
 Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind.
 Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
+
+## Schriftart
+Die verwendete Schriftart ist "Robot Slab Bold" lizenziert unter Apache 2.0 Lizenz.
