@@ -51,4 +51,4 @@ Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
 Fehlt ein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
 ## Schriftart
-Die verwendete Schriftart ist "Robot Slab Bold" lizenziert unter Apache 2.0 Lizenz.
+Die verwendete Schriftart ist "Roboto Slab Bold" lizenziert unter Apache 2.0 Lizenz.
