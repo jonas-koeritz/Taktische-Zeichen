@@ -1,12 +1,8 @@
 {
   "name": "taktische-zeichen",
-  "version": "1.1.6",
+  "version": "1.3.0",
   "description": "Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken",
   "main": "render.js",
-  "scripts": {
-    "render-all": "node render.js config.json render-all",
-    "create-svgs": "node render.js config.json create-svgs"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jonas-koeritz/Taktische-Zeichen.git"
@@ -26,5 +22,10 @@
   "dependencies": {
     "async": "^2.2.0",
     "handlebars": "^4.0.6"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-bump": "^0.8.0",
+    "grunt-run": "^0.7.0"
   }
 }

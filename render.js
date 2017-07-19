@@ -37,8 +37,6 @@ function renderAll() {
 		fs.mkdirSync(path.join(__dirname, "1024x1024"));
 	}
 
-	createSVGs();
-
 	var jobs = [];
 
 
