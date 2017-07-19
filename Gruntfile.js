@@ -48,17 +48,31 @@ module.exports = function(grunt) {
             ]
         }
     },
+    zip: {
+      release: {
+        src: ['128x128/**', '256x256/**', '512x512/**', '1024x1024/**', 'symbols/**'],
+        dest: 'release-v<%= pkg.version %>.zip',
+        router: function(filepath) {
+          if(filepath.startsWith('symbols/')) {
+            filepath = filepath.replace(/symbols/, 'svg');
+          }
+          console.log(filepath);
+          return filepath;
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-run');
   grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-publish');
+  grunt.loadNpmTasks('grunt-zip');
 
   // Default task(s).
   grunt.registerTask('default', ['run:create_svgs']);
   grunt.registerTask('create-svgs', ['run:create_svgs'])
   grunt.registerTask('render-all', ['run:create_svgs', 'run:render_all'])
-  grunt.registerTask('patch-release', ['bump:patch', 'publish'])
-  grunt.registerTask('minor-release', ['bump:minor', 'publish'])
-  grunt.registerTask('major-release', ['bump:major', 'publish'])
+  grunt.registerTask('patch-release', ['bump:patch', 'zip:release', 'publish'])
+  grunt.registerTask('minor-release', ['bump:minor', 'zip:release', 'publish'])
+  grunt.registerTask('major-release', ['bump:major', 'zip:release', 'publish'])
 };
