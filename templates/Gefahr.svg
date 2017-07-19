@@ -25,6 +25,10 @@
 	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">A</text>
 	{{/if}}
 
+	{{#if electricity}}
+	<path d="M118,80 l0,40 l20,-20 l0,50 m-10,-10 l10,10 l 10,-10" stroke-width="5" stroke="{{ color_primary }}" fill="none" />
+	{{/if}}
+
 	{{#if hazardous_materials}}
 	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">GS</text>
 	{{/if}}
@@ -34,6 +38,14 @@
 	<ellipse cx="128" cy="108" rx="10" ry="10" fill="{{ color_primary }}" />
 	<rect x="123" y="76" fill="{{ color_primary }}" width="10" height="10" transform="rotate(30,128,108)" />
 	<rect x="123" y="76" fill="{{ color_primary }}" width="10" height="10" transform="rotate(-30,128,108)" />
+	{{/if}}
+
+	{{#if gas}}
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="250%" x="128" y="108">Gas</text>
+	{{/if}}
+
+	{{#if suffocation}}
+	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="{{ color_primary }}" font-size="350%" x="128" y="108">L</text>
 	{{/if}}
 
 	{{#if denominator}}

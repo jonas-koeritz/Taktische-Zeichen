@@ -849,8 +849,11 @@
 						"explosion": "Akute Gefahr durch Explosion",
 						"oil": "Akute Gefahr durch Mineralöl",
 						"radioactivity": "Akute Gefahr durch Radioaktivität",
+						"electricity": "Akute Gefahr durch elektrischen Strom",
 						"explosives": "Akute Gefahr durch Explosivstoffe",
 						"hazardous_materials": "Akute Gefahr durch gefährliche Stoffe",
+						"suffocation": "Akute Gefahr durch Luftmangel",
+						"gas": "Akute Gefahr durch Gas",
 						"unspecified": "Akute Gefahr"
 					}
 				},
@@ -862,8 +865,11 @@
 						"explosion": "Vermutete Gefahr durch Explosion",
 						"oil": "Vermutete Gefahr durch Mineralöl",
 						"radioactivity": "Vermutete Gefahr durch Radioaktivität",
+						"electricity": "Vermutete Gefahr durch elektrischen Strom",
 						"explosives": "Vermutete Gefahr durch Explosivstoffe",
 						"hazardous_materials": "Vermutete Gefahr durch gefährliche Stoffe",
+						"suffocation": "Vermutete Gefahr durch Luftmangel",
+						"gas": "Vermutete Gefahr durch Gas",
 						"unspecified": "Vermutete Gefahr"
 					}
 				},
@@ -874,8 +880,11 @@
 						"explosion": "Gefahr durch Explosion",
 						"oil": "Gefahr durch Mineralöl",
 						"radioactivity": "Gefahr durch Radioaktivität",
+						"electricity": "Gefahr durch elektrischen Strom",
 						"explosives": "Gefahr durch Explosivstoffe",
 						"hazardous_materials": "Gefahr durch gefährliche Stoffe",
+						"suffocation": "Gefahr durch Luftmangel",
+						"gas": "Gefahr durch Gas",
 						"unspecified": "Gefahr"
 					}
 				},
