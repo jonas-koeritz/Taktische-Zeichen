@@ -40,9 +40,15 @@ npm install --save taktische-zeichen
 ```
 
 ## Lizenz
-Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigenen Änderungen erweitert werden.
-Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind.
+Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigene Änderungen erweitert werden.
+Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind, d.h. der Vollständige Inhalt der Datei COPYRIGHT.md muss über die Benutzeroberfläche (bei Anwendungen mit grafischer Benutzeroberfläche) oder im Programmverzeichnis (für Anwendungen ohne grafische Benutzeroberfläche) für jeden Benutzer einsehbar sein.
 Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
 
+## Liste der Projekte die diesen Zeichensatz verwenden
+
+* [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
+
+Fehlt ein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
+
 ## Schriftart
-Die verwendete Schriftart ist "Robot Slab Bold" lizenziert unter Apache 2.0 Lizenz.
+Die verwendete Schriftart ist "Roboto Slab Bold" lizenziert unter Apache 2.0 Lizenz.
