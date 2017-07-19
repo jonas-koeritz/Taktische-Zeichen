@@ -907,6 +907,7 @@
 					"template": "Person.svg",
 					"color_primary": "#FFFFFF",
 					"color_secondary": "none",
+					"stroke_width": "5",
 					"stroke_color": "#000000",
 					"variants": {
 						"missing": "Vermisste Person",
@@ -949,7 +950,7 @@
 					"color_primary": "#FFFF00",
 					"color_secondary": "#000000",
 					"text_color": "#000000",
-					"font_size": "230%",
+					"font_size": "200%",
 					"unit": "UEAL",
 					"variants": {
 						"special_function": "Untereinsatzabschnittsleiter"
