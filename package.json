@@ -26,6 +26,7 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-bump": "^0.8.0",
+    "grunt-publish": "^1.0.0",
     "grunt-run": "^0.7.0"
   }
 }
