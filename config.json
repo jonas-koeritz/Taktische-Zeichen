@@ -700,6 +700,13 @@
 					"variants": {
 						"drehleiter": "Drehleiter mit Korb"
 					}
+				},
+				{
+					"name": "Feuerwehrboot",
+					"template": "Wasserfahrzeug.svg",
+					"variants": {
+						"boot": "Feuerwehrboot"
+					}
 				}
 			]
 		},
