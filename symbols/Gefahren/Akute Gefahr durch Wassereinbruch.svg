@@ -10,19 +10,8 @@
 		]]>
 		</style>
 	</defs>
-
 	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="#003399" fill="none" />
-
-
-
-
-
-
-
-
-
 	<text font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" fill="#003399" font-size="400%" x="64" y="150">!</text>
-
 	<path d="M78,84 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0" stroke="#003399" stroke-width="5" fill="none" />
 	<path d="M78,100 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0" stroke="#003399" stroke-width="5" fill="none" />
 </svg>

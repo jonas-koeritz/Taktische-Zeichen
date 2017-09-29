@@ -151,6 +151,7 @@ function createSVGs() {
 
 				console.log("Generating Symbol: " + symbol.name + " [" + variant + "]");
 				var compiled_symbol = template(variant_data);
+				compiled_symbol = compiled_symbol.replace(/^\s*[\r\n]/gm, "");
 				fs.writeFileSync(path.join('symbols', set.name, symbol.variants[variant] + ".svg"), compiled_symbol);
 			}
 		}

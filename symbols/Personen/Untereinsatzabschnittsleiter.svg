@@ -13,28 +13,8 @@
 			<path d="M64,128 L128,64 L192,128 L128,192 Z" />
 		</clipPath>
 	</defs>
-
 	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="5" stroke="#000000" fill="#FFFF00" />
-
 	<rect x="64" y="64" width="128" height="24" clip-path="url(#person)" fill="#000000" stroke="#000000" stroke-width="2" />
-
-
-
-
-
-
 	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="2" stroke="" fill="none" />
-
-
-
-
-
-
-
-
-
-
-
-
 	<text x="128" y="128" font-family="Roboto Slab Bold" font-size="200%" dominant-baseline="central" fill="" text-anchor="middle">UEAL</text>
 </svg>

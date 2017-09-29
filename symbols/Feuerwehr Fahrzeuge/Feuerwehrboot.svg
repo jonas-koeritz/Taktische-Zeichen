@@ -13,11 +13,8 @@
 			<path d="M10,64 l236,0 A118,118 180 0 1 10,64 Z" />
 		</clipPath>
 	</defs>
-
 	<path d="M10,64 l236,0 A118,118 180 0 1 10,64 Z" stroke="#FFFFFF" fill="#FF0000" stroke-width="10" clip-path="url(#symbol)" />
-
 	<path d="M10,64 l236,0 A118,118 180 0 1 10,64 Z" stroke="#000000" fill="none" stroke-width="1" clip-path="url(#symbol)" />
-
 	<!-- Texte -->
 	<text font-size="300%" fill="#FFFFFF" font-family="Roboto Slab Bold" dominant-baseline="central" text-anchor="middle" x="128" y="110"></text>
 	<text fill="#000000" font-family="Roboto Slab Bold"  text-anchor="end" x="236" y="180"></text>

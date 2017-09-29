@@ -13,14 +13,11 @@
 			<rect x="10" y="64" width="236" height="128" />
 		</clipPath>
 	</defs>
-	
 	<rect x="10" y="64" width="236" height="128" stroke="#FFFFFF" stroke-width="10" fill="#FF0000" clip-path="url(#symbol)" />
 	<rect x="10" y="64" width="236" height="128" stroke="#000000" stroke-width="1" fill="none" />
-
 	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
 	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="#000000" />
 	<ellipse cx="192" cy="48" rx="10" ry="10" fill="#000000" />
-
 	<path d="M11 128 L245 128 M156 128 L241 69 M156 128 L241 187" stroke="#FFFFFF" stroke-width="10" fill="none" />
 	<text x="22" y="70" alignment-baseline="before-edge" font-size="200%" font-family="Roboto Slab Bold" fill="#FFFFFF">BF</text>
 </svg>

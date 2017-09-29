@@ -1,16 +1,10 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
-
 	<g transform="skewX(-45) translate(145,0)">
 		<line x1="98" x2="98" y1="52" y2="192" stroke-width="5" stroke="#000000" />
 		<line x1="118" x2="118" y1="52" y2="192" stroke-width="5" stroke="#000000" />
 		<line x1="138" x2="138" y1="52" y2="192" stroke-width="5" stroke="#000000" />
 		<line x1="158" x2="158" y1="52" y2="192" stroke-width="5" stroke="#000000" />
 	</g>
-	
 	<path d="M10,64 l0,128 l236,0 l0,-128 m0,40 l-236,0" stroke="#000000" stroke-width="5" fill="none" />
-
-
-
-
 </svg>

@@ -13,27 +13,7 @@
 			<path d="M64,128 L128,64 L192,128 L128,192 Z" />
 		</clipPath>
 	</defs>
-
 	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="5" stroke="none" fill="#FFFFFF" />
-
-
-
-
-
-
-
 	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="5" stroke="#000000" fill="none" />
-
 	<path d="M57,121 l64,-64 M135,199 l64,-64" stroke-width="5" stroke="#000000" />
-
-
-
-
-
-
-
-
-
-
-
 </svg>
