@@ -735,6 +735,13 @@
 					"variants": {
 						"gwg": "Gerätewagen Gefahrgut"
 					}
+				},
+				{
+					"name": "Rüstwagen",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"ruestwagen": "Rüstwagen"
+					}
 				}
 			]
 		},

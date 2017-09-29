@@ -24,6 +24,7 @@
 	</g>
 	<text font-family="Roboto Slab Bold" font-size="150%" fill="#FFFFFF" dominant-baseline="central" text-anchor="left" x="20" y="128">GW-G</text>
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="#000000" />
 	<text font-family="Roboto Slab Bold" font-size="300%" fill="#FFFFFF" dominant-baseline="central" text-anchor="middle" x="128" y="128"></text>

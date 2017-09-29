@@ -61,6 +61,7 @@
 
 
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	{{/if}}
 
@@ -74,6 +75,21 @@
 
 
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	{{/if}}
+
+	{{#if ruestwagen}}
+	<text font-family="Roboto Slab Bold" font-size="150%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="85">RW</text>
+	<g transform="translate(0,24)">
+		<path d="M120,128 l10,0 c10,-20,58,-20,48,0 -10,20,38,20,48,0" stroke="{{ color_secondary }}" stroke-width="14" fill="none" />
+		<path d="M120,128 l10,0 c10,-20,58,-20,48,0 -10,20,38,20,48,0" stroke="{{ color_primary }}" stroke-width="8" fill="none" />
+		<rect x="60" y="116" width="60" height="22" stroke="{{ color_secondary }}" stroke-width="3" fill="{{ color_primary }}" />
+		<path d="M60,120 l-24,-10 M60,134 l-24,10" stroke="{{ color_secondary }}" stroke-width="3" fill="none" />
+	</g>
+
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	{{/if}}
 	
