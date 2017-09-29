@@ -742,6 +742,13 @@
 					"variants": {
 						"ruestwagen": "Rüstwagen"
 					}
+				},
+				{
+					"name": "Feuerwehranhänger",
+					"template": "Anhänger.svg",
+					"variants": {
+						"anhänger": "Feuerwehranhänger"
+					}
 				}
 			]
 		},
