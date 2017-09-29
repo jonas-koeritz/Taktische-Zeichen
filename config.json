@@ -723,6 +723,46 @@
 					}
 				},
 				{
+					"name": "HLF",
+					"template": "Fahrzeug.svg",
+					"unit": "HLF",
+					"variants": {
+						"loeschfahrzeug": "HLF"
+					}
+				},
+				{
+					"name": "LF 8/6",
+					"template": "Fahrzeug.svg",
+					"unit": "LF 8/6",
+					"variants": {
+						"loeschfahrzeug": "LF 8-6"
+					}
+				},
+				{
+					"name": "LF 16-TS",
+					"template": "Fahrzeug.svg",
+					"unit": "LF 16-TS",
+					"variants": {
+						"loeschfahrzeug": "LF 16-TS"
+					}
+				},
+				{
+					"name": "LF 16/25",
+					"template": "Fahrzeug.svg",
+					"unit": "LF 16/25",
+					"variants": {
+						"loeschfahrzeug": "LF 16-25"
+					}
+				},
+				{
+					"name": "LF 24/50",
+					"template": "Fahrzeug.svg",
+					"unit": "LF 24/50",
+					"variants": {
+						"loeschfahrzeug": "LF 24-50"
+					}
+				},
+				{
 					"name": "Messfahrzeug",
 					"template": "Fahrzeug.svg",
 					"variants": {
@@ -748,7 +788,7 @@
 					"template": "Anhänger.svg",
 					"variants": {
 						"anhänger": "Feuerwehranhänger"
-					}
+						}
 				}
 			]
 		},

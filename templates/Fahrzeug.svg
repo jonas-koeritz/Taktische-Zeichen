@@ -80,7 +80,7 @@
 	{{/if}}
 
 	{{#if ruestwagen}}
-	<text font-family="Roboto Slab Bold" font-size="150%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="85">RW</text>
+	<text font-family="Roboto Slab Bold" font-size="150%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="95">RW</text>
 	<g transform="translate(0,24)">
 		<path d="M120,128 l10,0 c10,-20,58,-20,48,0 -10,20,38,20,48,0" stroke="{{ color_secondary }}" stroke-width="14" fill="none" />
 		<path d="M120,128 l10,0 c10,-20,58,-20,48,0 -10,20,38,20,48,0" stroke="{{ color_primary }}" stroke-width="8" fill="none" />
@@ -135,7 +135,11 @@
 	<path d="M10,128 l236,0 M128,192 l0,-110" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
 	<text font-family="Roboto Slab Bold" font-size="200%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="85">{{ unit }}</text>
 	{{else}}
+	{{#if loeschfahrzeug}}
+	<text font-family="Roboto Slab Bold" font-size="150%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="95">{{ unit }}</text>
+	{{else}}
 	<text font-family="Roboto Slab Bold" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
+	{{/if}}
 	{{/if}}
 
 	<text font-family="Roboto Slab Bold" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
