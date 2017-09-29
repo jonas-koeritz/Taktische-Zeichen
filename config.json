@@ -707,6 +707,13 @@
 					"variants": {
 						"boot": "Feuerwehrboot"
 					}
+				},
+				{
+					"name": "Schlauchwagen",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"schlauchwagen": "Schlauchwagen"
+					}
 				}
 			]
 		},
@@ -911,6 +918,24 @@
 					"color_primary": "#003399",
 					"variants": {
 						"water_ingress": "Gefahr durch Wassereinbruch"
+					}
+				},
+				{
+					"name": "Vermutete Gefahr durch Wassereinbruch",
+					"template": "Gefahr.svg",
+					"color_primary": "#003399",
+					"denominator": "?",
+					"variants": {
+						"water_ingress": "Vermutete Gefahr durch Wassereinbruch"
+					}
+				},
+				{
+					"name": "Akute Gefahr durch Wassereinbruch",
+					"template": "Gefahr.svg",
+					"color_primary": "#003399",
+					"denominator": "!",
+					"variants": {
+						"water_ingress": "Akute Gefahr durch Wassereinbruch"
 					}
 				}
 			]
