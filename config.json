@@ -714,6 +714,13 @@
 					"variants": {
 						"schlauchwagen": "Schlauchwagen"
 					}
+				},
+				{
+					"name": "Löschfahrzeug",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"loeschfahrzeug": "Löschfahrzeug"
+					}
 				}
 			]
 		},

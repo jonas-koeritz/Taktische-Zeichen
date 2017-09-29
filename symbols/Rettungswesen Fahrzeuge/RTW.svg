@@ -13,14 +13,14 @@
 			<rect x="10" y="192" width="236" height="20" />
 		</clipPath>
 		<clipPath id="symbol">
-			<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" />
+			<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" />
 		</clipPath>
 	</defs>
-	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="#FFFFFF" stroke-width="10" stroke="#000000" clip-path="url(#symbol)" />
-	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="none" stroke-width="1" stroke="#000000" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="#FFFFFF" stroke-width="10" stroke="#000000" clip-path="url(#symbol)" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="#000000" />
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<path d="M10,128 l236,0 M128,192 l0,-120" fill="none" stroke-width="5" stroke="#000000" />
-	<text font-family="Roboto Slab Bold" font-size="200%" fill="#000000" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="70">RTW</text>
+	<path d="M10,128 l236,0 M128,192 l0,-110" fill="none" stroke-width="5" stroke="#000000" />
+	<text font-family="Roboto Slab Bold" font-size="200%" fill="#000000" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="85">RTW</text>
 	<text font-family="Roboto Slab Bold" fill="#000000" text-anchor="end" x="236" y="180"></text>
 </svg>

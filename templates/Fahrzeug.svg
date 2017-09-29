@@ -14,7 +14,7 @@
 			<rect x="10" y="192" width="236" height="20" />
 		</clipPath>
 		<clipPath id="symbol">
-			<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" />
+			<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" />
 		</clipPath>
 
 		{{#if container}}
@@ -27,7 +27,7 @@
 	
 
 	
-	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="{{ color_primary }}" stroke-width="10" stroke="{{ color_secondary }}" clip-path="url(#symbol)" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ color_primary }}" stroke-width="10" stroke="{{ color_secondary }}" clip-path="url(#symbol)" />
 
 	{{#if drehleiter}}
 	<path d="M125,192 l3,0 l80,-80 l20,0 l0,-20 l-20,0 l0,20" fill="none" stroke="{{ color_secondary }}" stroke-width="7" clip-path="url(#symbol)" />
@@ -42,8 +42,15 @@
 	<path d="M10,128 L246,128 M156,128 l85,59 M156,128 L245,65" fill="none" stroke-width="5" stroke="{{ color_secondary }}" />
 	<path d="M25,108 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0" stroke="{{ color_secondary }}" stroke-width="5" fill="none" />
 	{{/if}}
+
+	{{#if loeschfahrzeug}}
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<path d="M10,128 L246,128 M156,128 l85,59 M156,128 L245,65" fill="none" stroke-width="5" stroke="{{ color_secondary }}" />
+	{{/if}}
 	
-	<path d="M10,44 L10,192 L246,192 L246,44 Q128,100 10,44 Z" fill="none" stroke-width="1" stroke="{{ stroke_color }}" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="{{ stroke_color }}" />
 	
 	{{#if three_wheels}}
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
@@ -82,8 +89,8 @@
 	
 
 	{{#if rettungswesen}}
-	<path d="M10,128 l236,0 M128,192 l0,-120" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
-	<text font-family="Roboto Slab Bold" font-size="200%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="70">{{ unit }}</text>
+	<path d="M10,128 l236,0 M128,192 l0,-110" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
+	<text font-family="Roboto Slab Bold" font-size="200%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="85">{{ unit }}</text>
 	{{else}}
 	<text font-family="Roboto Slab Bold" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
 	{{/if}}
