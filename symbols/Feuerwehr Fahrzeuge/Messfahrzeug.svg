@@ -9,102 +9,23 @@
 			}
 		]]>
 		</style>
-
 		<clipPath id="wheels">
 			<rect x="10" y="192" width="236" height="20" />
 		</clipPath>
 		<clipPath id="symbol">
 			<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" />
 		</clipPath>
-
-		{{#if container}}
-		<clipPath id="hook">
-			<rect x="0" y="44" width="10" height="148" />
-		</clipPath>
-		{{/if}}
 	</defs>
-
-	
-
-	
-	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ color_primary }}" stroke-width="10" stroke="{{ color_secondary }}" clip-path="url(#symbol)" />
-
-	{{#if drehleiter}}
-	<path d="M125,192 l3,0 l80,-80 l20,0 l0,-20 l-20,0 l0,20" fill="none" stroke="{{ color_secondary }}" stroke-width="7" clip-path="url(#symbol)" />
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	{{/if}}
-
-	{{#if schlauchwagen}}
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<path d="M10,128 L246,128 M156,128 l85,59 M156,128 L245,65" fill="none" stroke-width="5" stroke="{{ color_secondary }}" />
-	<path d="M25,108 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0 a10,10 180 1 0 20,0 a10,10 180 1 1 20,0" stroke="{{ color_secondary }}" stroke-width="5" fill="none" />
-	{{/if}}
-
-	{{#if loeschfahrzeug}}
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<path d="M10,128 L246,128 M156,128 l85,59 M156,128 L245,65" fill="none" stroke-width="5" stroke="{{ color_secondary }}" />
-	{{/if}}
-
-	{{#if messfahrzeug}}
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="#FF0000" stroke-width="10" stroke="#FFFFFF" clip-path="url(#symbol)" />
 	<path d="M10,192 l236,-128" stroke-width="5" stroke="#ffffff" fill="none" clip-path="url(#symbol)" />
-	<ellipse cx="78" cy="112" rx="20" ry="20" fill="{{ color_secondary }}" />
-	<ellipse cx="178" cy="112" rx="20" ry="20" fill="{{ color_secondary }}" />
-	<path d="M88 102 L188 174 M168 102 L68 174" stroke="{{ color_secondary }}" stroke-width="10" fill="none" />
-	<path d="M185,171 m7,7 l-15,0 m15,0 l0,-15 l-15,15 Z" fill="{{ color_secondary }}" transform="rotate(-10,188,164)" />
-	<path d="M71,171 m-7,7 l15,0 l-15,-15 Z" fill="{{ color_secondary }}" transform="rotate(10,68,164)" />
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	{{/if}}
-	
-	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="{{ stroke_color }}" />
-	
-	{{#if three_wheels}}
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="128" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	{{/if}}
-
-	{{#if two_wheels}}
-	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="{{ stroke_color }}" fill="none" stroke-width="5" clip-path="url(#wheels)" />
-	{{/if}}
-
-	{{#if tracks}}
-	<path d="M24,195 l208,0 a10,10 180 0 1 0,20 l-208,0 a10,10 180 0 1 0,-20 Z" stroke="#000000" fill="none" stroke-width="5" />
-	{{/if}}
-
-	{{#if rail}}
-	<ellipse cx="24" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
-	<ellipse cx="50" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
-	<ellipse cx="206" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
-	<ellipse cx="232" cy="205" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
-	{{/if}}
-	
-	{{#if container}}
-	<ellipse cx="8" cy="80" rx="5" ry="5" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#hook)" />
-	{{/if}}
-
-	{{#if trailer}}
-	<rect x="0" y="120.5" width="10" height="15" />
-	{{/if}}
-
-	{{#if arzt}}
-	<path d="M108,160 l40,0" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
-	{{/if}}
-
-	
-
-	{{#if rettungswesen}}
-	<path d="M10,128 l236,0 M128,192 l0,-110" fill="none" stroke-width="5" stroke="{{ stroke_color }}" />
-	<text font-family="Roboto Slab Bold" font-size="200%" fill="{{ color_text }}" dominant-baseline="text-before-edge" text-anchor="start" x="22" y="85">{{ unit }}</text>
-	{{else}}
-	<text font-family="Roboto Slab Bold" font-size="300%" fill="{{ color_text }}" dominant-baseline="central" text-anchor="middle" x="128" y="128">{{ unit }}</text>
-	{{/if}}
-
-	<text font-family="Roboto Slab Bold" fill="{{ color_text }}" text-anchor="end" x="236" y="180">{{ organization }}</text>
+	<ellipse cx="78" cy="112" rx="20" ry="20" fill="#FFFFFF" />
+	<ellipse cx="178" cy="112" rx="20" ry="20" fill="#FFFFFF" />
+	<path d="M88 102 L188 174 M168 102 L68 174" stroke="#FFFFFF" stroke-width="10" fill="none" />
+	<path d="M185,171 m7,7 l-15,0 m15,0 l0,-15 l-15,15 Z" fill="#FFFFFF" transform="rotate(-10,188,164)" />
+	<path d="M71,171 m-7,7 l15,0 l-15,-15 Z" fill="#FFFFFF" transform="rotate(10,68,164)" />
+	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="#000000" />
+	<text font-family="Roboto Slab Bold" font-size="300%" fill="#FFFFFF" dominant-baseline="central" text-anchor="middle" x="128" y="128"></text>
+	<text font-family="Roboto Slab Bold" fill="#FFFFFF" text-anchor="end" x="236" y="180"></text>
 </svg>

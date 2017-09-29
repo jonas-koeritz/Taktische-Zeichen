@@ -721,6 +721,13 @@
 					"variants": {
 						"loeschfahrzeug": "Löschfahrzeug"
 					}
+				},
+				{
+					"name": "Messfahrzeug",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"messfahrzeug": "Messfahrzeug"
+					}
 				}
 			]
 		},
