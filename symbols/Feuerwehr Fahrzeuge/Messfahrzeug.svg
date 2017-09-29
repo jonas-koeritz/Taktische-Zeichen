@@ -17,12 +17,15 @@
 		</clipPath>
 	</defs>
 	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="#FF0000" stroke-width="10" stroke="#FFFFFF" clip-path="url(#symbol)" />
-	<path d="M10,192 l236,-128" stroke-width="5" stroke="#ffffff" fill="none" clip-path="url(#symbol)" />
-	<ellipse cx="78" cy="112" rx="20" ry="20" fill="#FFFFFF" />
-	<ellipse cx="178" cy="112" rx="20" ry="20" fill="#FFFFFF" />
-	<path d="M88 102 L188 174 M168 102 L68 174" stroke="#FFFFFF" stroke-width="10" fill="none" />
-	<path d="M185,171 m7,7 l-15,0 m15,0 l0,-15 l-15,15 Z" fill="#FFFFFF" transform="rotate(-10,188,164)" />
-	<path d="M71,171 m-7,7 l15,0 l-15,-15 Z" fill="#FFFFFF" transform="rotate(10,68,164)" />
+	<g transform="scale(0.5), translate(220,128)">
+		<path d="M10,192 l236,-128" stroke-width="5" stroke="#ffffff" fill="none" clip-path="url(#symbol)" />
+		<ellipse cx="78" cy="112" rx="20" ry="20" fill="#FFFFFF" />
+		<ellipse cx="178" cy="112" rx="20" ry="20" fill="#FFFFFF" />
+		<path d="M88 102 L188 174 M168 102 L68 174" stroke="#FFFFFF" stroke-width="10" fill="none" />
+		<path d="M185,171 m7,7 l-15,0 m15,0 l0,-15 l-15,15 Z" fill="#FFFFFF" transform="rotate(-10,188,164)" />
+		<path d="M71,171 m-7,7 l15,0 l-15,-15 Z" fill="#FFFFFF" transform="rotate(10,68,164)" />
+	</g>
+	<text font-family="Roboto Slab Bold" font-size="150%" fill="#FFFFFF" dominant-baseline="central" text-anchor="left" x="20" y="128">GW-Mess</text>
 	<ellipse cx="40" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<ellipse cx="216" cy="196" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" clip-path="url(#wheels)" />
 	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="#000000" />
