@@ -728,6 +728,13 @@
 					"variants": {
 						"messfahrzeug": "Messfahrzeug"
 					}
+				},
+				{
+					"name": "Gerätewagen Gefahrgut",
+					"template": "Fahrzeug.svg",
+					"variants": {
+						"gwg": "Gerätewagen Gefahrgut"
+					}
 				}
 			]
 		},
