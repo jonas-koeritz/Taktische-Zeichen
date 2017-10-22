@@ -747,11 +747,11 @@
 					}
 				},
 				{
-					"name": "LF 16/25",
+					"name": "TLF 16/25",
 					"template": "Fahrzeug.svg",
-					"unit": "LF 16/25",
+					"unit": "TLF 16/25",
 					"variants": {
-						"loeschfahrzeug": "LF 16-25"
+						"loeschfahrzeug": "TLF 16-25"
 					}
 				},
 				{
