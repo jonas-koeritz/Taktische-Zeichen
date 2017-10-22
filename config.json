@@ -22,7 +22,7 @@
 					"unit": "B 2",
 					"variants": { "group": "2. Bergungsgruppe" }
 				},
-				{
+				{		
 					"name": "FGr Beleuchtung",
 					"template": "Einheit.svg",
 					"unit": "Bel",
@@ -224,6 +224,32 @@
 					"unit": "TZ",
 					"variants": {
 						"zugführer_thw": "Zugführer"
+					}
+				},
+				{
+					"name": "Zugtruppführer",
+					"template": "Person.svg",
+					"unit": "TZ",
+					"variants": {
+						"zugtruppführer_thw": "Zugtruppführer"
+					}
+				},
+				{
+					"name": "Führungskräfte B 1",
+					"template": "Person.svg",
+					"unit": "B 1",
+					"variants": {
+						"gruppenführer_thw": "Gruppenführer B 1",
+						"truppführer_thw": "Truppführer B 1"
+					}
+				},
+				{
+					"name": "Führungskräfte B 2",
+					"template": "Person.svg",
+					"unit": "B 2",
+					"variants": {
+						"gruppenführer_thw": "Gruppenführer B 2",
+						"truppführer_thw": "Truppführer B 2"
 					}
 				}
 			]
