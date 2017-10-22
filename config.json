@@ -13,13 +13,13 @@
 				{
 					"name": "1. Bergungsgruppe",
 					"template": "Einheit.svg",
-					"unit": "B1",
+					"unit": "B 1",
 					"variants": { "group": "1. Bergungsgruppe" }
 				},
 				{
 					"name": "2. Bergungsgruppe",
 					"template": "Einheit.svg",
-					"unit": "B2",
+					"unit": "B 2",
 					"variants": { "group": "2. Bergungsgruppe" }
 				},
 				{
