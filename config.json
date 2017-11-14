@@ -4,7 +4,7 @@
 	"sets": [
 		{
 			"name": "THW Einheiten",
-			"color_primary": "#003399",
+			"color_primary": "#120A8F",
 			"color_secondary": "#FFFFFF",
 			"stroke_color": "#000000",
 			"color_text": "#FFFFFF",
@@ -212,7 +212,7 @@
 		},
 		{
 			"name": "THW Personen",
-			"color_primary": "#003399",
+			"color_primary": "#120A8F",
 			"color_secondary": "#FFFFFF",
 			"stroke_color": "#000000",
 			"color_text": "#FFFFFF",
@@ -251,12 +251,28 @@
 						"gruppenführer_thw": "Gruppenführer B 2",
 						"truppführer_thw": "Truppführer B 2"
 					}
+				},
+				{
+					"name": "Kraftfahrer",
+					"template": "Person.svg",
+					"unit": "KF",
+					"variants": {
+						"thw": "Kraftfahrer"
+					}
+				},
+				{
+					"name": "Helfer",
+					"template": "Person.svg",
+					"unit": "",
+					"variants": {
+						"thw": "Helfer"
+					}
 				}
 			]
 		},
 		{
 			"name": "THW Fahrzeuge",
-			"color_primary": "#003399",
+			"color_primary": "#120A8F",
 			"color_secondary": "#FFFFFF",
 			"stroke_color": "#000000",
 			"color_text": "#FFFFFF",
@@ -398,7 +414,7 @@
 		},
 		{
 			"name": "THW Gebäude",
-			"color_primary": "#003399",
+			"color_primary": "#120A8F",
 			"color_secondary": "#FFFFFF",
 			"stroke_color": "#000000",
 			"color_text": "#FFFFFF",
