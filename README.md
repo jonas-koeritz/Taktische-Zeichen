@@ -27,6 +27,8 @@ Die Dateien können auch mit dem beiligenenden Skript erstellt werden:
 ```
 grunt render-all
 ```
+Als Voraussetzung für das Skript werden die Programme: [wkhtmltoimage](https://wkhtmltopdf.org/), [Imagemagick Version 7](https://www.imagemagick.org/), [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt.
+
 
 ## Installation mit bower oder npm
 Die Symbole können auch über bower und npm bezogen werden. Das Paket heißt jeweils `taktische-zeichen`.
