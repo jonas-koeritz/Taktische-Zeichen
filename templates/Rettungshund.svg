@@ -1,0 +1,32 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+  
+  <g
+     transform="translate(-148.10999,-61.529755)"
+     id="layer1">
+    <g
+       transform="translate(26.839232,-80.718287)"
+       id="g8195">
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-opacity:1"
+         d="m 167.83907,313.64089 c 10.66532,-15.10928 21.33064,-30.21855 31.99596,-45.32782 10.90107,14.99956 21.80215,29.99912 32.70322,44.99868"
+         id="path4154" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-opacity:1"
+         d="m 281.14451,317.31442 c 11.37047,-16.53692 22.74094,-33.07384 34.11141,-49.61076 11.62181,16.41684 23.24363,32.83367 34.86544,49.25051"
+         id="path4154-3" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-opacity:1"
+         d="m 314.89412,268.60702 c 8.7616,-13.18668 17.52321,-26.37336 26.28483,-39.56004"
+         id="path4146-6" />
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-opacity:1"
+         d="m 199.4731,267.67696 c -16.8325,0.0143 -33.66501,0.0287 -50.49751,0.043 8.40385,-14.58453 16.80767,-29.16908 25.21151,-43.75362 8.42866,14.57021 16.85734,29.14041 25.286,43.71062 z"
+         id="path4233" />
+      <path
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 200,267.3622 115.35714,0"
+         id="path8174" />
+    </g>
+  </g>
+</svg>

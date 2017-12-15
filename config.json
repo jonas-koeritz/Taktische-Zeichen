@@ -1370,6 +1370,13 @@
 					}
 				},
 				{
+					"name": "Rettungshund",
+					"template": "Rettungshund.svg",
+					"variants": {
+						"": "Suchen und orten mit Rettungshunden"
+					}
+				},
+				{
 					"name": "Ortsfest",
 					"template": "Ortsfest.svg",
 					"variants": {

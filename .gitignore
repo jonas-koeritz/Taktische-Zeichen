@@ -3,6 +3,7 @@ node_modules
 256x256/
 512x512/
 1024x1024/
+symbols/
 magnet/
 npm-debug.log
 release-*.zip
