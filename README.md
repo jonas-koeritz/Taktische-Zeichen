@@ -35,6 +35,13 @@ Alle SVG- und PNG-Dateien können mit dem beiligenden Makefile in einem Schritt 
 make all
 ```
 
+Ein Release-Zip Archiv kann ebenfalls erstellt werden:
+
+```
+make release
+```
+
+## Voraussetzungen
 Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
 

@@ -40,5 +40,9 @@ build/png/256/%.png: build/svg/%.svg
 
 clean:
 	rm -rf build
+	rm Taktische-Zeichen.zip
 
 all: svg png
+
+release: all
+	cd build && zip -r ../Taktische-Zeichen.zip ./*
