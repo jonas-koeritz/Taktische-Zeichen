@@ -39,20 +39,6 @@ make release
 ## Voraussetzungen
 Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
-
-## Installation mit bower oder npm
-Die Symbole können auch über bower und npm bezogen werden. Das Paket heißt jeweils `taktische-zeichen`.
-
-**Die Aktuelle Version dieses Projektes steht zur Zeit nicht bei bower oder npm zur Verfügung!**
-
-```
-bower install taktische-zeichen
-```
-bzw.
-```
-npm install --save taktische-zeichen
-```
-
 ## Lizenz
 Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigene Änderungen erweitert werden.
 Die Datei NOTICE muss in jeder Kopie unverändert beibehalten werden.
