@@ -1,0 +1,10 @@
+---
+name: Neues taktisches Zeichen
+about: Template für ein neues taktisches Zeichen
+title: "[Titel des neuen Taktischen Zeichens]"
+labels: new-symbol
+assignees: jonas-koeritz
+
+---
+
+Dieses Template kann für die Anfrage eines neuen taktischen Zeichens genutzt werden. Für mehrere Zeichen sollten möglichst auch mehrere Issues erstellt werden.
