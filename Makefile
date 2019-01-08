@@ -46,3 +46,6 @@ all: svg png
 
 release: all
 	cd build && zip -r ../Taktische-Zeichen.zip ./*
+
+ci: all
+	cd build && zip -r ../latest.zip ./*

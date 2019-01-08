@@ -5,4 +5,4 @@ before_install:
   - sudo apt-get install -y phantomjs optipng python3-pip
   - sudo pip3 install j2cli
 
-install: make
+install: make ci
