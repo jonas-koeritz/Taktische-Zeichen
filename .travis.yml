@@ -1,0 +1,4 @@
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y phantomjs optipng
+  - sudo pip3 install j2cli
