@@ -48,6 +48,8 @@ Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://gi
 ## Installation mit bower oder npm
 Die Symbole können auch über bower und npm bezogen werden. Das Paket heißt jeweils `taktische-zeichen`.
 
+**Die Aktuelle Version dieses Projektes steht zur Zeit nicht bei bower oder npm zur Verfügung!**
+
 ```
 bower install taktische-zeichen
 ```
