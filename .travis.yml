@@ -1,8 +1,14 @@
 language: generic
-
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y phantomjs optipng python3-pip
-  - sudo pip3 install j2cli
-
+- sudo apt-get update
+- sudo apt-get install -y phantomjs optipng python3-pip
+- sudo pip3 install j2cli
 install: make ci
+deploy:
+  provider: releases
+  api_key:
+    secure: Nb0vtSdP3I3hpo6M4qcKwRsOUDjUkdfKGhWUSakyySxfknhgbrTalCkJ3kjqfDyE42rK5tB43ZVvOzXBGHgfVOSuEPxuLib8ki0Rbj31SvyJa3ng3FjcVjmNPIC5NjfujR0SzBJozDcIF3oTriyjL9Fh3Q1md2n9n5GynXFUB7VyuQVlNL3AgtO/8nxF6mJGvOqj3tQSvUKQHfybIRxQSzq8u/i209tOykrSRjCmF32aAj7T1vpARD+0YbbDfWWrkJhGWF27iyZhhMnTrUb6TxiE/roX4auf8J5OiPSDEJi87FE5jlVAjYWQ2vD2iZsmEi//ZKtSVYeQGNNfFzeG+uCKZEUIPtIbLkUCBOe4BBe+xsn8huBwI5PTFWGBHQhA4py3CkhU2uAbA0X3KOmvLaSEkdmdA57PHv1QQJ4IKL4e6mHdtM/z9Zh0UpKTdMllIE1CELZNC0hGC8+EOZrXkmldedleXBQvTtKg9aP9a3zu0ZiyDYG5D8MiCxMHHVoU2hI7grxBW70x8Rir6YPoiwOCaXoKodrhCYUzHI59ETw13JTy0Zpvd9Sm87RNyrq3bFwBhvcNt41UFRUhV/i+ABsDFbRGMt5pLKDNUHcKYvaqZ9kqu0S0rpwnK4oOm7TJIffLlfcX87LaR7dBlhLTrkZ1ihFld4cvRjh4yD0+wSY=
+  skip_cleanup: true
+  file: latest.zip
+  on:
+    tags: true
