@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen.svg?branch=master)](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen)
+
 # Taktische-Zeichen
 Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
 
