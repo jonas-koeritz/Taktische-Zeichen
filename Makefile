@@ -49,3 +49,8 @@ release: all
 
 ci: all
 	cd build && zip -r ../release.zip ./*
+
+web: all
+	mkdir -p ./web/build
+	cp -r ./build/ ./web/
+	find build/ -name *.svg > ./web/symbols.lst
