@@ -1,48 +1,47 @@
+[![Build Status](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen.svg?branch=master)](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen)
+
 # Taktische-Zeichen
 Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
-
-![Zugführer - THW](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/symbols/THW%20Personen/Zugführer.svg)
-![Löschzug](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/symbols/Feuerwehr%20Einheiten/Löschzug.svg)
-![Leitstelle](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/symbols/Einrichtungen/Leitstelle.svg)
-![Gerettete Person](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/symbols/Personen/Gerettete%20Person.svg)
-![Gefahr durch Explosivstoffe](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/symbols/Gefahren/Gefahr%20durch%20Explosivstoffe.svg)
-![Brückenbau](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/symbols/Maßnahmen/Brückenbau.svg)
 
 ## Fehlende Zeichen
 Fehlende zeichen können als [issue](https://github.com/jonas-koeritz/Taktische-Zeichen/issues) eingereicht werden, Ich erstelle die Symbole dann.
 
 ## Aufbau der Symbole
 Die .SVG Dateien haben die Maße 256x256 Einheiten, Alle Zeichen müssen in diesem Bereich dargestellt werden und mittig ausgerichtet sein.
-Zeichen für Einheiten/Fahrzeuge/Personen etc. müssen untereinander Deckungsgleich sein, hierbei hilft das System aus Templates und `config.json`.
-Um die SVG-Dateien aus den Templates zu erzeugen wird ein Grunt Task verwendet.
+Zeichen für Einheiten/Fahrzeuge/Personen etc. müssen untereinander Deckungsgleich sein.
+Um die SVG-Dateien zu erzeugen werden Jinja2 Templates verwendet. Das beigefügte Makefile kann verwendet werden um alle SVG-Dateien zu erzeugen:
 
 ```
-grunt create-svgs
+make svg
 ```
 
 ## PNG-Dateien
-Die PNG Dateien stehen in den Maßen 128x128, 256x256, 512x512 und 1024x1024 zur Verfügung. Die fertigen PNG Dateien können unter [releases](https://github.com/jonas-koeritz/Taktische-Zeichen/releases) heruntergeladen werden.
-Die Dateien können auch mit dem beiligenenden Skript erstellt werden:
+Die PNG-Dateien stehen in den Maßen 256x256, 512x512 und 1024x1024 zur Verfügung. Die fertigen PNG Dateien können unter [releases](https://github.com/jonas-koeritz/Taktische-Zeichen/releases) heruntergeladen werden.
+Die Dateien können auch mit dem beiligenenden Makefile erstellt werden:
 
 ```
-grunt render-all
+make png
 ```
-Als Voraussetzung für das Skript werden die Programme: [wkhtmltoimage](https://wkhtmltopdf.org/), [Imagemagick Version 7](https://www.imagemagick.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt.
 
-
-## Installation mit bower oder npm
-Die Symbole können auch über bower und npm bezogen werden. Das Paket heißt jeweils `taktische-zeichen`.
+## Vollständiger Build
+Alle SVG- und PNG-Dateien können mit dem beiligenden Makefile in einem Schritt erzeugt werden:
 
 ```
-bower install taktische-zeichen
+make all
 ```
-bzw.
+
+Ein Release-Zip Archiv kann ebenfalls erstellt werden:
+
 ```
-npm install --save taktische-zeichen
+make release
 ```
+
+## Voraussetzungen
+Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
 ## Lizenz
 Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigene Änderungen erweitert werden.
+Die Datei NOTICE muss in jeder Kopie unverändert beibehalten werden.
 Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind, d.h. der Vollständige Inhalt der Datei COPYRIGHT.md muss über die Benutzeroberfläche (bei Anwendungen mit grafischer Benutzeroberfläche) oder im Programmverzeichnis (für Anwendungen ohne grafische Benutzeroberfläche) für jeden Benutzer einsehbar sein.
 Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
 
@@ -53,4 +52,4 @@ Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
 Fehlt ein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
 ## Schriftart
-Die verwendete Schriftart ist "Roboto Slab Bold" lizenziert unter Apache 2.0 Lizenz.
+Die verwendete Schriftart ist "RobotoSlab-Bold" lizenziert unter Apache 2.0 Lizenz.
