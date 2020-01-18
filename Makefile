@@ -1,5 +1,6 @@
 # Alle Jinja2 Templates im Ordner symbols finden
 SOURCES = $(shell find symbols/ -name *.j2)
+TEMPLATE = $(shell find symbols/ -name *.j2t)
 
 # symbols/ prefix entfernen für die Ausgabedateien
 TARGET_PATHS = $(SOURCES:symbols/%=%)
@@ -16,9 +17,9 @@ PNG_256_FILES = $(addprefix build/png/256/,$(PNG_TARGETS))
 # Erstellt alle SVG Ausgabedateien
 svg: $(SVG_FILES)
 
-build/svg/%.svg: symbols/%.j2
+build/svg/%.svg: symbols/%.j2 $(TEMPLATE)
 	mkdir -p $(@D)
-	j2 $^ -o $@
+	j2 $< -o $@
 
 # Erstellt alle PNG Ausgabedateien
 png: $(PNG_1024_FILES) $(PNG_512_FILES) $(PNG_256_FILES)
