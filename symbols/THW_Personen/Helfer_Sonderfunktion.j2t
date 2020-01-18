@@ -1,0 +1,24 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256">
+	<defs>
+		<style type="text/css">
+		{% include './fonts/fonts.j2' %}
+		</style>
+		<clipPath id="person">
+			<path d="M64,128 L128,64 L192,128 L128,192 Z" />
+		</clipPath>
+	</defs>
+	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="5" stroke="#FFFFFF" fill="#003399" />
+	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="12" stroke="#FFFFFF" fill="#003399" clip-path="url(#person)" />
+	<rect x="64" y="64" width="128" height="24" fill="#FFFFFF" clip-path="url(#person)" />
+	<path d="M64,128 L128,64 L192,128 L128,192 Z" stroke-width="2" stroke="#000000" fill="none" />
+{% if size is not defined %}
+{% set size=300 %}
+{% endif %}
+{% if fgr2 is defined %}
+	<text x="128" y="113" style="font-family: 'Roboto Slab'; font-weight: bold; dominant-baseline: central; text-anchor: middle; font-size: {{size}}%;" fill="#FFFFFF">{{ fgr }}</text>
+	<text x="128" y="143" style="font-family: 'Roboto Slab'; font-weight: bold; dominant-baseline: central; text-anchor: middle; font-size: {{size}}%;" fill="#FFFFFF">{{ fgr2 }}</text>
+{% else %}
+	<text x="128" y="128" style="font-family: 'Roboto Slab'; font-weight: bold; dominant-baseline: central; text-anchor: middle; font-size: {{size}}%;" fill="#FFFFFF">{{ fgr }}</text>
+{% endif %}
+</svg>
