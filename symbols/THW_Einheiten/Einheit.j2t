@@ -16,7 +16,7 @@
 {% if unten is defined %}
         <rect x="11" y="166" width="234" height="25" fill="#FFFFFF" />
 {% endif %}
-{% if kreis is defined %}
+{% if kreise is defined %}
 {% if kreise in ('2', '3') %}        
 	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="#000000" />
 {% endif %}        
