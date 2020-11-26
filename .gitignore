@@ -3,3 +3,6 @@ release-*.zip
 Taktische-Zeichen.zip
 web
 test
+node_modules
+package-lock.json
+.DS_Store

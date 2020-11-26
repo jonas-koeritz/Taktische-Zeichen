@@ -39,6 +39,9 @@ build/png/256/%.png: build/svg/%.svg
 	phantomjs rasterize.js $^ $@ 256px*256px 1
 	optipng $@
 
+optimize:
+	npx svgo --config=config.yml -r -f build
+
 clean:
 	rm -rf build
 	rm Taktische-Zeichen.zip
