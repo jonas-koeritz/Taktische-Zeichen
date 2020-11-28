@@ -24,14 +24,14 @@ make svg
 
 ## PNG-Dateien
 Die PNG-Dateien stehen in den Maßen 256x256, 512x512 und 1024x1024 zur Verfügung. Die fertigen PNG Dateien können unter [releases](https://github.com/jonas-koeritz/Taktische-Zeichen/releases) heruntergeladen werden.
-Die Dateien können auch mit dem beiligenenden Makefile erstellt werden:
+Die Dateien können auch mit dem beiliegenenden Makefile erstellt werden:
 
 ```
 make png
 ```
 
 ## Vollständiger Build
-Alle SVG- und PNG-Dateien können mit dem beiligenden Makefile in einem Schritt erzeugt werden:
+Alle SVG- und PNG-Dateien können mit dem beiliegenden Makefile in einem Schritt erzeugt werden:
 
 ```
 make all
