@@ -1,3 +1,3 @@
 Taktische-Zeichen
 
-Copyright 2019 Jonas Köritz
+Copyright 2020 Jonas Köritz
