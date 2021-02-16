@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen.svg?branch=master)](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen)
+[![Build Status](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen.svg?branch=master)](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Taktische-Zeichen
 Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
@@ -47,10 +47,10 @@ make release
 Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
 ## Lizenz
-Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigene Änderungen erweitert werden.
-Die Datei NOTICE muss in jeder Kopie unverändert beibehalten werden.
-Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind, d.h. der Vollständige Inhalt der Datei COPYRIGHT.md muss über die Benutzeroberfläche (bei Anwendungen mit grafischer Benutzeroberfläche) oder im Programmverzeichnis (für Anwendungen ohne grafische Benutzeroberfläche) für jeden Benutzer einsehbar sein.
-Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
+
+[Creative Commons Attribution 4.0 International License][cc-by]
+
+[![CC BY 4.0][cc-by-image]][cc-by]
 
 ## Liste der Projekte die diesen Zeichensatz verwenden
 
@@ -61,3 +61,8 @@ Fehlt dein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder ei
 
 ## Schriftart
 Die verwendete Schriftart ist "RobotoSlab-Bold" lizenziert unter Apache 2.0 Lizenz.
+
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
