@@ -56,6 +56,7 @@ Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://gi
 
 * [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
 * [Taktische Zeichen Vorlagen Generator von Tristan Lins](https://tristanlins.gitlab.io/taktische-zeichen-vorlagen-generator/)
+* [Bibliothek taktische Zeichen](https://github.com/ReneDens/Bibliothek-taktische-Zeichen)
 
 Fehlt dein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
