@@ -46,6 +46,10 @@ make release
 ## Voraussetzungen
 Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
+## Verwendung in QGIS
+
+Der Pfad zu den SVG Dateien wird unter `Einstellungen` -> `Optionen` -> `System` in der Liste `SVG-Pfade` hinzugefügt. Danach stehen die Zeichen als Symbolisierung für den Typ `SVG-Markierung` zur Verfügung.
+
 ## Lizenz
 
 [Creative Commons Attribution 4.0 International License][cc-by]
