@@ -52,9 +52,10 @@ Der Pfad zu den SVG Dateien wird unter `Einstellungen` -> `Optionen` -> `System`
 
 ## Lizenz
 
-[Creative Commons Attribution 4.0 International License][cc-by]
+Code in diesem Repository: [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-[![CC BY 4.0][cc-by-image]][cc-by]
+Die fertigen Zeichen aus den `release.zip` Dateien: [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
+
 
 ## Liste der Projekte die diesen Zeichensatz verwenden
 
