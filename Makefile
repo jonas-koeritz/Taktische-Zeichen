@@ -42,7 +42,7 @@ build/png/256/%.png: build/svg/%.svg
 	mkdir -p $(@D)
 	phantomjs rasterize.js $^ $@ 256px*256px 1
 
-build/sticker/%.png: build/png/1024/%.png
+build/sticker/%.png: build/png/512/%.png
 	mkdir -p $(@D)
 	convert $^ -bordercolor none -background white -alpha background -channel A -blur 20 -level 0,0%% $@
 
