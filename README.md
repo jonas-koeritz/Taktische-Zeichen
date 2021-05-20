@@ -1,14 +1,14 @@
-[![Build Status](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen.svg?branch=master)](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen)
+[![Build Status](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen.svg?branch=master)](https://travis-ci.org/jonas-koeritz/Taktische-Zeichen) [![CC BY 4.0][cc-by-shield]][cc-by]
 
 # Taktische-Zeichen
 Taktische Zeichen für Hilfsorganisationen als Vektorgrafiken.
 
-![Zugführer - THW](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Zugführer.svg)
-![Löschzug](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Löschzug.svg)
-![Leitstelle](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Leitstelle.svg)
-![Gerettete Person](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Gerettete_Person.svg)
-![Gefahr durch Explosivstoffe](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Gefahr_durch_Explosivstoffe.svg)
-![Zugtrupp - THW](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Zugtrupp.svg)
+![Zugführer - THW](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Zugführer.png)
+![Löschzug](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Löschzug.png)
+![Leitstelle](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Leitstelle.png)
+![Gerettete Person](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Gerettete_Person.png)
+![Gefahr durch Explosivstoffe](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Gefahr_durch_Explosivstoffe.png)
+![Zugtrupp - THW](https://rawgit.com/jonas-koeritz/Taktische-Zeichen/master/examples/Zugtrupp.png)
 
 ## Fehlende Zeichen
 Fehlende zeichen können als [issue](https://github.com/jonas-koeritz/Taktische-Zeichen/issues) eingereicht werden, Ich erstelle die Symbole dann.
@@ -46,18 +46,27 @@ make release
 ## Voraussetzungen
 Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
+## Verwendung in QGIS
+
+Der Pfad zu den SVG Dateien wird unter `Einstellungen` -> `Optionen` -> `System` in der Liste `SVG-Pfade` hinzugefügt. Danach stehen die Zeichen als Symbolisierung für den Typ `SVG-Markierung` zur Verfügung.
+
 ## Lizenz
-Die Zeichen können im Rahmen der Apache License 2.0 verwendet werden. Die Datei COPYRIGHT.md darf nur durch Angaben über eigene Änderungen erweitert werden.
-Die Datei NOTICE muss in jeder Kopie unverändert beibehalten werden.
-Die Kommerzielle Nutzung ist gestattet, sofern die Copyright Hinweise für den Benutzer klar ersichtlich sind, d.h. der Vollständige Inhalt der Datei COPYRIGHT.md muss über die Benutzeroberfläche (bei Anwendungen mit grafischer Benutzeroberfläche) oder im Programmverzeichnis (für Anwendungen ohne grafische Benutzeroberfläche) für jeden Benutzer einsehbar sein.
-Der Druck und die Vervielfältigung von Ausdrucken ist ebenfalls gestattet.
+
+Der Code in diesem Repository steht unter [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/), die fertigen Zeichen aus den `release.zip` Dateien sind gemeinfrei [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/).
+
 
 ## Liste der Projekte die diesen Zeichensatz verwenden
 
 * [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
 * [Taktische Zeichen Vorlagen Generator von Tristan Lins](https://tristanlins.gitlab.io/taktische-zeichen-vorlagen-generator/)
+* [Bibliothek taktische Zeichen von @ReneDens](https://github.com/ReneDens/Bibliothek-taktische-Zeichen)
 
 Fehlt dein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
 ## Schriftart
 Die verwendete Schriftart ist "RobotoSlab-Bold" lizenziert unter Apache 2.0 Lizenz.
+
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
