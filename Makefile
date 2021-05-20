@@ -25,22 +25,22 @@ build/svg/%.svg: symbols/%.j2 $(TEMPLATE)
 # Erstellt alle PNG Ausgabedateien
 png: $(PNG_1024_FILES) $(PNG_512_FILES) $(PNG_256_FILES)
 
-optimize: $(PNG_1024_FILES) $(PNG_512_FILES) $(PNG_256_FILES)
-	optipng $^
-
 stickers: $(STICKERS)
 
 build/png/1024/%.png: build/svg/%.svg
 	mkdir -p $(@D)
 	phantomjs rasterize.js $^ $@ 1024px*1024px 4
+	optipng $@
 
 build/png/512/%.png: build/svg/%.svg
 	mkdir -p $(@D)
 	phantomjs rasterize.js $^ $@ 512px*512px 2
+	optipng $@
 
 build/png/256/%.png: build/svg/%.svg
 	mkdir -p $(@D)
 	phantomjs rasterize.js $^ $@ 256px*256px 1
+	optipng $@
 
 build/sticker/%.png: build/png/512/%.png
 	mkdir -p $(@D)
@@ -50,7 +50,7 @@ clean:
 	rm -rf build
 	rm Taktische-Zeichen.zip
 
-all: svg png optimize
+all: svg png
 
 release: all
 	cd build && zip -r ../Taktische-Zeichen.zip ./*
