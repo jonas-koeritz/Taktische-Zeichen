@@ -46,16 +46,20 @@ make release
 ## Voraussetzungen
 Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich.
 
+## Verwendung in QGIS
+
+Der Pfad zu den SVG Dateien wird unter `Einstellungen` -> `Optionen` -> `System` in der Liste `SVG-Pfade` hinzugefügt. Danach stehen die Zeichen als Symbolisierung für den Typ `SVG-Markierung` zur Verfügung.
+
 ## Lizenz
 
-[Creative Commons Attribution 4.0 International License][cc-by]
+Der Code in diesem Repository steht unter [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/), die fertigen Zeichen aus den `release.zip` Dateien sind gemeinfrei [![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/).
 
-[![CC BY 4.0][cc-by-image]][cc-by]
 
 ## Liste der Projekte die diesen Zeichensatz verwenden
 
 * [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
 * [Taktische Zeichen Vorlagen Generator von Tristan Lins](https://tristanlins.gitlab.io/taktische-zeichen-vorlagen-generator/)
+* [Bibliothek taktische Zeichen von @ReneDens](https://github.com/ReneDens/Bibliothek-taktische-Zeichen)
 
 Fehlt dein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
