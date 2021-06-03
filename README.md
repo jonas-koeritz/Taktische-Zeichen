@@ -57,9 +57,10 @@ Der Code in diesem Repository steht unter [![License: CC BY 4.0](https://img.shi
 
 ## Liste der Projekte die diesen Zeichensatz verwenden
 
-* [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
-* [Taktische Zeichen Vorlagen Generator von Tristan Lins](https://tristanlins.gitlab.io/taktische-zeichen-vorlagen-generator/)
 * [Bibliothek taktische Zeichen von @ReneDens](https://github.com/ReneDens/Bibliothek-taktische-Zeichen)
+* [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
+* [LARDIS Live von RTM:IT](https://www.lardis.de)
+* [Taktische Zeichen Vorlagen Generator von Tristan Lins](https://tristanlins.gitlab.io/taktische-zeichen-vorlagen-generator/)
 
 Fehlt dein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
