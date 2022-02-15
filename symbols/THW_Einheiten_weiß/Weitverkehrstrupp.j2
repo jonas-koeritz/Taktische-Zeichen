@@ -1,0 +1,24 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewbox="0 0 256 256">
+	<title>Weitverkehrstrupp</title>
+	<defs>
+		<style type="text/css">
+		{% include './fonts/fonts.j2' %}
+		</style>
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
+		<mask id="ends">
+			<rect width="100%" height="100%" fill="#FFFFFF" />
+			<path d="M50 160 a16 16 0 0 0 0 -32" stroke="#000000" />
+			<path d="M206 160 a16 16 0 0 1 0 -32" stroke="#000000" />
+		</mask>
+	</defs>
+	<rect x="10" y="64" width="236" height="128" fill="#FFFFFF" stroke="#003399" stroke-width="10" clip-path="url(#symbol)" />
+	<rect x="10" y="64" width="236" height="128" fill="none" stroke="#000000" stroke-width="1" />
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 48px;" fill="#FFFFFF" x="128" y="120">WV</text>
+	<path d="M50 160 a16 16 0 0 0 0 -32 M206 160 a16 16 0 0 1 0 -32" stroke="#FFFFFF" stroke-width="5" fill="none" />
+	<path d="M56 132 l24 24 l24 -24 l24 24 l24 -24 l24 24 l24 -24" stroke="#FFFFFF" stroke-width="5" fill="none" mask="url(#ends)" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="#003399" x="236" y="180">THW</text>
+</svg>
