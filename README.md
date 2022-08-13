@@ -44,7 +44,7 @@ make release
 ```
 
 ## Voraussetzungen
-Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli), [PhantomJS](http://phantomjs.org/), und [optipng](http://optipng.sourceforge.net/) im Systempfad vorausgesetzt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich. (Die version von PhantomJS in den ubuntu repositories funktioniert nicht, daher sollte man in dem Fall PhantomJS von der Webseite installieren.)
+Als Voraussetzung für den Buildvorgang werden die Programme: [j2cli](https://github.com/kolypto/j2cli) und [rsvg-convert](https://gitlab.gnome.org/GNOME/librsvg) im Systempfad vorausgesetzt. Zusätzlich wird die Schriftart [roboto-slab](https://github.com/googlefonts/robotoslab) als installierte Schriftart benötigt. Zum erstellen der SVG-Dateien ist nur j2cli erforderlich. (Die version von PhantomJS in den ubuntu repositories funktioniert nicht, daher sollte man in dem Fall PhantomJS von der Webseite installieren.)
 
 ## Verwendung in QGIS
 

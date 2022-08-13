@@ -29,18 +29,15 @@ stickers: $(STICKERS)
 
 build/png/1024/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	phantomjs rasterize.js $^ $@ 1024px*1024px 4
-	optipng $@
+	rsvg-convert -f png -w 1024 -h 1024 -o "$@" "$^"
 
 build/png/512/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	phantomjs rasterize.js $^ $@ 512px*512px 2
-	optipng $@
+	rsvg-convert -f png -w 512 -h 512 -o "$@" "$^"
 
 build/png/256/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	phantomjs rasterize.js $^ $@ 256px*256px 1
-	optipng $@
+	rsvg-convert -f png -w 256 -h 256 -o "$@" "$^"
 
 build/sticker/%.png: build/png/512/%.png
 	mkdir -p $(@D)
