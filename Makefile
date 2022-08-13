@@ -50,9 +50,11 @@ clean:
 all: svg png
 
 release: all
+	cp LICENSE build/
 	cd build && zip -r ../Taktische-Zeichen.zip ./*
 
 ci: all
+	cp LICENSE build/
 	cd build && zip -r ../release.zip ./*
 
 web: all
