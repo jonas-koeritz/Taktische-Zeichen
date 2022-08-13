@@ -1,0 +1,30 @@
+name: "tagged-release"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: |
+        sudo pip install j2cli
+        sudo apt-get install librsvg2-bin fonts-roboto-slab
+
+    - name: Build release package
+      run: make release
+
+    - uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        draft: false
+        files: |
+          LICENSE
+          Taktische-Zeichen.zip
