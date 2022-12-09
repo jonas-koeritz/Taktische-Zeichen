@@ -29,17 +29,17 @@ stickers: $(STICKERS)
 
 build/png/1024/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	phantomjs rasterize.js $^ $@ 1024px*1024px 4
+	inkscape -w 1024 -h 1024 $^ -o $@
 	optipng $@
 
 build/png/512/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	phantomjs rasterize.js $^ $@ 512px*512px 2
+	inkscape -w 512 -h 512 $^ -o $@
 	optipng $@
 
 build/png/256/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	phantomjs rasterize.js $^ $@ 256px*256px 1
+	inkscape -w 256 -h 256 $^ -o $@
 	optipng $@
 
 build/sticker/%.png: build/png/512/%.png
