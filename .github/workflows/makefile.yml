@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Install dependencies (Packages)
-      run: sudo apt-get update && sudo apt-get install -y phantomjs optipng python3-pip
+      run: sudo apt-get update && sudo apt-get install -y inkscape optipng python3-pip
       
     - name: Install dependencies (Python)
       run: sudo pip3 install j2cli
