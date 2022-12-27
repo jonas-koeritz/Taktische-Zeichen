@@ -61,6 +61,7 @@ Der Code in diesem Repository steht unter [![License: CC BY 4.0](https://img.shi
 * [draw.io Shapes von Martin Böhmer](https://github.com/MartinBoehmer/Taktische-Zeichen-drawio)
 * [LARDIS:LIVE von RTM:IT](https://www.lardis.de)
 * [Taktische Zeichen Vorlagen Generator von Tristan Lins](https://tristanlins.gitlab.io/taktische-zeichen-vorlagen-generator/)
+* [Java Module mit taktische Zeichen von Luke Ian Turner](https://github.com/liturner/Taktische-Zeichen-Java)
 
 Fehlt dein Projekt auf der Liste? Bitte direkt mit mir Kontakt aufnehmen oder eine Änderung an dieser Datei per Pull-Request einsenden.
 
