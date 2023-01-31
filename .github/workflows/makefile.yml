@@ -1,0 +1,36 @@
+name: Continious Integration
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install dependencies (Packages)
+      run: sudo apt-get update && sudo apt-get install -y inkscape optipng python3-pip fonts-roboto-slab
+      
+    - name: Install dependencies (Python)
+      run: sudo pip3 install j2cli
+
+    - name: Create SVGs
+      run: make svg
+
+    - name: Create PNGs
+      run: make png
+    
+    - name: Create Package
+      run: make ci
+    
+    - name: Create Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: release-zip
+        path: release.zip
