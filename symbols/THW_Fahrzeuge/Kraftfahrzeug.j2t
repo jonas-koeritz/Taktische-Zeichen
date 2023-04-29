@@ -1,0 +1,5 @@
+{% extends "templates/fahrzeug.j2t" %}
+{% block shadow-color %}#000000{% endblock shadow-color %}
+{% block outline-color %}#FFFFFF{% endblock outline-color %}
+{% block base-color %}#003399{% endblock base-color %}
+

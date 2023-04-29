@@ -1,0 +1,24 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewbox="0 0 256 256">
+	<title>{% block title%}Feuerwehrgerätehaus{% endblock %}</title>
+	{% block def%}
+	<defs>
+		{% block style%}
+		<style type="text/css">
+		{% include './fonts/fonts.j2' %}
+		</style>
+		{% endblock %}
+		<clipPath id="symbol">
+			<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64 Z" />
+		</clipPath>
+	</defs>
+	{% endblock %}
+	{% block symbol %}
+	<rect x="10" y="64" width="236" height="128" fill="#FF0000" stroke="#FFFFFF" stroke-width="10" clip-path="url(#symbol)" />
+	<path d="M10 64 L128 16 L246 64" stroke="#FFFFFF" stroke-width="10" fill="#FF0000" clip-path="url(#symbol)" />
+	<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64" stroke="#000000" stroke-width="1" fill="none" />
+	{% endblock %}
+	{% block text %}
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 80px;" fill="#FFFFFF" x="128" y="155">Fw</text>
+	{% endblock %}
+</svg>
