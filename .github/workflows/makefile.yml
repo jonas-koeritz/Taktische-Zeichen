@@ -25,6 +25,12 @@ jobs:
 
     - name: Create PNGs
       run: make png
+
+    - name: Create Print-SVGs
+      run: make print
+
+    - name: Create Print-PNGs
+      run: make png_print
     
     - name: Create Package
       run: make ci
