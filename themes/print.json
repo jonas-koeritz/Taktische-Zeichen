@@ -1,0 +1,17 @@
+{
+    "thw": {
+        "colorPrimary": "#FFFFFF",
+        "colorSecondary": "#003399",
+        "colorStroke": "#003399"
+    },
+    "feuerwehr": {
+        "colorPrimary": "#FFFFFF",
+        "colorSecondary": "#FF0000",
+        "colorStroke": "#FF0000"
+    },
+    "bundeswehr": {
+        "colorPrimary": "#FFFFFF",
+        "colorSecondary": "#996633",
+        "colorStroke": "#996633"
+    }
+}
