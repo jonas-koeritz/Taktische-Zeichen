@@ -9,8 +9,7 @@ install_dependencies-job:
   stage: install_dependencies
   script:
     - apt-get update
-    - apt-get install -y inkscape optipng python3-pip fonts-roboto-slab --no-install-recommends
-    - pip3 install j2cli
+    - apt-get install -y inkscape optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
 
 build-job:
   stage: build
