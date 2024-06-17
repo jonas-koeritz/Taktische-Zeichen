@@ -1,27 +1,17 @@
 image: ubuntu
 
 stages:
-  - install_dependencies
   - build
-  - package
 
-install_dependencies-job: 
-  stage: install_dependencies
+build:
+  stage: build
   script:
     - apt-get update
     - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
-
-build-job:
-  stage: build
-  script:
     - make svg
     - make print
     - make png
     - make png_print
-
-package-job:
-  stage: package
-  script:
     - make ci
   artifacts:
     paths:
