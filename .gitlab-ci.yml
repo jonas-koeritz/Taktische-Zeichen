@@ -1,17 +1,65 @@
 image: ubuntu
 
 stages:
-  - build
+  - build-svg
+  - build-png
+  - pack
 
-build:
-  stage: build
+build-svg:
+  stage: build-svg
+  cache:
+    key: build-cache-$CI_COMMIT_REF_SLUG
+    paths:
+      - build/svg/**
+      - build/print/svg/**
+      - build/png/**
+      - build/print/png/**
   script:
     - apt-get update
     - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
     - make svg
     - make print
+
+build-png:
+  stage: build-png
+  cache:
+    key: build-cache-$CI_COMMIT_REF_SLUG
+    paths:
+      - build/svg/**
+      - build/print/svg/**
+      - build/png/**
+      - build/print/png/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
     - make png
+
+build-png-print:
+  stage: build-png
+  cache:
+    key: build-cache-$CI_COMMIT_REF_SLUG
+    paths:
+      - build/svg/**
+      - build/print/svg/**
+      - build/png/**
+      - build/print/png/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
     - make png_print
+
+pack:
+  stage: pack
+  cache:
+    key: build-cache-$CI_COMMIT_REF_SLUG
+    paths:
+      - build/svg/**
+      - build/print/svg/**
+      - build/png/**
+      - build/print/png/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
     - make ci
   artifacts:
     paths:
