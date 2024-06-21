@@ -21,19 +21,19 @@ jobs:
       run: sudo pip3 install j2cli
 
     - name: Create SVGs
-      run: make svg
+      run: make -j8 svg
 
     - name: Create PNGs
-      run: make png
+      run: make -j8 png
 
     - name: Create Print-SVGs
-      run: make print
+      run: make -j8 print
 
     - name: Create Print-PNGs
-      run: make png_print
+      run: make -j8 png_print
     
     - name: Create Package
-      run: make ci
+      run: make -j8 ci
     
     - name: Create Artifact
       uses: actions/upload-artifact@v3
