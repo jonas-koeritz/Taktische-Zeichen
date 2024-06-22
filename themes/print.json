@@ -13,5 +13,10 @@
         "colorPrimary": "#FFFFFF",
         "colorSecondary": "#996633",
         "colorStroke": "#996633"
+    },
+    "kommunal": {
+        "colorPrimary": "#FFFFFF",
+        "colorSecondary": "#E26E0E",
+        "colorStroke": "#E26E0E"
     }
 }
