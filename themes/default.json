@@ -14,9 +14,24 @@
         "colorSecondary": "#FFFFFF",
         "colorStroke": "#000000"
     },
+    "katastrophenschutz": {
+        "colorPrimary": "#DF6711",
+        "colorSecondary": "#000000",
+        "colorStroke": "#000000"
+    },
     "kommunal": {
         "colorPrimary": "#E26E0E",
         "colorSecondary": "#000000",
+        "colorStroke": "#000000"
+    },
+    "polizei": {
+        "colorPrimary": "#13A538",
+        "colorSecondary": "#FFFFFF",
+        "colorStroke": "#000000"
+    },
+    "zoll": {
+        "colorPrimary": "#13A538",
+        "colorSecondary": "#FFFFFF",
         "colorStroke": "#000000"
     }
 }
