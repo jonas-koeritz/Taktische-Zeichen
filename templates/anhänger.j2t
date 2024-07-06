@@ -1,6 +1,0 @@
-{% extends "templates/fahrzeug.j2t" %}
-{% block symbol %}
-	{{ super () }}
-	<rect x="0" y="120" width="10" height="16" fill="{{ ShadowColor }}" />
-	<rect x="1" y="121" width="10" height="14" fill="{{ OutlineColor }}" />
-{% endblock symbol %}
