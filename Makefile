@@ -1,6 +1,6 @@
 # Alle Jinja2 Templates im Ordner symbols finden
 SOURCES = $(shell find symbols/ -name *.j2)
-TEMPLATE = $(shell find symbols/ -name *.j2t)
+#TEMPLATE = $(shell find symbols/ -name *.j2t)
 
 # symbols/ prefix entfernen für die Ausgabedateien
 TARGET_PATHS = $(SOURCES:symbols/%=%)
@@ -23,7 +23,8 @@ STICKERS = $(addprefix build/sticker/,$(PNG_TARGETS))
 svg: $(SVG_FILES)
 print: $(SVG_PRINT_FILES)
 
-build/svg/%.svg: symbols/%.j2 $(TEMPLATE)
+build/svg/%.svg: symbols/%.j2 
+#$(TEMPLATE)
 	mkdir -p $(@D)
 	j2 $< themes/default.json -o $@
 
