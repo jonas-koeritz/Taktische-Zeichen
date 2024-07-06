@@ -6,6 +6,7 @@
 		{% include './fonts/fonts.j2' %}
 		</style>
 	</defs>
+<<<<<<< HEAD
 	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="#000000" stroke="none" />
 	<path d="M11,65 L11,191 L245,191 L245,65 Q128,101 11,65 Z" fill="#FFFFFF" stroke="none"/>
 	<path d="M16,72 L16,186 L240,186 L240,72 Q128,106 16,72 Z" fill="#996633" stroke="none"/>
@@ -14,3 +15,12 @@
 	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="#000000" fill="none" stroke-width="5" />
 	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="#FFFFFF" x="236" y="180">BW</text>
 </svg>
+=======
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ bundeswehr.colorPrimary }}" stroke-width="10" stroke="{{ bundeswehr.colorSecondary }}" clip-path="url(#symbol)" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="{{ bundeswehr.colorStroke }}" />
+	<ellipse cx="40" cy="210" rx="10" ry="10" stroke="{{ bundeswehr.colorStroke }}" fill="none" stroke-width="5" />
+	<ellipse cx="128" cy="210" rx="10" ry="10" stroke="{{ bundeswehr.colorStroke }}" fill="none" stroke-width="5" />
+	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ bundeswehr.colorStroke }}" fill="none" stroke-width="5" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="{{ bundeswehr.colorSecondary }}" x="236" y="180">BW</text>
+</svg>
+>>>>>>> master

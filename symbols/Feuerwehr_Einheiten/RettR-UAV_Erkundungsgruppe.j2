@@ -1,6 +1,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewbox="0 0 256 256">
 	<title>RettR/UAV Erkundungsgruppe</title>
+<<<<<<< HEAD
 	<rect x="10" y="64" width="236" height="128" fill="#000000" stroke="none" />
 	<rect x="11" y="65" width="234" height="126" fill="#FFFFFF" stroke="none" />
 	<rect x="16" y="70" width="224" height="116" fill="#FF0000" stroke="none" />
@@ -8,4 +9,18 @@
 	<ellipse cx="64"  cy="48" rx="10" ry="10" fill="#000000" />
 	<ellipse cx="192" cy="48" rx="10" ry="10" fill="#000000" />
 	<path 	d="M204.61,110.63a11.82,11.82,0,0,1-6.15,8.73L131.39,155a7.33,7.33,0,0,1-6.9,0L57.42,119.36a11.89,11.89,0,0,1-6.14-8.73l-1.07-7.38a1.11,1.11,0,0,1,1.44-1.2L127.94,128l76.31-25.91a1.1,1.1,0,0,1,1.44,1.2Z" style="fill: #fff"/>
+=======
+  <defs>
+		<clipPath id="symbol">
+			<rect x="10" y="64" width="236" height="128" />
+		</clipPath>
+	</defs>
+  <rect x="10" y="64" width="236" height="128" stroke="{{ feuerwehr.colorSecondary }}" stroke-width="10" fill="{{ feuerwehr.colorPrimary }}" clip-path="url(#symbol)" />
+  <path d="M10,192 l236,-128" stroke-width="5" stroke="{{ feuerwehr.colorSecondary }}" fill="none" clip-path="url(#symbol)" />
+  <rect x="10" y="64" width="236" height="128" stroke="{{ feuerwehr.colorStroke }}" stroke-width="1" fill="none" />
+
+  <ellipse cx="64"  cy="48" rx="10" ry="10" fill="{{ feuerwehr.colorStroke }}" />
+  <ellipse cx="192" cy="48" rx="10" ry="10" fill="{{ feuerwehr.colorStroke }}" />
+  <path d="M204.61,110.63a11.82,11.82,0,0,1-6.15,8.73L131.39,155a7.33,7.33,0,0,1-6.9,0L57.42,119.36a11.89,11.89,0,0,1-6.14-8.73l-1.07-7.38a1.11,1.11,0,0,1,1.44-1.2L127.94,128l76.31-25.91a1.1,1.1,0,0,1,1.44,1.2Z" style="fill: {{ feuerwehr.colorSecondary }}"/>
+>>>>>>> master
 </svg>

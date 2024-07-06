@@ -1,0 +1,71 @@
+image: ubuntu
+
+stages:
+  - build
+  - pack
+
+build-svg:
+  stage: build
+  cache:
+    key: svg-$CI_COMMIT_SHA
+    paths:
+      - build/svg/**
+      - build/print/svg/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
+    - make -j8 svg
+    - make -j8 print
+
+build-png:
+  stage: build
+  needs: ["build-svg"]
+  cache:
+    - key: svg-$CI_COMMIT_SHA
+      paths:
+        - build/svg/**
+        - build/print/svg/**
+    - key: png-$CI_COMMIT_SHA
+      paths:
+        - build/png/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
+    - make -j8 png
+
+build-png-print:
+  stage: build
+  needs: ["build-svg"]
+  cache:
+    - key: svg-$CI_COMMIT_SHA
+      paths:
+        - build/svg/**
+        - build/print/svg/**
+    - key: png-print-$CI_COMMIT_SHA
+      paths:
+        - build/print/png/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
+    - make -j8 png_print
+
+pack:
+  stage: pack
+  cache:
+    - key: svg-$CI_COMMIT_SHA
+      paths:
+        - build/svg/**
+        - build/print/svg/**
+    - key: png-$CI_COMMIT_SHA
+      paths:
+        - build/png/**
+    - key: png-print-$CI_COMMIT_SHA
+      paths:
+        - build/print/png/**
+  script:
+    - apt-get update
+    - apt-get install -y inkscape make optipng python3-pip fonts-roboto-slab j2cli --no-install-recommends
+    - make -j8 ci
+  artifacts:
+    paths:
+      - release.zip

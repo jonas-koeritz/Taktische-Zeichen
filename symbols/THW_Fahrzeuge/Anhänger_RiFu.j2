@@ -6,6 +6,7 @@
 		{% include './fonts/fonts.j2' %}
 		</style>
 	</defs>
+<<<<<<< HEAD
 	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="#000000" stroke="none" />
 	<path d="M11,65 L11,191 L245,191 L245,65 Q128,101 11,65 Z" fill="#FFFFFF" stroke="none"/>
 	<path d="M16,72 L16,186 L240,186 L240,72 Q128,106 16,72 Z" fill="#003399" stroke="none"/>
@@ -14,3 +15,12 @@
 	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 48px; " fill="#FFFFFF" x="128" y="145">RiFu</text>
 	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="#FFFFFF" x="236" y="180">THW</text>
 </svg>
+=======
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ thw.colorPrimary }}" stroke-width="10" stroke="{{ thw.colorSecondary }}" clip-path="url(#symbol)" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="{{ thw.colorStroke }}" />
+	<rect x="0" y="121.5" width="11" height="15" fill="{{ thw.colorSecondary }}" />
+	<path d="M10,121 L10,121.5 L0,121.5 M0,136.5 L10,136.5 L10,137" stroke="{{ thw.colorStroke }}" stroke-width="1" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 48px; " fill="{{  thw.colorSecondary }}" x="128" y="145">RiFu</text>
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="{{ thw.colorSecondary }}" x="236" y="180">THW</text>
+</svg>
+>>>>>>> master

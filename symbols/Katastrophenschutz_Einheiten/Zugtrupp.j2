@@ -6,6 +6,7 @@
 		{% include './fonts/fonts.j2' %}
 		</style>
 	</defs>
+<<<<<<< HEAD
 	<rect x="10" y="64" width="236" height="128" stroke="none" fill="#000000" />
 	<rect x="15" y="69" width="226" height="118" stroke="none" fill="#DF6711" />
 	<ellipse cx="128" cy="48" rx="10" ry="10" fill="#000000" />
@@ -14,3 +15,12 @@
 	<ellipse cx="192" cy="86" rx="10" ry="10" fill="#000000" />
 	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="#000000" x="236" y="180">IuK</text>
 </svg>
+=======
+	<rect x="10" y="64" width="236" height="128" fill="{{ katastrophenschutz.colorPrimary }}" stroke="{{ katastrophenschutz.colorStroke }}" stroke-width="10" clip-path="url(#symbol)" />
+	<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ katastrophenschutz.colorStroke }}" />
+	<ellipse cx="64"  cy="86" rx="10" ry="10" fill="{{ katastrophenschutz.colorStroke }}" />
+	<ellipse cx="128" cy="86" rx="10" ry="10" fill="{{ katastrophenschutz.colorStroke }}" />
+	<ellipse cx="192" cy="86" rx="10" ry="10" fill="{{ katastrophenschutz.colorStroke }}" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end;" fill="{{ katastrophenschutz.colorStroke }}" x="236" y="180">IuK</text>
+</svg>
+>>>>>>> master
