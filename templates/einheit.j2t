@@ -1,0 +1,6 @@
+{% extends "templates/base.j2t" %}
+{% block symbol %}
+	<rect x="9" y="63" width="238" height="130" fill="{{ ShadowColor }}" stroke="none" />
+	<rect x="10" y="64" width="236" height="128" fill="{{ OutlineColor }}" stroke="none" />
+	<rect x="16" y="70" width="224" height="116" fill="{{ BaseColor }}" stroke="none" />
+{% endblock symbol %}
