@@ -1,0 +1,7 @@
+{% extends "templates/base.j2t" %}
+{% block symbol %}
+	<path d="M9 63 l0 130 l238 0 l0 -130 l-119 -47 Z" fill="{{ ShadowColor }}" stroke="none" />
+	<path d="M10 64 l0 128 l236 0 l0 -128.5 l-118 -46.5 l-118 46.5 Z" fill="{{ OutlineColor }}" stroke="none" />
+	<rect x="16" y="70" width="224" height="116" fill="{{ BaseColor }}" stroke="none" />
+	<path d="M26 64 L128 25 L230 64" stroke="none" fill="{{ BaseColor }}" />
+{% endblock symbol %}
