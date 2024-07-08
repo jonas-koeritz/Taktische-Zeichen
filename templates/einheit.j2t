@@ -1,7 +1,16 @@
 {% extends "templates/base.j2t" %}
 	{% if UnitSize is undefined %}
 		{% set UnitSize = False %}
+	{% endif %}
+	{% if Zugtrupp is undefined %}
+		{% set Zugtrupp = False %}
 	{% endif %}	
+	{% if Logistik is undefined %}
+		{% set Logistik = False %}
+	{% endif %}	
+	{% if Fuehrung is undefined %}
+		{% set Fuehrung = False %}
+	{% endif %}		
 	{% if Org == "thw" %}
 		{% set ShadowColor = thw.colorStroke %} 
 		{% set OutlineColor = thw.colorSecondary %} 
@@ -38,7 +47,13 @@
 {%- block symbol -%}
 	<rect x="9" y="63" width="238" height="130" fill="{{ ShadowColor }}" stroke="none" />
 	<rect x="10" y="64" width="236" height="128" fill="{{ OutlineColor }}" stroke="none" />
-	<rect x="16" y="70" width="224" height="116" fill="{{ BaseColor }}" stroke="none" />
+	{%- if Logistik == True -%}
+		<rect x="16" y="70" width="224" height="96" fill="{{ BaseColor }}" stroke="none" />
+	{%- elif Fuehrung == True -%}
+		<rect x="16" y="90" width="224" height="96" fill="{{ BaseColor }}" stroke="none" />
+	{%- else -%}
+		<rect x="16" y="70" width="224" height="116" fill="{{ BaseColor }}" stroke="none" />
+	{%- endif -%}
 	{%- if UnitSize == "Trupp" -%}
 		<ellipse cx="128" cy="48" rx="10" ry="10" fill="{{ ShadowColor }}" stroke="none" />	
 	{%- elif UnitSize == "Gruppe" -%}
@@ -60,5 +75,10 @@
 		<rect x="103" y="28" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
 		<rect x="123" y="28" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
 		<rect x="143" y="28" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
+	{%- endif -%}
+	{%- if Zugtrupp == True -%}
+		<ellipse cx="64"  cy="86" rx="10" ry="10" fill="{{ OutlineColor }}" />
+		<ellipse cx="128" cy="86" rx="10" ry="10" fill="{{ OutlineColor }}" />
+		<ellipse cx="192" cy="86" rx="10" ry="10" fill="{{ OutlineColor }}" />
 	{%- endif -%}
 {%- endblock symbol -%}
