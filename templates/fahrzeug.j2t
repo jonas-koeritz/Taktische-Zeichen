@@ -1,6 +1,7 @@
 {% extends "templates/base.j2t" %}
-{% set Org = "undefined" if Org is undefined %}
-{% set VehicleType = False if VehicleType is undefined %}
+	{% if VehicleType is undefined %}
+		{% set VehicleType = "undefined" %}
+	{% endif %}	
 	{% if Org == "thw" %}
 		{% set ShadowColor = thw.colorStroke %} 
 		{% set OutlineColor = thw.colorSecondary %} 
