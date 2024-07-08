@@ -4,31 +4,31 @@
 		{% set ShadowColor = thw.colorStroke %} 
 		{% set OutlineColor = thw.colorSecondary %} 
 		{% set BaseColor = thw.colorPrimary %} 	
-	{% elif Org == "feuerwehr"%}
+	{% elif Org == "feuerwehr" %}
 		{% set ShadowColor = feuerwehr.colorStroke %} 
 		{% set OutlineColor = feuerwehr.colorSecondary %} 
 		{% set BaseColor = feuerwehr.colorPrimary %} 	
-	{% elif Org == "bundeswehr"%}
+	{% elif Org == "bundeswehr" %}
 		{% set ShadowColor = bundeswehr.colorStroke %} 
 		{% set OutlineColor = bundeswehr.colorSecondary %} 
 		{% set BaseColor = bundeswehr.colorPrimary %} 	
-	{% elif Org == "katastrophenschutz"%}
+	{% elif Org == "katastrophenschutz" %}
 		{% set ShadowColor = katastrophenschutz.colorStroke %} 
 		{% set OutlineColor = katastrophenschutz.colorSecondary %} 
 		{% set BaseColor = katastrophenschutz.colorPrimary %} 	
-	{% elif Org == "kommunal"%}
+	{% elif Org == "kommunal" %}
 		{% set ShadowColor = kommunal.colorStroke %} 
 		{% set OutlineColor = kommunal.colorSecondary %} 
 		{% set BaseColor = kommunal.colorPrimary %} 	
-	{% elif Org == "polizei"%}
+	{% elif Org == "polizei" %}
 		{% set ShadowColor = polizei.colorStroke %} 
 		{% set OutlineColor = polizei.colorSecondary %} 
 		{% set BaseColor = polizei.colorPrimary %} 	
-	{% elif Org == "zoll"%}
+	{% elif Org == "zoll" %}
 		{% set ShadowColor = zoll.colorStroke %} 
 		{% set OutlineColor = zoll.colorSecondary %} 
 		{% set BaseColor = zoll.colorPrimary %} 
-	{% elif Org == "undefined"%}
+	{% else %}
 		{% set ShadowColor = undefined.colorStroke %} 
 		{% set OutlineColor = undefined.colorSecondary %} 
 		{% set BaseColor = undefined.colorPrimary %} 
