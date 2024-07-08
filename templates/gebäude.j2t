@@ -1,7 +1,41 @@
 {% extends "templates/base.j2t" %}
-{% block symbol %}
+{% set Org = "undefined" if Org is undefined %}
+	{% if Org == "thw" %}
+		{% set ShadowColor = thw.colorStroke %} 
+		{% set OutlineColor = thw.colorSecondary %} 
+		{% set BaseColor = thw.colorPrimary %} 	
+	{% elif Org == "feuerwehr"%}
+		{% set ShadowColor = feuerwehr.colorStroke %} 
+		{% set OutlineColor = feuerwehr.colorSecondary %} 
+		{% set BaseColor = feuerwehr.colorPrimary %} 	
+	{% elif Org == "bundeswehr"%}
+		{% set ShadowColor = bundeswehr.colorStroke %} 
+		{% set OutlineColor = bundeswehr.colorSecondary %} 
+		{% set BaseColor = bundeswehr.colorPrimary %} 	
+	{% elif Org == "katastrophenschutz"%}
+		{% set ShadowColor = katastrophenschutz.colorStroke %} 
+		{% set OutlineColor = katastrophenschutz.colorSecondary %} 
+		{% set BaseColor = katastrophenschutz.colorPrimary %} 	
+	{% elif Org == "kommunal"%}
+		{% set ShadowColor = kommunal.colorStroke %} 
+		{% set OutlineColor = kommunal.colorSecondary %} 
+		{% set BaseColor = kommunal.colorPrimary %} 	
+	{% elif Org == "polizei"%}
+		{% set ShadowColor = polizei.colorStroke %} 
+		{% set OutlineColor = polizei.colorSecondary %} 
+		{% set BaseColor = polizei.colorPrimary %} 	
+	{% elif Org == "zoll"%}
+		{% set ShadowColor = zoll.colorStroke %} 
+		{% set OutlineColor = zoll.colorSecondary %} 
+		{% set BaseColor = zoll.colorPrimary %} 
+	{% elif Org == "undefined"%}
+		{% set ShadowColor = undefined.colorStroke %} 
+		{% set OutlineColor = undefined.colorSecondary %} 
+		{% set BaseColor = undefined.colorPrimary %} 
+	{% endif %}	
+{%- block symbol -%}
 	<path d="M9 63 l0 130 l238 0 l0 -130 l-119 -47 Z" fill="{{ ShadowColor }}" stroke="none" />
 	<path d="M10 64 l0 128 l236 0 l0 -128.5 l-118 -46.5 l-118 46.5 Z" fill="{{ OutlineColor }}" stroke="none" />
 	<rect x="16" y="70" width="224" height="116" fill="{{ BaseColor }}" stroke="none" />
 	<path d="M26 64 L128 25 L230 64" stroke="none" fill="{{ BaseColor }}" />
-{% endblock symbol %}
+{%- endblock symbol -%}

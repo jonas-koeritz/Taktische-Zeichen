@@ -1,30 +1,65 @@
 {% extends "templates/base.j2t" %}
-{% block symbol %}
-	{% if VehicleType == "Anhänger" %}
+{% set Org = "undefined" if Org is undefined %}
+{% set VehicleType = False if VehicleType is undefined %}
+	{% if Org == "thw" %}
+		{% set ShadowColor = thw.colorStroke %} 
+		{% set OutlineColor = thw.colorSecondary %} 
+		{% set BaseColor = thw.colorPrimary %} 	
+	{% elif Org == "feuerwehr"%}
+		{% set ShadowColor = feuerwehr.colorStroke %} 
+		{% set OutlineColor = feuerwehr.colorSecondary %} 
+		{% set BaseColor = feuerwehr.colorPrimary %} 	
+	{% elif Org == "bundeswehr"%}
+		{% set ShadowColor = bundeswehr.colorStroke %} 
+		{% set OutlineColor = bundeswehr.colorSecondary %} 
+		{% set BaseColor = bundeswehr.colorPrimary %} 	
+	{% elif Org == "katastrophenschutz"%}
+		{% set ShadowColor = katastrophenschutz.colorStroke %} 
+		{% set OutlineColor = katastrophenschutz.colorSecondary %} 
+		{% set BaseColor = katastrophenschutz.colorPrimary %} 	
+	{% elif Org == "kommunal"%}
+		{% set ShadowColor = kommunal.colorStroke %} 
+		{% set OutlineColor = kommunal.colorSecondary %} 
+		{% set BaseColor = kommunal.colorPrimary %} 	
+	{% elif Org == "polizei"%}
+		{% set ShadowColor = polizei.colorStroke %} 
+		{% set OutlineColor = polizei.colorSecondary %} 
+		{% set BaseColor = polizei.colorPrimary %} 	
+	{% elif Org == "zoll"%}
+		{% set ShadowColor = zoll.colorStroke %} 
+		{% set OutlineColor = zoll.colorSecondary %} 
+		{% set BaseColor = zoll.colorPrimary %} 
+	{% elif Org == "undefined"%}
+		{% set ShadowColor = undefined.colorStroke %} 
+		{% set OutlineColor = undefined.colorSecondary %} 
+		{% set BaseColor = undefined.colorPrimary %} 
+	{% endif %}	
+{%- block symbol -%}
+	{%- if VehicleType == "Anhänger" -%}
 	<rect x="0" y="120" width="10" height="16" fill="{{ ShadowColor }}" />
 	<rect x="1" y="121" width="10" height="14" fill="{{ OutlineColor }}" />
-	{% elif VehicleType == "Kette" %}	
+	{%- elif VehicleType == "Kette" -%}	
 	<path d="M24,200 l208,0 a10,10 180 0 1 0,20 l-208,0 a10,10 180 0 1 0,-20 Z" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
-	{% elif VehicleType == "Kraft" %}	
+	{%- elif VehicleType == "Kraft" -%}	
 	<ellipse cx="40" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
-	{% elif VehicleType == "Gelände" %}	
+	{%- elif VehicleType == "Gelände" -%}	
 	<ellipse cx="40" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="128" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
-	{% elif VehicleType == "Container" %}	
+	{%- elif VehicleType == "Container" -%}	
 	<ellipse cx="8" cy="80" rx="5" ry="5" stroke="{{ ShadowColor }}" fill="none" stroke-width="4" />
-	{% elif VehicleType == "Wechsel" %}	
+	{%- elif VehicleType == "Wechsel" -%}	
 	<path d="M5,63 l0,134 l242,0" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="40" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
-	{% elif VehicleType == "Wechsel Gelände" %}	
+	{%- elif VehicleType == "Wechsel Gelände" -%}	
 	<path d="M5,63 l0,134 l242,0" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="40" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="128" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
-	{% endif %}	
+	{%- endif -%}	
 	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ ShadowColor }}" stroke="none" />
 	<path d="M11,65 L11,191 L245,191 L245,65 Q128,101 11,65 Z" fill="{{ OutlineColor }}" stroke="none" />
 	<path d="M16,72 L16,186 L240,186 L240,72 Q128,106 16,72 Z" fill="{{ BaseColor }}" stroke="none" />
-{% endblock symbol %}
+{%- endblock symbol -%}
