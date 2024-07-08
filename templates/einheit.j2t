@@ -1,5 +1,5 @@
 {% extends "templates/base.j2t" %}
-	{%%} if UnitSize is undefined %}
+	{% if UnitSize is undefined %}
 		{% set UnitSize = False %}
 	{% endif %}	
 	{% if Org == "thw" %}
