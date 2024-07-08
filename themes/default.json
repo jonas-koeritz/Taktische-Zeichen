@@ -33,5 +33,10 @@
         "colorPrimary": "#13A538",
         "colorSecondary": "#FFFFFF",
         "colorStroke": "#000000"
+    },
+    "undefined": {
+        "colorPrimary": "#FFFFFF",
+        "colorSecondary": "#000000",
+        "colorStroke": "#000000"
     }
 }
