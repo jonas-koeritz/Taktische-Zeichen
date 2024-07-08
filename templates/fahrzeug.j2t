@@ -60,7 +60,7 @@
 	<ellipse cx="128" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ ShadowColor }}" fill="none" stroke-width="6" />
 	{%- endif -%}	
-	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ ShadowColor }}" stroke="none" />
-	<path d="M11,65 L11,191 L245,191 L245,65 Q128,101 11,65 Z" fill="{{ OutlineColor }}" stroke="none" />
-	<path d="M16,72 L16,186 L240,186 L240,72 Q128,106 16,72 Z" fill="{{ BaseColor }}" stroke="none" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ ShadowColor }}" />
+	<path d="M11,65 L11,191 L245,191 L245,65 Q128,101 11,65 Z" fill="{{ OutlineColor }}" />
+	<path d="M16,72 L16,186 L240,186 L240,72 Q128,106 16,72 Z" fill="{{ BaseColor }}" />
 {%- endblock symbol -%}

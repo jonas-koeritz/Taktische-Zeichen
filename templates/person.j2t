@@ -45,41 +45,41 @@
 		{% set BaseColor = undefined.colorPrimary %} 
 	{% endif %}	
 {%- block symbol -%}
-	<path d="M62,128 L128,62 L194,128 L128,194 Z"  fill="{{ ShadowColor }}" />
-	<path d="M65,128 L128,65 L191,128 L128,191 Z"  fill="{{ OutlineColor }}" />
-    {%- if UnitSize != False or Fuehrungskraft == true -%}
-	    <path d="M72,128 L112,88 L144,88 L184,128 L128,184 Z"  fill="{{ BaseColor }}" /> 
-    {%- elif Funktioner == true -%}
-	    <path d="M72,128 L112,88 L144,88 L184,128 L128,184 Z"  fill="{{ BaseColor }}" /> 
-	    <path d="M116,84 L128,72 L140,84 Z"  fill="{{ BaseColor }}" /> 
-    {%- else -%}
-    	<path d="M72,128 L128,72 L184,128 L128,184 Z"  fill="{{ BaseColor }}" />
-    {%- endif -%}
+	<path d="M62,128 L128,62 L194,128 L128,194 Z" fill="{{ ShadowColor }}" />
+	<path d="M65,128 L128,65 L191,128 L128,191 Z" fill="{{ OutlineColor }}" />
+	{%- if UnitSize != False or Fuehrungskraft == true -%}
+		<path d="M72,128 L112,88 L144,88 L184,128 L128,184 Z" fill="{{ BaseColor }}" /> 
+	{%- elif Funktioner == true -%}
+		<path d="M72,128 L112,88 L144,88 L184,128 L128,184 Z" fill="{{ BaseColor }}" /> 
+		<path d="M116,84 L128,72 L140,84 Z" fill="{{ BaseColor }}" /> 
+	{%- else -%}
+		<path d="M72,128 L128,72 L184,128 L128,184 Z" fill="{{ BaseColor }}" />
+	{%- endif -%}
 	{%- if UnitSize == "Trupp" -%}
-	    <ellipse cx="128" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
+		<ellipse cx="128" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
 	{%- elif UnitSize == "Gruppe" -%}
-	    <ellipse cx="100" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
-	    <ellipse cx="156" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
+		<ellipse cx="100" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
+		<ellipse cx="156" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
 	{%- elif UnitSize == "Staffel" -%}
 		<ellipse cx="128" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
 		<ellipse cx="128" cy="20" rx="10" ry="10" fill="{{ ShadowColor }}" />
 	{%- elif UnitSize == "Zug" -%}	
-	    <ellipse cx="100" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
-    	<ellipse cx="128" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
-	    <ellipse cx="156" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
+		<ellipse cx="100" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
+		<ellipse cx="128" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
+		<ellipse cx="156" cy="44" rx="10" ry="10" fill="{{ ShadowColor }}" />
 	{%- elif UnitSize == "Bereitschaft" or UnitSize == "Verband 1" -%}
-		<rect x="123" y="24" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
+		<rect x="123" y="24" width="10" height="36" fill="{{ ShadowColor}}" />
 	{%- elif UnitSize == "Abteilung" or UnitSize == "Verband 2" -%}
-		<rect x="103" y="24" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
-		<rect x="143" y="24" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
+		<rect x="103" y="24" width="10" height="36" fill="{{ ShadowColor}}" />
+		<rect x="143" y="24" width="10" height="36" fill="{{ ShadowColor}}" />
 	{%- elif UnitSize == "Großverband" or UnitSize == "Verband 3" -%}
-		<rect x="103" y="24" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
-		<rect x="123" y="24" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
-		<rect x="143" y="24" width="10" height="36" fill="{{ ShadowColor}}" stroke="none" />
+		<rect x="103" y="24" width="10" height="36" fill="{{ ShadowColor}}" />
+		<rect x="123" y="24" width="10" height="36" fill="{{ ShadowColor}}" />
+		<rect x="143" y="24" width="10" height="36" fill="{{ ShadowColor}}" />
 	{%- endif -%}
-    {%- if Zugtrupp == True -%}
-    	<ellipse cx="114" cy="100" rx="5" ry="5" fill="{{ OutlineColor }}" />
-    	<ellipse cx="128" cy="100" rx="5" ry="5" fill="{{ OutlineColor }}" />
-    	<ellipse cx="142" cy="100" rx="5" ry="5" fill="{{ OutlineColor }}" />
+	{%- if Zugtrupp == True -%}
+		<ellipse cx="114" cy="100" rx="5" ry="5" fill="{{ OutlineColor }}" />
+		<ellipse cx="128" cy="100" rx="5" ry="5" fill="{{ OutlineColor }}" />
+		<ellipse cx="142" cy="100" rx="5" ry="5" fill="{{ OutlineColor }}" />
 	{%- endif -%}
 {%- endblock symbol -%}
