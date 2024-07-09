@@ -1,0 +1,16 @@
+{% extends "templates/base.j2t" %}
+	{% if Akut is undefined %}
+		{% set Akut = False %}
+	{% endif %}	
+	{% if Vermutet is undefined %}
+		{% set Vermutet = False %}
+	{% endif %}	
+{%- block symbol -%}
+	<path d="M50,64 L128,192 L206,64 Z" stroke-width="5" stroke="#FF0000" fill="none" />
+	{%- if Akut == True -%}
+		<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 56px;" fill="#FF0000" x="64" y="180">!</text>
+	{%- endif -%}
+	{%- if Vermutet == True -%}
+		<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 56px;" fill="#FF0000" x="64" y="180">?</text>
+	{%- endif -%}
+{%- endblock symbol -%}
