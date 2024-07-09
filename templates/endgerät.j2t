@@ -1,0 +1,41 @@
+{% extends "templates/base.j2t" %}
+	{% if Verbindung is undefined %}
+		{% set Verbindung = False %}
+	{% endif %}	
+	{% if Funk is undefined %}
+		{% set Funk = False %}
+	{% endif %}	
+{%- block symbol -%}
+	<rect x="60" y="60" width="136" height="136" fill="#000000" />
+	<rect x="64" y="64" width="128" height="128" fill="#FFFFFF" />
+	{%- if Funk == True -%}
+		<path d="M80,96 l16,16 l16,-16 l16,16 l16,-16 l16,16 l16,-16" stroke="#000000" stroke-width="5" fill="none" />
+	{%- endif -%}	
+	{%- if Verbindung == "Bild" -%}
+		<rect x="104" y="70" width="48" height="18" rx="6" ry="6" stroke="#000000" stroke-width="5" fill="none" />
+	{%- elif Verbindung == "Daten" -%}
+		<path d="M80,74 l32,0 l0,12 l32,0 l0,-12 l32,0" stroke-width="5" stroke="#000000" fill="none" />
+	{%- elif Verbindung == "Sprechen" -%}
+		<path d="M80,84 l96,0" stroke-width="5" stroke="#000000" fill="none" />
+	{%- elif Verbindung == "Schreiben" -%}
+		<path d="M80,74 l96,0" stroke-width="5" stroke="#000000" fill="none" />
+		<path d="M80,84 l96,0" stroke-width="5" stroke="#000000" fill="none" />
+	{%- elif Verbindung == "Tasten" -%}
+		<path d="M128,74 l48,0" stroke-width="5" stroke="#000000" fill="none" />
+		<path d="M80,84 l96,0" stroke-width="5" stroke="#000000" fill="none" />
+	{%- elif Verbindung == "Festbild" -%}
+		<path d="M115,70 l26,0" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M115,76 l26,0" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M115,82 l26,0" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M115,88 l26,0" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M119,66 l0,26" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M125,66 l0,26" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M131,66 l0,26" stroke-width="2" stroke="#000000" fill="none" />
+		<path d="M137,66 l0,26" stroke-width="2" stroke="#000000" fill="none" />
+	{%- elif Verbindung == "Relais" -%}
+		<path d="M71,90 A10,10 90 0 1 71,110" stroke="#000000" stroke-width="5" fill="none" />
+		<path d="M185,90 A10,10 90 1 0 185,110" stroke="#000000" stroke-width="5" fill="none" />
+	{%- elif Verbindung == "Richt" -%}
+		<path d="M136,112 l0,-25 l-10,10 l0,-25 l-10,0 l20,0" stroke-width="5" stroke="#000000" fill="none" />
+	{%- endif -%}	
+{%- endblock symbol -%}
