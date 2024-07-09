@@ -10,7 +10,10 @@
 	{% endif %}	
 	{% if Fuehrung is undefined %}
 		{% set Fuehrung = False %}
-	{% endif %}		
+	{% endif %}
+	{% if Org is undefined %}
+		{% set Org = "undefined" %}
+	{% endif %}			
 	{% if Org == "thw" %}
 		{% set ShadowColor = thw.colorStroke %} 
 		{% set OutlineColor = thw.colorSecondary %} 

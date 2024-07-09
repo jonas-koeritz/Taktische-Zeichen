@@ -1,5 +1,7 @@
 {% extends "templates/base.j2t" %}
-{% set Org = "undefined" if Org is undefined %}
+	{% if Org is undefined %}
+		{% set Org = "undefined" %}
+	{% endif %}	
 	{% if Org == "thw" %}
 		{% set ShadowColor = thw.colorStroke %} 
 		{% set OutlineColor = thw.colorSecondary %} 
