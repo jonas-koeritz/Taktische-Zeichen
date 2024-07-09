@@ -11,6 +11,9 @@
 	{% if Zugtrupp is undefined %}
 		{% set Zugtrupp = False %}
 	{% endif %}	
+	{% if Fuehrungseinrichtung is undefined %}
+		{% set Fuehrungseinrichtung = False %}
+	{% endif %}
 	{% if Org == "thw" %}
 		{% set ShadowColor = thw.colorStroke %} 
 		{% set OutlineColor = thw.colorSecondary %} 
@@ -43,6 +46,11 @@
 		{% set ShadowColor = undefined.colorStroke %} 
 		{% set OutlineColor = undefined.colorSecondary %} 
 		{% set BaseColor = undefined.colorPrimary %} 
+	{% endif %}	
+	{% if Fuehrungseinrichtung == True %}
+		{% set ShadowColor = "#000000" %} 
+		{% set OutlineColor = "#FFFFFF" %} 
+		{% set BaseColor = "#FFFF00" %} 	
 	{% endif %}	
 {%- block symbol -%}
 	<path d="M62,128 L128,62 L194,128 L128,194 Z" fill="{{ ShadowColor }}" />
