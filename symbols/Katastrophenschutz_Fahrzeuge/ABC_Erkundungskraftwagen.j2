@@ -1,0 +1,17 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+	<title>ABC Erkundungskraftwagen</title>
+	<defs>
+		<style type="text/css">
+		{% include './fonts/fonts.j2' %}
+		</style>
+		<clipPath id="symbol">
+			<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" />
+		</clipPath>
+	</defs>
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="{{ katastrophenschutz.colorPrimary }}" stroke-width="10" stroke="{{ katastrophenschutz.colorSecondary }}" clip-path="url(#symbol)" />
+	<path d="M10,64 L10,192 L246,192 L246,64 Q128,100 10,64 Z" fill="none" stroke-width="1" stroke="{{ katastrophenschutz.colorStroke }}" />
+	<ellipse cx="40" cy="210" rx="10" ry="10" stroke="{{ katastrophenschutz.colorStroke }}" fill="none" stroke-width="5" />
+	<ellipse cx="216" cy="210" rx="10" ry="10" stroke="{{ katastrophenschutz.colorStroke }}" fill="none" stroke-width="5" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; font-size: 32px; text-anchor: middle;" fill="{{ katastrophenschutz.colorSecondary }}" x="128" y="145">ABCErkKW</text>
+</svg>
