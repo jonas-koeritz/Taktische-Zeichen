@@ -1,0 +1,17 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 256 256">
+	<title>Wechselbrücke</title>
+	<defs>
+		<style type="text/css">
+		{% include './fonts/fonts.j2' %}
+		</style>
+		<clipPath id="symbol">
+			<path d="M19,64 L19,192 L255,192 L255,64 Q137,100 19,64 Z" />
+		</clipPath>
+	</defs>
+	<path d="M19,64 L19,192 L255,192 L255,64 Q137,100 19,64 Z" fill="{{ thw.colorPrimary }}" stroke-width="10" stroke="{{ thw.colorSecondary }}" clip-path="url(#symbol)" />
+	<path d="M19,64 L19,192 L255,192 L255,64 Q137,100 19,64 Z" fill="none" stroke-width="1" stroke="{{ thw.colorStroke }}" />
+	<path d="M12,63 L12,199 L256,199" fill="none" stroke-width="5" stroke="{{ thw.colorStroke }}" />
+	<rect x="0" y="121.5" width="11" height="15" fill="{{ thw.colorSecondary }}" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: end; font-size: 16px;" fill="{{ thw.colorSecondary }}" x="236" y="180">THW</text>
+</svg>
