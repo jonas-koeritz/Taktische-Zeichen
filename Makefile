@@ -2,6 +2,13 @@
 SOURCES = $(shell find symbols/ -name *.j2)
 TEMPLATE = $(shell find symbols/ -name *.j2t)
 
+# Unter Linux Inkscape in einem eigenen Benutzer-Namensraum ausführen
+UNAME_S := $(shell uname -s)
+INKSCAPE = inkscape
+ifeq ($(UNAME_S),Linux)
+INKSCAPE = unshare --user inkscape
+endif
+
 # symbols/ prefix entfernen für die Ausgabedateien
 TARGET_PATHS = $(SOURCES:symbols/%=%)
 
@@ -39,33 +46,33 @@ stickers: $(STICKERS)
 
 build/png/1024/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	unshare --user inkscape -w 1024 -h 1024 $^ -o $@ > /dev/null
+	$(INKSCAPE) -w 1024 -h 1024 $^ -o $@ > /dev/null
 	optipng $@
 	
 build/print/png/1024/%.png: build/print/svg/%.svg
 	mkdir -p $(@D)
-	unshare --user inkscape -w 1024 -h 1024 $^ -o $@ > /dev/null
+	$(INKSCAPE) -w 1024 -h 1024 $^ -o $@ > /dev/null
 	optipng $@
 
 build/png/512/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	unshare --user inkscape -w 512 -h 512 $^ -o $@ > /dev/null
+	$(INKSCAPE) -w 512 -h 512 $^ -o $@ > /dev/null
 	optipng $@
 
 	
 build/print/png/512/%.png: build/print/svg/%.svg
 	mkdir -p $(@D)
-	unshare --user inkscape -w 512 -h 512 $^ -o $@ > /dev/null
+	$(INKSCAPE) -w 512 -h 512 $^ -o $@ > /dev/null
 	optipng $@
 
 build/png/256/%.png: build/svg/%.svg
 	mkdir -p $(@D)
-	unshare --user inkscape -w 256 -h 256 $^ -o $@ > /dev/null
+	$(INKSCAPE) -w 256 -h 256 $^ -o $@ > /dev/null
 	optipng $@
 	
 build/print/png/256/%.png: build/print/svg/%.svg
 	mkdir -p $(@D)
-	unshare --user inkscape -w 256 -h 256 $^ -o $@ > /dev/null
+	$(INKSCAPE) -w 256 -h 256 $^ -o $@ > /dev/null
 	optipng $@
 
 
