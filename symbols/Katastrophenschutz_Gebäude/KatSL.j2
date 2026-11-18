@@ -1,0 +1,16 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+	<title>Katastrophenschutz Leitung</title>
+	<defs>
+		<style type="text/css">
+		{% include './fonts/fonts.j2' %}
+		</style>
+		<clipPath id="symbol">
+			<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64 Z" />
+		</clipPath>
+	</defs>
+	<rect x="10" y="64" width="236" height="128" fill="{{ katastrophenschutz.colorPrimary }}" stroke="{{ katastrophenschutz.colorSecondary }}" stroke-width="10" clip-path="url(#symbol)" />
+	<path d="M10 64 L128 16 L246 64" stroke="{{ katastrophenschutz.colorSecondary }}" stroke-width="10" fill="{{ katastrophenschutz.colorPrimary }}" clip-path="url(#symbol)" />
+	<path d="M10 64 L10 192 L246 192 L246 64 L128 16 L10 64" stroke="{{ katastrophenschutz.colorStroke }}" stroke-width="1" fill="none" />
+	<text style="font-family: 'Roboto Slab'; font-weight: bold; text-anchor: middle; font-size: 56px;" fill="{{ katastrophenschutz.colorSecondary }}" x="128" y="155">KatSL</text>
+</svg>
